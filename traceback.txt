@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 16, in script
+    with dissolve(3.0)
+TypeError: 'Dissolve' object is not callable
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 16, in script
+    with dissolve(3.0)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+TypeError: 'Dissolve' object is not callable
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.1.3.23091805
+Concert of Liberation2 1.0
+Mon Nov 20 23:19:49 2023
