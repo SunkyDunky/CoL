@@ -16,11 +16,6 @@ label start:
     pause 4.0
     scene bg entrance_ticket
     with Dissolve(2.0)
-    pause 5.0
-    with Fade(1.0,0.0,1.0)
-
-    # $ renpy.movie_cutscene("movies/opening.mp4")
-
     menu Characterselection:
         "Choose a character"
         "Renee":
@@ -29,7 +24,9 @@ label start:
             jump Juila_Start
         "Quol":
             jump Sorry
-        
+    with Fade(1.0,0.0,1.0)
+
+    # $ renpy.movie_cutscene("movies/opening.mp4")
 
     return
 
@@ -39,5 +36,7 @@ label Sorry:
     return
 
 label Juila_Start:
-    "yayayayaya"
+    scene bg entrance_ticket
+    with Fade(1.0,0.0,1.0)
+    pause 1.0
     return
