@@ -13,7 +13,7 @@ image bg entrance_ticket = im.Scale("bg_entrance_ticket.png", config.screen_widt
 label start:
 
     show bg entrance
-    pause 6.0
+    pause 4.0
     scene bg entrance_ticket
     with Dissolve(2.0)
     pause 5.0
