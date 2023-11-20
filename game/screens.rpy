@@ -212,16 +212,13 @@ screen choice(items):
         for i in items:
             textbutton i.caption action i.action
 
-
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    ypos 405
-    yanchor 0.5
-
+    xalign 1.5  # Aligns the box to the right of the screen
+    yalign 0.5  # Vertically centers the box
     spacing gui.choice_spacing
 
 style choice_button is default:
@@ -229,6 +226,8 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
+    xalign 0.0  # Aligns the text to the left of the box
+
 
 
 ## Quick Menu screen ###########################################################
