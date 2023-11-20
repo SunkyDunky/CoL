@@ -16,26 +16,17 @@ screen character_selection:
         yalign 0.5
         hbox spacing 40:  # Add space between each option
             imagebutton:
-                idle Transform("renee_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
+                idle Transform("renee_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
                 hover Transform("renee_opt.jpg", zoom=1.1)
-                selected_idle Transform("renee_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
-                selected_hover Transform("renee_opt.jpg", zoom=1.1)
                 action Jump("Sorry")
             imagebutton:
-                idle Transform("juila_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
+                idle Transform("juila_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
                 hover Transform("juila_opt.jpg", zoom=1.1)
-                selected_idle Transform("juila_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
-                selected_hover Transform("juila_opt.jpg", zoom=1.1)
                 action Jump("Juila_Start")
             imagebutton:
-                idle Transform("quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
+                idle Transform("quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
                 hover Transform("quol_opt.jpg", zoom=1.1)
-                selected_idle Transform("quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3))
-                selected_hover Transform("quol_opt.jpg", zoom=1.1)
                 action Jump("Sorry")
-
-
-
 
 
 
