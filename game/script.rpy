@@ -6,8 +6,12 @@
 
 # defining
 define e = Character("Eileen")
+
+
 image bg entrance = im.Scale("bg_entrance.png", config.screen_width, config.screen_height)
 image bg entrance_ticket = im.Scale("bg_entrance_ticket.png", config.screen_width, config.screen_height)
+
+image openingscene = Movie(channel="movie_dp",size=(config.screen_width,config.screen_height), loop = False, image = "bg_entrance.png", play = "movies/opening.mp4")
 
 #selection screen
 screen character_selection:
@@ -41,9 +45,6 @@ label start:
     # Show your screen
     call screen character_selection
     with Fade(1.0,0.0,1.0)
-
-    # $ renpy.movie_cutscene("movies/opening.mp4")
-
     return
 
 label Sorry:
@@ -52,7 +53,13 @@ label Sorry:
     return
 
 label Juila_Start:
-    scene bg entrance_ticket
-    with Fade(1.0,0.0,1.0)
-    pause 1.0
+    "Operation enacted"
+    window hide 
+    pause 0.5 
+    $ renpy.movie_cutscene("images/opening.webm.webm")
+    pause 1.0 
+    window show
+    "start"
     return
+
+

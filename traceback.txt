@@ -1,64 +1,47 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/script.rpy", line 13, in prepare_screen
-    screen character_selection:
-  File "game/script.rpy", line 13, in prepare
-    screen character_selection:
-  File "game/script.rpy", line 14, in prepare
-    vbox:
-  File "game/script.rpy", line 14, in prepare
-    vbox:
-  File "game/script.rpy", line 17, in prepare
-    hbox spacing 40:  # Add space between each option
-  File "game/script.rpy", line 17, in prepare
-    hbox spacing 40:  # Add space between each option
-  File "game/script.rpy", line 22, in prepare
-    imagebutton:
-  File "game/script.rpy", line 22, in prepare
-    imagebutton:
-SyntaxError: invalid syntax (game/script.rpy, line 23)
+While running game code:
+  File "game/script.rpy", line 59, in script
+    $ renpy.movie_cutscene("images\opening.webm.webm",delay=2,loops=0)
+  File "game/script.rpy", line 59, in <module>
+    $ renpy.movie_cutscene("images\opening.webm.webm",delay=2,loops=0)
+Exception: Backslash in filename, use '/' instead: 'images\\opening.webm.webm'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\main.py", line 93, in run
-    renpy.display.screen.prepare_screens()
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\screen.py", line 1003, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/script.rpy", line 13, in prepare_screen
-    screen character_selection:
-  File "game/script.rpy", line 13, in prepare
-    screen character_selection:
-  File "game/script.rpy", line 14, in prepare
-    vbox:
-  File "game/script.rpy", line 14, in prepare
-    vbox:
-  File "game/script.rpy", line 17, in prepare
-    hbox spacing 40:  # Add space between each option
-  File "game/script.rpy", line 17, in prepare
-    hbox spacing 40:  # Add space between each option
-  File "game/script.rpy", line 22, in prepare
-    imagebutton:
-  File "game/script.rpy", line 22, in prepare
-    imagebutton:
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\py3analysis.py", line 808, in ast_eval
-    return self.ast_eval_literal(expr)[0]
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/script.rpy, line 23)
+  File "game/script.rpy", line 59, in script
+    $ renpy.movie_cutscene("images\opening.webm.webm",delay=2,loops=0)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 59, in <module>
+    $ renpy.movie_cutscene("images\opening.webm.webm",delay=2,loops=0)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1700, in movie_cutscene
+    rv = renpy.ui.interact(suppress_overlay=True,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 4379, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1224, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1202, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1144, in periodic_pass
+    c.periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\loader.py", line 824, in load
+    raise Exception("Backslash in filename, use '/' instead: %r" % name)
+Exception: Backslash in filename, use '/' instead: 'images\\opening.webm.webm'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Tue Nov 21 02:02:24 2023
+Tue Nov 21 03:14:11 2023
