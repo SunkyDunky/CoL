@@ -3,6 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+#setting
+default hp = 15
 
 # defining characters
 define J = Character("Juila",color="#F400FF")
@@ -21,6 +23,9 @@ image Renee sad:
 image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
 image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
+image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
+
+
 
 #selection screen
 screen character_selection:
@@ -74,15 +79,15 @@ label Juila_Start:
     hide Juila worried
 
     show Goon at left with Dissolve(0.5)
-    pause 1.0
+    pause 0.5
     hide Goon with Dissolve(0.5)
     pause 0.5
     show Goon at right with Dissolve(0.5)
-    pause 1.0
+    pause 0.5
     hide Goon with Dissolve(0.5)
     pause 0.5
     show Goon at center with Dissolve(0.5)
-    pause 1.0
+    pause 0.5
     hide Goon with Dissolve(0.5)
    
     show Juila worried
@@ -91,7 +96,7 @@ label Juila_Start:
     what should I do?"""
 
     menu:
-        "what should I do?"
+        J"what should I do?"
         "Warn my bandmates about them":
             jump J1
         "Ignore them and hope it doesn't worsen the situation":
@@ -104,7 +109,7 @@ label J1:
     
     Who should I warn first though..."""
     menu:
-        "Who should I warn first though..."
+        J"Who should I warn first though..."
         "Quol":
             jump JQ0
         "Renee":
@@ -123,12 +128,6 @@ label J2:
     show Goon at center with Dissolve(0.3)
     pause 0.5
     hide Goon with Dissolve(0.3)
-    show Goon at center with Dissolve(0.3)
-    pause 0.5
-    hide Goon with Dissolve(0.3)
-    show Goon at center with Dissolve(0.3)
-    pause 0.5
-    hide Goon with Dissolve(0.3)
 
     J"""They... they are coming closer..
     
@@ -137,8 +136,75 @@ label J2:
     what do I do.."""
 
     menu:
-        "what do I do.."
+        J"what do I do.."
         "Stand my ground, don't move a muscle..":
-            jump JQ0
+            jump JS0
         "I have to leave, I have to go!":
-            jump JR0
+            jump JH0
+
+label JS0:
+    # agent tries dragging her
+    show Goon at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+
+    J"{b}'Aaaah!'{/b}"
+    J"I have to back up I have to back up!!"
+    hide Goon
+    pause 2.0
+
+    J"What...what just happened.."
+    J"I'm hyperventilating.."
+
+    menu:
+        J"I'm hyperventilating.."
+        "I should snap out of it":
+            jump JS1
+        "Run..I have to leave!":
+            jump JS2
+
+label JS1:
+
+    menu:
+        J"Calm down...calm down..."
+        "I need to help my friends":
+            jump JS1FS
+        "I have to do something!":
+            jump JS1FS
+        "I can't just stand and do nothing!":
+            jump JS1FS        
+
+label JS1FS:
+    J"where...where is my bat?"
+    pause 0.5
+    J"Oh..oh I remember! It's in Renee's bag!"
+    J"It's just behind me, I have to get i-"
+    show Goon at center
+    menu:
+        J"gasp!"
+        "Try to dodge the attack":
+            jump JS1FSa
+        "Scream":
+            $ hp - 3
+            jump JS1FSb
+        "Reach for my bat":
+            $ hp - 1
+            jump JS1FSc
+
+# fight scene JS1
+label JS1FSa:
+    J"I have to dodge this!"
+
+label JS1FSb:
+    J"{b}'AAAAAH'{/b}"
+
+label JS1FSc:
+    J"I'm getting the bat!"
+
+label JS2:
+    J"I have to go, I have to go!"
+    show bg stage with vpunch
+    pause 0.1
+    show bg stage with vpunch
+    pause 0.1
+    show bg stage with vpunch
+    show bg greenroom with wipeleft
+    J"Huff.."
