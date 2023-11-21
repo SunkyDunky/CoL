@@ -13,7 +13,7 @@ define Q = Character("Quol", color="#0094FF")
 # defining bgs
 image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
 image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
-
+image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 
 
 #selection screen
@@ -57,6 +57,7 @@ label Juila_Start:
     window hide 
     pause 0.5 
     $ renpy.movie_cutscene("images/opening.webm")
+    show bg stage
     pause 1.0 
     window show
     J"""Aren't those agents?
