@@ -255,7 +255,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Settings") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -296,17 +296,40 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            # textbutton _("Start") action Start()
+            imagebutton:
+                auto "gui/GUIButtons/mm_start_%s.png"
+                action Start()
+                hovered [ Play("sound","audio/click.wav")]
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            # textbutton _("History") action ShowMenu("history")
+            imagebutton:
+                auto "gui/GUIButtons/History_%s.png"
+                action ShowMenu("history")
+                hovered [ Play("sound","audio/click.wav")]
 
-            textbutton _("Save") action ShowMenu("save")
+            # textbutton _("Save") action ShowMenu("save")
+            imagebutton:
+                auto "gui/GUIButtons/save_%s.png"
+                action ShowMenu("save")
+                hovered [ Play("sound","audio/click.wav")]
 
-        textbutton _("Load") action ShowMenu("load")
+        #  textbutton _("Load") action ShowMenu("load")
+        imagebutton:
+            auto "gui/GUIButtons/mm_load_%s.png"
+            action ShowMenu("load")
+            hovered [ Play("sound","audio/click.wav")]
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+
+        # textbutton _("Settings") action ShowMenu("preferences")
+        imagebutton: 
+            auto "gui/GUIButtons/mm_settings_%s.png" 
+            action ShowMenu("preferences")
+            hovered [ Play("sound","audio/click.wav")]
+        
+
 
         if _in_replay:
 
@@ -314,20 +337,36 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            # textbutton _("Main Menu") action MainMenu()
+            imagebutton:
+                auto "gui/GUIButtons/main_menu_%s.png"
+                action MainMenu()
+                hovered [ Play("sound","audio/click.wav")]
 
-        textbutton _("About") action ShowMenu("about")
+        # textbutton _("About") action ShowMenu("about")
+        imagebutton:
+            auto "gui/GUIButtons/mm_about_%s.png"
+            action ShowMenu("about")
+            hovered [ Play("sound","audio/click.wav")]
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            # textbutton _("Help") action ShowMenu("help")
+            imagebutton:
+                auto "gui/GUIButtons/mm_help_%s.png"
+                action ShowMenu("help")
+                hovered [ Play("sound","audio/click.wav")]
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            # textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton:
+                auto "gui/GUIButtons/mm_quit_%s.png"
+                action Quit(confirm=not main_menu)
+                hovered [ Play("sound","audio/click.wav")]
 
 
 style navigation_button is gui_button
@@ -468,8 +507,11 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Return"):
+    # textbutton _("Return"):
+    imagebutton:
+        auto "gui/GUIButtons/return_%s.png"
         style "return_button"
+        hovered [ Play("sound","audio/click.wav")]
 
         action Return()
 
@@ -528,7 +570,8 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    xoffset -20
+    yoffset -42
 
 
 ## About screen ################################################################
@@ -724,7 +767,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
