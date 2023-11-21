@@ -8,7 +8,7 @@ default hp = 15
 
 # defining characters
 define J = Character("Juila",color="#F400FF")
-define R = Character("Renee", color= "#FF8700",image="Renee")
+define R = Character("Renee", color= "#FF8700")
 define Q = Character("Quol", color="#0094FF")
 define L = Character("Layon", color= "#ff0000")
 define LQ = Character("Lenorra", color="#00ff11")
@@ -183,7 +183,7 @@ label JH1:
     J"""huff...huff...
 
     I'm safe...aren't I?
-    
+
     What can I do now...what do I do??"""
 
     menu:
@@ -216,6 +216,7 @@ label JS1FS:
     menu:
         J"gasp!"
         "Try to dodge the attack":
+            hide Goon
             jump JS1FSa
         "Scream":
             $ hp - 3
@@ -227,13 +228,111 @@ label JS1FS:
 # fight scene JS1
 label JS1FSa:
     J"I have to dodge this!"
+    pause 2.0
+    show goon with moveinright
+    pause 1.0
+    hide goon with moveoutleft
+    J"I dodged him!"
+    jump JS1FSd
 
 label JS1FSb:
     J"{b}'AAAAAH'{/b}"
+    Q"Whats happening?"
+    J"'help!'"
+    hide Goon
+    pause 1.0
+    show Goon at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+    J"'OUCH!!!'"
+    hide Goon with moveoutbottom
+    jump JS1FSd
 
 label JS1FSc:
     J"I'm getting the bat!"
+    pause 1.0
+    J"'got it! OW!"
+    menu: 
+        "Block":
+            jump JS1FSe
+        "Hit":
+            jump JS1FSf    
 
+label JS1FSd:
+    show Goon with moveinbottom
+    J"he's trying to attack again!"
+    menu:
+        "Scream":
+            jump JS1FSg
+        "Dodge":
+            jump JS1FSh
+        "Get bat":
+            jump JS1FSi
+
+label JS1FSe:
+    J"I should block him.."
+    pause 2.0
+    J" and then.."
+    menu:
+        "and then.."
+        "Hit him back!":
+            jump JS1FSf
+
+label JS1FSf:
+    J"'Uuuugahhhh!'"
+    pause 2.0
+    J"he's out...cold"
+    J"did I hit him a little too hard..?"
+    jump JS1FSafter
+
+label JS1FSg:
+    J"{b}'AAAAAH'{/b}"
+    hide Goon with moveoutleft
+    show quol with moveinright   
+    Q"'You alright Juila?'" 
+    J"'Thank...Thank you..'"
+    Q"'better fight back yourself next time.'"
+    jump JS1FSafter
+
+label JS1FSh:
+    J"I'll dodge, it'll be fin-"
+    J"'ah!'"
+    J"I tripped over myself..."
+    J"'ouch!'"
+    $ hp - 2
+    hide Goon with moveoutleft
+    show quol with moveinright   
+    Q"'You alright Juila?'" 
+    J"'Thank...Thank you..'"
+    Q"'better not trip next time.'"
+    jump JS1FSafter
+
+label JS1FSi:
+    J"I have to get my bat this time"
+    pause 1.0
+    J"yes! and I'll defend.."
+    pause 1.0
+    J"I blocked him!"
+    J"It should be fine if I hit back.."
+    pause 2.0
+    jump JS1FSafter
+
+label JS1FSafter:
+    J"he's down at least."
+
+    R "There are quite a lot of them."
+
+    R "Trying to hold them back."
+    
+    Q"Same."
+
+    J"I want to help.."
+    menu:
+        J"I want to help.."
+        "Help Quol first":
+            jump JS11
+        "Help Renee first":
+            jump JS12    
+
+#JS2
 label JS2:
     show bg greenroom with wipeleft
     J"Huff.."

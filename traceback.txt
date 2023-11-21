@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 179, in script
-    jump toilet
-ScriptError: could not find label 'toilet'.
+  File "game/script.rpy", line 257, in script
+    show Goon with moveinBottom
+  File "game/script.rpy", line 257, in <module>
+    show Goon with moveinBottom
+NameError: name 'moveinBottom' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 179, in script
-    jump toilet
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'toilet'.
+  File "game/script.rpy", line 257, in script
+    show Goon with moveinBottom
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1674, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 257, in <module>
+    show Goon with moveinBottom
+NameError: name 'moveinBottom' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Wed Nov 22 04:44:08 2023
+Wed Nov 22 05:19:34 2023

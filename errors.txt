@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 209: end of line expected.
-    show bg entrance behind bg stage
-                               ^
+File "game/script.rpy", line 323: expected statement.
+    R"Trying to hold them back."
+                                ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Wed Nov 22 04:13:39 2023
+Wed Nov 22 05:31:22 2023
