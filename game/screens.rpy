@@ -498,7 +498,9 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Return"):
+    # textbutton _("Return"):
+    imagebutton:
+        auto "gui/GUIButtons/return_%s.png"
         style "return_button"
 
         action Return()
@@ -558,7 +560,8 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    xoffset -20
+    yoffset -42
 
 
 ## About screen ################################################################
