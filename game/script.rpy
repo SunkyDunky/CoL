@@ -176,12 +176,14 @@ label JH0:
             show bg stage with vpunch
             jump JS2
         "Toilet":
-            jump toilet    
+            jump JH1    
 
 label JH1:
     show bg toilet with vpunch
     J"""huff...huff...
+
     I'm safe...aren't I?
+    
     What can I do now...what do I do??"""
 
     menu:
