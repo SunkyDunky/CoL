@@ -4,14 +4,17 @@
 # name of the character.
 
 
-# defining
-define e = Character("Eileen")
+# defining characters
+define J = Character("Juila",color="#F400FF")
+define R = Character("Renee", color= "#FF8700")
+define Q = Character("Quol", color="#0094FF")
 
 
-image bg entrance = im.Scale("bg_entrance.png", config.screen_width, config.screen_height)
-image bg entrance_ticket = im.Scale("bg_entrance_ticket.png", config.screen_width, config.screen_height)
+# defining bgs
+image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
+image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
 
-image openingscene = Movie(channel="movie_dp",size=(config.screen_width,config.screen_height), loop = False, image = "bg_entrance.png", play = "movies/opening.mp4")
+
 
 #selection screen
 screen character_selection:
@@ -33,8 +36,6 @@ screen character_selection:
                 action Jump("Sorry")
 
 
-
-
 # The game starts here.
 
 label start:
@@ -48,7 +49,7 @@ label start:
     return
 
 label Sorry:
-    "sorry this character isnt avaabile for now, Juila is available though."
+    "sorry this character isn't avaabile for now, Juila is available though."
     jump Juila_Start
     return
 
@@ -56,10 +57,12 @@ label Juila_Start:
     "Operation enacted"
     window hide 
     pause 0.5 
-    $ renpy.movie_cutscene("images/opening.webm.webm")
+    $ renpy.movie_cutscene("images/opening.webm")
     pause 1.0 
     window show
-    "start"
+    J"""Aren't those agents?
+    
+    what are they doing here??"""
     return
 
 
