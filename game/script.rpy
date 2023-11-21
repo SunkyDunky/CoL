@@ -115,6 +115,8 @@ label J1:
         "Renee":
             jump JR0
 
+
+#J2-Juila self routes
 label J2:
     J"""I should ignore them...
     
@@ -159,7 +161,38 @@ label JS0:
         "I should snap out of it":
             jump JS1
         "Run..I have to leave!":
+            jump JH0
+
+label JH0:
+    show bg stage with vpunch
+    menu:
+        J"where...where should I go.."
+        "Green Room":
+            J"I have to go, I have to go!"
+            show bg stage with vpunch
+            pause 0.1
+            show bg stage with vpunch
+            pause 0.1
+            show bg stage with vpunch
             jump JS2
+        "Toilet":
+            jump toilet    
+
+label JH1:
+    show bg toilet with vpunch
+    J"""huff...huff...
+    I'm safe...aren't I?
+    What can I do now...what do I do??"""
+
+    menu:
+        "Go find layon":
+            jump JS2
+        "Rush and help your friends":
+            jump Jh5
+        "Don't go outside":
+            jump JH2
+
+
 
 label JS1:
 
@@ -200,11 +233,15 @@ label JS1FSc:
     J"I'm getting the bat!"
 
 label JS2:
-    J"I have to go, I have to go!"
-    show bg stage with vpunch
-    pause 0.1
-    show bg stage with vpunch
-    pause 0.1
-    show bg stage with vpunch
     show bg greenroom with wipeleft
     J"Huff.."
+    show Layon with fade
+    L"Hey what happened? Are you alright?"
+    J"I....I..."
+    menu:
+        J"Layon.."
+        "I left them behind..":
+            jump JS21
+        "Can you come to the front stage now?...please?":
+            jump JS22   
+
