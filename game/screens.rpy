@@ -298,7 +298,7 @@ screen navigation():
 
             # textbutton _("Start") action Start()
             imagebutton:
-                auto "gui/mm_start_%s.png"
+                auto "gui/GUIButtons/mm_start_%s.png"
                 action Start()
 
         else:
@@ -309,12 +309,12 @@ screen navigation():
 
         #  textbutton _("Load") action ShowMenu("load")
         imagebutton:
-            auto "gui/mm_load_%s.png"
+            auto "gui/GUIButtons/mm_load_%s.png"
             action ShowMenu("load")
 
 
         # textbutton _("Settings") action ShowMenu("preferences")
-        imagebutton auto "gui/mm_settings_%s.png" action ShowMenu("preferences")
+        imagebutton auto "gui/GUIButtons/mm_settings_%s.png" action ShowMenu("preferences")
         
 
 
@@ -328,7 +328,7 @@ screen navigation():
 
         # textbutton _("About") action ShowMenu("about")
         imagebutton:
-            auto "gui/mm_about_%s.png"
+            auto "gui/GUIButtons/mm_about_%s.png"
             action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
@@ -336,7 +336,7 @@ screen navigation():
             ## Help isn't necessary or relevant to mobile devices.
             # textbutton _("Help") action ShowMenu("help")
             imagebutton:
-                auto "gui/mm_help_%s.png"
+                auto "gui/GUIButtons/mm_help_%s.png"
                 action ShowMenu("help")
 
         if renpy.variant("pc"):
@@ -345,7 +345,7 @@ screen navigation():
             ## Web.
             # textbutton _("Quit") action Quit(confirm=not main_menu)
             imagebutton:
-                auto "gui/mm_quit_%s.png"
+                auto "gui/GUIButtons/mm_quit_%s.png"
                 action Quit(confirm=not main_menu)
 
 
