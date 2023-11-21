@@ -303,9 +303,15 @@ screen navigation():
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            # textbutton _("History") action ShowMenu("history")
+            imagebutton:
+                auto "gui/GUIButtons/History_%s.png"
+                action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            # textbutton _("Save") action ShowMenu("save")
+            imagebutton:
+                auto "gui/GUIButtons/save_%s.png"
+                action ShowMenu("save")
 
         #  textbutton _("Load") action ShowMenu("load")
         imagebutton:
@@ -314,7 +320,9 @@ screen navigation():
 
 
         # textbutton _("Settings") action ShowMenu("preferences")
-        imagebutton auto "gui/GUIButtons/mm_settings_%s.png" action ShowMenu("preferences")
+        imagebutton: 
+            auto "gui/GUIButtons/mm_settings_%s.png" 
+            action ShowMenu("preferences")
         
 
 
@@ -324,7 +332,10 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            # textbutton _("Main Menu") action MainMenu()
+            imagebutton:
+                auto "gui/GUIButtons/main_menu_%s.png"
+                action MainMenu()
 
         # textbutton _("About") action ShowMenu("about")
         imagebutton:
