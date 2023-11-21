@@ -54,7 +54,6 @@ label Sorry:
     return
 
 label Juila_Start:
-    "Operation enacted"
     window hide 
     pause 0.5 
     $ renpy.movie_cutscene("images/opening.webm")
