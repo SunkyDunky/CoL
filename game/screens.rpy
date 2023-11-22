@@ -300,7 +300,7 @@ screen navigation():
             imagebutton:
                 auto "gui/GUIButtons/mm_start_%s.png"
                 action Start()
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
         else:
 
@@ -308,26 +308,26 @@ screen navigation():
             imagebutton:
                 auto "gui/GUIButtons/History_%s.png"
                 action ShowMenu("history")
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
             # textbutton _("Save") action ShowMenu("save")
             imagebutton:
                 auto "gui/GUIButtons/save_%s.png"
                 action ShowMenu("save")
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
         #  textbutton _("Load") action ShowMenu("load")
         imagebutton:
             auto "gui/GUIButtons/mm_load_%s.png"
             action ShowMenu("load")
-            hovered [ Play("sound","audio/click.wav")]
+            hovered [ Play("sound","audio/click.mp3")]
 
 
         # textbutton _("Settings") action ShowMenu("preferences")
         imagebutton: 
             auto "gui/GUIButtons/mm_settings_%s.png" 
             action ShowMenu("preferences")
-            hovered [ Play("sound","audio/click.wav")]
+            hovered [ Play("sound","audio/click.mp3")]
         
 
 
@@ -341,13 +341,13 @@ screen navigation():
             imagebutton:
                 auto "gui/GUIButtons/main_menu_%s.png"
                 action MainMenu()
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
         # textbutton _("About") action ShowMenu("about")
         imagebutton:
             auto "gui/GUIButtons/mm_about_%s.png"
             action ShowMenu("about")
-            hovered [ Play("sound","audio/click.wav")]
+            hovered [ Play("sound","audio/click.mp3")]
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -356,7 +356,7 @@ screen navigation():
             imagebutton:
                 auto "gui/GUIButtons/mm_help_%s.png"
                 action ShowMenu("help")
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
         if renpy.variant("pc"):
 
@@ -366,7 +366,7 @@ screen navigation():
             imagebutton:
                 auto "gui/GUIButtons/mm_quit_%s.png"
                 action Quit(confirm=not main_menu)
-                hovered [ Play("sound","audio/click.wav")]
+                hovered [ Play("sound","audio/click.mp3")]
 
 
 style navigation_button is gui_button
@@ -511,7 +511,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     imagebutton:
         auto "gui/GUIButtons/return_%s.png"
         style "return_button"
-        hovered [ Play("sound","audio/click.wav")]
+        hovered [ Play("sound","audio/click.mp3")]
 
         action Return()
 

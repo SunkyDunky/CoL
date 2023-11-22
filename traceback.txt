@@ -1,28 +1,45 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 257, in script
-    show Goon with moveinBottom
-  File "game/script.rpy", line 257, in <module>
-    show Goon with moveinBottom
-NameError: name 'moveinBottom' is not defined
+OSError: Couldn't find file 'audio/click.wav'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 257, in script
-    show Goon with moveinBottom
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1674, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 257, in <module>
-    show Goon with moveinBottom
-NameError: name 'moveinBottom' is not defined
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 4102, in interact_core
+    renpy.audio.audio.interact()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1271, in interact
+    periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1224, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1202, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1144, in periodic_pass
+    c.periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/click.wav'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Wed Nov 22 05:19:34 2023
+Thu Nov 23 00:57:52 2023

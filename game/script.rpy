@@ -7,17 +7,23 @@
 default hp = 15
 
 # defining characters
-define J = Character("Juila",color="#F400FF")
+define J = Character("Julia",color="#F400FF")
 define R = Character("Renee", color= "#FF8700")
 define Q = Character("Quol", color="#0094FF")
 define L = Character("Layon", color= "#ff0000")
 define LQ = Character("Lenorra", color="#00ff11")
-define G = Character("Goon",color="#cacaca")
+define G = Character("Agent",color="#cacaca")
 
 # define character sprites
-image Renee sad:   
-    "characters/Renee sad.png"
-    zoom 0.5
+image Renee :   
+    "characters/Renee.png"
+    zoom 1.7
+image Julia :   
+    "characters/Julia.png"
+    zoom 1.7
+image Quol :   
+    "characters/Quol.png"
+    zoom 1.7
 
 # defining bgs
 image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
@@ -25,6 +31,16 @@ image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
 
+#transform
+transform right_center_lower:
+    xalign 0.75
+    ypos 0.1
+transform left_center_lower:
+    xalign 0.25
+    ypos 0.1
+transform center_lower:
+    xalign 0.5
+    ypos 0.1
 
 
 #selection screen
@@ -38,12 +54,12 @@ screen character_selection:
                 hover Transform("renee_opt.jpg", zoom=1.1)
                 action Jump("Sorry")
             imagebutton:
-                idle Transform("juila_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("juila_opt.jpg", zoom=1.1)
-                action Jump("Juila_Start")
+                idle Transform("Julia_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("Julia_opt.jpg", zoom=1.1)
+                action Jump("Julia_Start")
             imagebutton:
-                idle Transform("quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("quol_opt.jpg", zoom=1.1)
+                idle Transform("Quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("Quol_opt.jpg", zoom=1.1)
                 action Jump("Sorry")
 
 
@@ -60,37 +76,37 @@ label start:
     return
 
 label Sorry:
-    "sorry this character isn't available for now, Juila is available though."
-    jump Juila_Start
+    "sorry this character isn't available for now, Julia is available though."
+    jump Julia_Start
     return
 
-label Juila_Start:
+label Julia_Start:
     window hide 
     pause 0.5 
     $ renpy.movie_cutscene("images/opening.webm")
     show bg stage
     pause 1.0 
     window show
-    show Juila worried at center
+    show Julia at center_lower
     J"""Aren't those agents?
     
     what are they doing here??"""
 
-    hide Juila worried
+    hide Julia
 
-    show Goon at left with Dissolve(0.5)
+    show Agent at left with Dissolve(0.5)
     pause 0.5
-    hide Goon with Dissolve(0.5)
+    hide Agent with Dissolve(0.5)
     pause 0.5
-    show Goon at right with Dissolve(0.5)
+    show Agent at right with Dissolve(0.5)
     pause 0.5
-    hide Goon with Dissolve(0.5)
+    hide Agent with Dissolve(0.5)
     pause 0.5
-    show Goon at center with Dissolve(0.5)
+    show Agent at center_lower with Dissolve(0.5)
     pause 0.5
-    hide Goon with Dissolve(0.5)
+    hide Agent with Dissolve(0.5)
    
-    show Juila worried
+    show Julia
     J"""This isn't a good sign..
 
     what should I do?"""
@@ -116,20 +132,20 @@ label J1:
             jump JR0
 
 
-#J2-Juila self routes
+#J2-Julia self routes
 label J2:
     J"""I should ignore them...
     
     I think it would be okay, right?"""
 
-    hide Juila worried
+    hide Julia worried
 
-    show Goon at center with Dissolve(0.3)
+    show Agent at center_lower with Dissolve(0.3)
     pause 0.5
-    hide Goon with Dissolve(0.3)
-    show Goon at center with Dissolve(0.3)
+    hide Agent with Dissolve(0.3)
+    show Agent at center_lower with Dissolve(0.3)
     pause 0.5
-    hide Goon with Dissolve(0.3)
+    hide Agent with Dissolve(0.3)
 
     J"""They... they are coming closer..
     
@@ -146,11 +162,11 @@ label J2:
 
 label JS0:
     # agent tries dragging her
-    show Goon at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+    show Agent at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
 
     J"{b}'Aaaah!'{/b}"
     J"I have to back up I have to back up!!"
-    hide Goon
+    hide Agent
     pause 2.0
 
     J"What...what just happened.."
@@ -164,22 +180,17 @@ label JS0:
             jump JH0
 
 label JH0:
-    show bg stage with vpunch
+    show bg stage 
     menu:
         J"where...where should I go.."
         "Green Room":
             J"I have to go, I have to go!"
-            show bg stage with vpunch
-            pause 0.1
-            show bg stage with vpunch
-            pause 0.1
-            show bg stage with vpunch
             jump JS2
         "Toilet":
             jump JH1    
 
 label JH1:
-    show bg toilet with vpunch
+    show bg toilet 
     J"""huff...huff...
 
     I'm safe...aren't I?
@@ -210,13 +221,15 @@ label JS1:
 label JS1FS:
     J"where...where is my bat?"
     pause 0.5
+    show Renee bag at center_lower
     J"Oh..oh I remember! It's in Renee's bag!"
+    hide Renee bag
     J"It's just behind me, I have to get i-"
-    show Goon at center
+    show Agent at center_lower
     menu:
         J"gasp!"
         "Try to dodge the attack":
-            hide Goon
+            hide Agent
             jump JS1FSa
         "Scream":
             $ hp - 3
@@ -229,9 +242,9 @@ label JS1FS:
 label JS1FSa:
     J"I have to dodge this!"
     pause 2.0
-    show goon with moveinright
+    show Agent with moveinright
     pause 1.0
-    hide goon with moveoutleft
+    hide Agent with moveoutleft
     J"I dodged him!"
     jump JS1FSd
 
@@ -239,11 +252,11 @@ label JS1FSb:
     J"{b}'AAAAAH'{/b}"
     Q"Whats happening?"
     J"'help!'"
-    hide Goon
+    hide Agent
     pause 1.0
-    show Goon at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+    show Agent at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
     J"'OUCH!!!'"
-    hide Goon with moveoutbottom
+    hide Agent with moveoutbottom
     jump JS1FSd
 
 label JS1FSc:
@@ -257,7 +270,7 @@ label JS1FSc:
             jump JS1FSf    
 
 label JS1FSd:
-    show Goon with moveinbottom
+    show Agent with moveinbottom
     J"he's trying to attack again!"
     menu:
         "Scream":
@@ -285,11 +298,14 @@ label JS1FSf:
 
 label JS1FSg:
     J"{b}'AAAAAH'{/b}"
-    hide Goon with moveoutleft
-    show quol with moveinright   
-    Q"'You alright Juila?'" 
+    hide Agent
+    show Quol with Dissolve(0.1)
+    Q"'You alright Julia?'" 
     J"'Thank...Thank you..'"
     Q"'better fight back yourself next time.'"
+    J"'Thanks..Oh, my bat!' "
+    Q"'keep it in your hands at all times.'"
+    hide Quol
     jump JS1FSafter
 
 label JS1FSh:
@@ -298,11 +314,14 @@ label JS1FSh:
     J"I tripped over myself..."
     J"'ouch!'"
     $ hp - 2
-    hide Goon with moveoutleft
-    show quol with moveinright   
-    Q"'You alright Juila?'" 
+    hide Agent
+    show Quol with Dissolve(0.1)
+    Q"'You alright Julia?'" 
     J"'Thank...Thank you..'"
     Q"'better not trip next time.'"
+    J"'Thanks..Oh, my bat!'"
+    Q"'keep it in your hands at all times.'"
+    hide Quol
     jump JS1FSafter
 
 label JS1FSi:
@@ -313,16 +332,17 @@ label JS1FSi:
     J"I blocked him!"
     J"It should be fine if I hit back.."
     pause 2.0
+    J"he's down"
     jump JS1FSafter
 
 label JS1FSafter:
     J"he's down at least."
-
+    show Renee at right_center_lower
     R "There are quite a lot of them."
 
     R "Trying to hold them back."
-    
-    Q"Same."
+    show Quol at left_center_lower
+    Q "Same."
 
     J"I want to help.."
     menu:
