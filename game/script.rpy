@@ -17,10 +17,10 @@ define G = Character("Agent",color="#cacaca")
 # define character sprites
 image Renee :   
     "characters/Renee.png"
-    zoom 1.7
+    zoom 1.5
 image Julia :   
     "characters/Julia.png"
-    zoom 1.7
+    zoom 1.5
 image Quol :   
     "characters/Quol.png"
     zoom 1.7
@@ -30,17 +30,18 @@ image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width,
 image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
+image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
 
 #transform
 transform right_center_lower:
     xalign 0.75
-    ypos 0.1
+    ypos 0.15
 transform left_center_lower:
     xalign 0.25
-    ypos 0.1
+    ypos 0.15
 transform center_lower:
     xalign 0.5
-    ypos 0.1
+    ypos 0.15
 
 
 #selection screen
@@ -106,7 +107,7 @@ label Julia_Start:
     pause 0.5
     hide Agent with Dissolve(0.5)
    
-    show Julia
+    show Julia at center_lower
     J"""This isn't a good sign..
 
     what should I do?"""
@@ -191,6 +192,7 @@ label JH0:
 
 label JH1:
     show bg toilet 
+    show Julia at center_lower
     J"""huff...huff...
 
     I'm safe...aren't I?
@@ -199,10 +201,13 @@ label JH1:
 
     menu:
         "Go find layon":
+            hide Julia
             jump JS2
         "Rush and help your friends":
+            hide Julia
             jump Jh5
         "Don't go outside":
+            hide Julia
             jump JH2
 
 
