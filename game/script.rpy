@@ -45,23 +45,25 @@ transform center_lower:
 
 
 #selection screen
+image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
 screen character_selection:
     vbox:
         xalign 0.5
         yalign 0.5
         hbox spacing 40:  # Add space between each option
             imagebutton:
-                idle Transform("renee_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("renee_opt.jpg", zoom=1.1)
+                idle Transform("ticket_Renee.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Renee.png", zoom=1.1)
                 action Jump("Sorry")
             imagebutton:
-                idle Transform("Julia_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("Julia_opt.jpg", zoom=1.1)
+                idle Transform("ticket_Julia.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Julia.png", zoom=1.1)
                 action Jump("Julia_Start")
             imagebutton:
-                idle Transform("Quol_opt.jpg", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("Quol_opt.jpg", zoom=1.1)
+                idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Quol.png", zoom=1.1)
                 action Jump("Sorry")
+
 
 
 # The game starts here.
@@ -72,6 +74,8 @@ label start:
     scene bg entrance_ticket
     with Dissolve(2.0)
     # Show your screen
+    "choose a character"
+    scene bg entrance_ticket_dark
     call screen character_selection
     with Fade(1.0,0.0,1.0)
     return
@@ -286,6 +290,9 @@ label JS1FSd:
             jump JS1FSi
 
 label JS1FSe:
+    hide Agent
+    show Agent at left_center_lower
+    show Julia at right_center_lower
     J"I should block him.."
     pause 2.0
     J" and then.."
@@ -371,3 +378,8 @@ label JS2:
         "Can you come to the front stage now?...please?":
             jump JS22   
 
+label JH2:
+    show Julia at center_lower
+    "She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
+    show bg Julia_toilet
+    "I..."

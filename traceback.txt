@@ -1,32 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 195, in script
-    show juila at center_
-  File "game/script.rpy", line 195, in <module>
-    show juila at center_
-NameError: name 'center_' is not defined
+  File "game/script.rpy", line 48, in script
+    image bg_entrance_ticket_dark = im.Composite((1920, 1080), ("bg_entrance_ticket", 0, 0), (Solid("#000000", alpha=0.2), 0, 0))
+  File "game/script.rpy", line 48, in <module>
+    image bg_entrance_ticket_dark = im.Composite((1920, 1080), ("bg_entrance_ticket", 0, 0), (Solid("#000000", alpha=0.2), 0, 0))
+Exception: Expected an image, but got a general displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 195, in script
-    show juila at center_
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
+  File "game/script.rpy", line 48, in script
+    image bg_entrance_ticket_dark = im.Composite((1920, 1080), ("bg_entrance_ticket", 0, 0), (Solid("#000000", alpha=0.2), 0, 0))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1237, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 195, in <module>
-    show juila at center_
-NameError: name 'center_' is not defined
+  File "game/script.rpy", line 48, in <module>
+    image bg_entrance_ticket_dark = im.Composite((1920, 1080), ("bg_entrance_ticket", 0, 0), (Solid("#000000", alpha=0.2), 0, 0))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 907, in __init__
+    self.images = [ image(i) for i in args[1::2] ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 907, in <listcomp>
+    self.images = [ image(i) for i in args[1::2] ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 2002, in image
+    return Composite(None, *params)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 907, in __init__
+    self.images = [ image(i) for i in args[1::2] ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 907, in <listcomp>
+    self.images = [ image(i) for i in args[1::2] ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 2008, in image
+    raise Exception("Expected an image, but got a general displayable.")
+Exception: Expected an image, but got a general displayable.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Sat Nov 25 05:41:56 2023
+Mon Nov 27 02:02:13 2023
