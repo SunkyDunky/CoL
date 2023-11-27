@@ -63,6 +63,7 @@ screen character_selection:
                 idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
                 hover Transform("ticket_Quol.png", zoom=1.1)
                 action Jump("Sorry")
+    text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
 
 
 
@@ -74,7 +75,6 @@ label start:
     scene bg entrance_ticket
     with Dissolve(2.0)
     # Show your screen
-    "choose a character"
     scene bg entrance_ticket_dark
     call screen character_selection
     with Fade(1.0,0.0,1.0)
@@ -379,7 +379,9 @@ label JS2:
             jump JS22   
 
 label JH2:
+    hide Julia
+    "Without hesitation, Julia stepped inside and locked the door behind her. The silence enveloped her, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
     show Julia at center_lower
-    "She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
+    J"She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
     show bg Julia_toilet
     "I..."
