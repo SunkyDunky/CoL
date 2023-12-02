@@ -12,7 +12,10 @@ define R = Character("Renee", color= "#FF8700")
 define Q = Character("Quol", color="#0094FF")
 define L = Character("Layon", color= "#ff0000")
 define LQ = Character("Lenorra", color="#00ff11")
-define G = Character("Agent",color="#cacaca")
+define G1 = Character("Agent1",color="#cacaca")
+define G2 = Character("Agent2",color="#cacaca")
+define A1 = Character("Audience1",color="#cacaca")
+define A2 = Character("Audience2",color="#cacaca")
 
 # define character sprites
 image Renee :   
@@ -23,6 +26,9 @@ image Julia :
     zoom 1.5
 image Quol :   
     "characters/Quol.png"
+    zoom 1.7
+image Quol Angry:   
+    "characters/Quol Angry.png"
     zoom 1.7
 
 # defining bgs
@@ -93,31 +99,42 @@ label Julia_Start:
     pause 1.0 
     window show
     show Julia at center_lower
-    J"""Aren't those agents?
-    
-    what are they doing here??"""
+
+    J"""(In the crowded and noisy venue, I find myself squished within the audience, my fingers absentmindedly gripping the neck of my guitar.)
+
+    (The vibrant lights and pulsating music create a whirlwind of sensory overload around me, but my senses are suddenly numbed as my gaze lands on a familiar figure.)
+
+    (Standing at the back of the venue are two enigmatic individuals, dressed in sleek white suits, their presence sending a jolt of disbelief through my core.)"""
 
     hide Julia
-
-    show Agent at left with Dissolve(0.5)
-    pause 0.5
-    hide Agent with Dissolve(0.5)
-    pause 0.5
-    show Agent at right with Dissolve(0.5)
-    pause 0.5
-    hide Agent with Dissolve(0.5)
-    pause 0.5
-    show Agent at center_lower with Dissolve(0.5)
-    pause 0.5
-    hide Agent with Dissolve(0.5)
+    
+    play music "StageBGM.mp3"
+    show Agent1 at left_center_lower with Dissolve(0.5)
+    show Agent2 at right_center_lower with Dissolve(0.5)
+    show Lenorra at center_lower with Dissolve(0.5)
    
-    show Julia at center_lower
-    J"""This isn't a good sign..
+    J"""(I can barely comprehend what I'm seeing.)
 
-    what should I do?"""
+    (The agents from NewFutures Institute have infiltrated this concert.)
+
+    (The music continues to blast through the air, but the sounds fade into the background as my focus narrows solely on the ominous figures before me.)
+
+    (Everything seems to move in slow motion as the spotlight illuminates the agents.)
+
+    (Their presence looms over the crowd, casting a shadow of unease and uncertainty within me.)
+
+    (Emotionally stunned, I struggle to find my footing.)
+
+    (Thoughts race through my mind, but clarity eludes me.)
+
+    (This isn't a good sign.)"""
+
+    hide Agent1
+    hide Agent2
+    hide Lenorra
 
     menu:
-        J"what should I do?"
+        J"(What should I do?)"
         "Warn my bandmates about them":
             jump J1
         "Ignore them and hope it doesn't worsen the situation":
@@ -139,24 +156,27 @@ label J1:
 
 #J2-Julia self routes
 label J2:
-    J"""I should ignore them...
-    
-    I think it would be okay, right?"""
+    J"""(I ignore the agents, not wanting to deal with any confrontations.)
 
-    hide Julia worried
+    I should just ignore them
+
+    (I mutter to myself, trying to convince myself that everything will be fine if I simply pretend they're not there.)"""
+
 
     show Agent at center_lower with Dissolve(0.3)
     pause 0.5
     hide Agent with Dissolve(0.3)
-    show Agent at center_lower with Dissolve(0.3)
-    pause 0.5
-    hide Agent with Dissolve(0.3)
 
-    J"""They... they are coming closer..
-    
-    I should do something...right?
-    
-    what do I do.."""
+    J"""(But as one of the agents takes a step closer, my heart leaps into my throat, and my previous confidence wavers.)
+
+    They... they are coming closer
+
+    (I stammer, my voice barely above a whisper.)
+
+    (Panic starts to grip me, and my mind races, desperately searching for a solution.)
+
+    I should do something... right?"""
+
 
     menu:
         J"what do I do.."
@@ -167,25 +187,93 @@ label J2:
 
 label JS0:
     # agent tries dragging her
-    show Agent at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+    J"(As I stand there, frozen in fear, the agent's sudden lunge towards me catches me off guard.)"
 
-    J"{b}'Aaaah!'{/b}"
-    J"I have to back up I have to back up!!"
-    hide Agent
-    pause 2.0
+    show Agent1 at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
+    
+    J"""(Panic courses through my veins as their grip tightens around my leg, threatening to drag me off the stage.)
 
-    J"What...what just happened.."
-    J"I'm hyperventilating.."
+    (In that moment, a scream erupts from deep within me, piercing the air and reverberating throughout the venue, carrying a raw mixture of terror and desperation.)
+
+    {b}Aaaah!{/b}
+
+    (My instinct kicks in, overriding my initial shock.)
+
+    (With every ounce of strength I can muster, I fight against the agent's grip, desperately wriggling and twisting in an attempt to break free.
+
+    "I have to back up! I have to back up!"
+
+    (Uttering those words repeatedly, a blend of panic and a hint of newfound determination, I summon a surge of adrenaline.)
+    (It fuels my movements as I manage to loosen the agent's hold.)
+
+    (Stumbling backwards, I narrowly escape being pulled off the stage, my heart pounding in my chest.)"""
+
+    hide Agent1 with Dissolve(0.3)
+
+    J"""(The sudden commotion disrupts the once-lively concert, casting a hushed silence over the audience.)
+
+    (Whispers and murmurs ripple through the air as people grapple to make sense of the chaotic scene unfolding before them.)"""
+
+    A1"It's NewFutures, why are they here?"
+ 
+    A2"Even a small event like this caught the attention of NewFutures... I wonder why they are here?"
+
+    J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding from the fragments of information swirling around.)
+
+    (However, before I can piece together the puzzle, the agents, realizing that their presence has been exposed, yells out to the audience.)"""
+
+    G1"{b}EVERYONE, LEAVE THE VENUE NOW!!!{/b}"
+
+    J"""(The audience obeys their command, and rushes towards the exit.)
+
+    What... what just happened? 
+
+    (Sweat trickles down my forehead, my hands trembling uncontrollably.)"""
+
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+    show Renee at right_center_lower with Dissolve(0.3)
+
+    J"(Quol and Renee, my bandmates, also speak up after witnessing the situation.)"
+
+    R "I...It's them, I did everything they wanted, why are they here?"
+
+    J"(her voice trembling mildly, her hands shaking, while grasping her whip tight.)"
+
+    Q"God its them again, goddammit!!"
+    
+    J"(Quol out of frustration, throws her bass towards the agents as it breaks into pieces upon contact with the floor, causing an echoing loud noise)"
+
+    Q"Fucking GOD!!"
+    
+    Q"Don't you all DARE lay a finger on any of us!"
+
+    J"""(her voice laced with anger and infuriation roars, as she pulls up her sleeves.)
+
+    (I find myself at the back of the stage, overwhelmed and at a loss for words.)
+
+    (My eyes dart between the chaotic scene unfolding before me and the unwavering support of my bandmates.)
+
+    (It's in this moment, that I realise I must do something other than stay in this vulnerable position.)"""
 
     menu:
         J"I'm hyperventilating.."
         "I should snap out of it":
             jump JS1
         "Run..I have to leave!":
+            hide Renee
+            hide Quol
             jump JH0
 
 label JH0:
     show bg stage 
+    J"""(As panic grips my racing mind, I sprint towards the backstage area, my breath coming in ragged gasps.)
+
+    (The urgency of the situation propels me forward, my heart pounding in my chest.)
+
+    (Two options dominate my thoughts like beacons of fleeting respite: the green room or the toilets.)
+
+    (I must make a swift decision.)"""
+
     menu:
         J"where...where should I go.."
         "Green Room":
@@ -217,6 +305,9 @@ label JH1:
 
 
 label JS1:
+    J"""(As the chaos ensues and my initial shock begins to fade, a surge of determination courses through my veins.)
+
+    (The sight of my bandmates valiantly defending me from the agents' onslaught ignites a fire within me.)"""
 
     menu:
         J"Calm down...calm down..."
@@ -228,12 +319,21 @@ label JS1:
             jump JS1FS        
 
 label JS1FS:
-    J"where...where is my bat?"
-    pause 0.5
-    show Renee bag at center_lower
-    J"Oh..oh I remember! It's in Renee's bag!"
+    J"""(I can't stand idly by while they put themselves in harm's way. I need to help them.)
+
+    (With a deep breath, I snap out of my daze, focusing my attention on the unfolding fight.) 
+
+    (My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival.)"""
+    
+    hide Renee
+    hide Quol
+    show Renee bag at center
+    J"""(And then I spot it ... my trusty bat, safely tucked inside Renee's bag.)
+
+    (But before I can fully process my next move, my attention is abruptly diverted.)"""
+
     hide Renee bag
-    J"It's just behind me, I have to get i-"
+    J"(An agent charges towards me, wielding a baton and swinging it with force.)"
     show Agent at center_lower
     menu:
         J"gasp!"
@@ -385,3 +485,52 @@ label JH2:
     J"She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
     show bg Julia_toilet
     "I..."
+
+
+label js5fs:
+    menu:
+        "JS5FSa":
+            jump js5fsa
+        "JS5FSb":
+            jump js5fsb
+
+label js5fsa:
+    menu:
+        "JS5FSd":
+            jump js5fsd
+        "JS5FSe":
+            jump js5fse
+
+label js5fsb:
+
+label js5fsd:
+    menu:
+        "JS5FSi":
+            jump js5fsi
+        "JS5FSj":
+            jump js5fsj
+
+label js5fse:
+    menu:
+        "JS5FSl":
+            jump js5fsl
+        "JS5FSm":
+            jump js5fsm
+        "JS5FSn":
+            jump js5fsn
+
+label js5fsi:
+    jump js5fsk
+
+label js5fsj:
+
+label js5fsk:
+
+label js5fsl:
+    jump js5fso
+
+label js5fsm:
+    jump js5fso
+
+label js5fsn:
+    jump js5fso

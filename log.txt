@@ -1,53 +1,54 @@
-Tue Nov 28 22:53:41 2023
-Windows-10-10.0.22631
+Sat Dec  2 23:57:02 2023
+Windows-10-10.0.22621
 Ren'Py 8.1.3.23091805
  
 
 Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.02s
+Loading error handling. took 0.04s
+Loading script. took 0.61s
+Loading save slot metadata. took 0.07s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
+Running init code. took 0.27s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
+Reloading save slot metadata. took 0.06s
 Index archives took 0.00s
-Dump and make backups. took 0.02s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.01s
-DPI scale factor: 1.000000
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.15s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.02s
 Cleaning stores took 0.00s
-Init translation took 0.01s
+Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.05s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 631.02s
+Bootstrap to the start of init.init. took 223.49s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
@@ -59,15 +60,15 @@ Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SunkyDunky\\AppData\\Roaming/RenPy/backups\\CoL':
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
 Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.12s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -79,40 +80,715 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.02s
+Interface start. took 0.03s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 662.85s
+Bootstrap to the start of init.init. took 458.33s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.07s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 463.07s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 538.97s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 670.44s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 673.64s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 693.91s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 698.66s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 721.53s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 732.33s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 746.12s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 759.90s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 767.69s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 772.44s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 778.68s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 784.92s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 792.69s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SunkyDunky\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.02s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.02s
-DPI scale factor: 1.000000
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.12s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -124,24 +800,666 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.02s
+Interface start. took 0.03s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 666.86s
+Bootstrap to the start of init.init. took 798.93s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.04s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 800.65s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 808.42s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 816.20s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 817.91s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 830.17s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 833.37s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 836.61s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 839.81s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 873.22s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 888.51s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 891.72s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 913.11s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 240: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    Q"God its them again, goddammit!!
+        
+        I have your backs, I'll take down these bastards."""
+                                                            ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 914.74s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 320: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 919.39s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 921.15s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 Running init code. took 0.01s
@@ -149,59 +1467,15 @@ Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.12s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 674.63s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SunkyDunky\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.02s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.02s
-DPI scale factor: 1.000000
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.12s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -213,20 +1487,824 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.02s
+Interface start. took 0.03s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 679.06s
+Bootstrap to the start of init.init. took 922.91s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 926.11s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 930.85s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 932.60s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 242: expected statement.
+    J
+     ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 934.28s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 322: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 958.48s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 322: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 960.16s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 966.44s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 969.65s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 972.86s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 974.58s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 979.33s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 985.57s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 988.78s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 990.53s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 322: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 993.73s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 999.97s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 244: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    Q"Fucking Belcium goverment hired brainwashed shits" "
+                                                         ^
+        
+        I have your backs, I'll take down these bastards."
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1001.66s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 324: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1004.86s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 324: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1017.03s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 324: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival."""
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1020.24s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1021.97s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
@@ -241,11 +2319,1750 @@ Index archives took 0.00s
 Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.11s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1029.74s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1031.46s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1037.70s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1046.98s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1051.72s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1059.51s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1062.71s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1064.43s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1066.15s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1072.39s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1075.60s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1078.80s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1083.55s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1098.96s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1161.23s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1196.30s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1208.56s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1210.28s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1228.59s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1234.84s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1251.65s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1262.41s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1264.13s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1277.95s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1291.74s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1495.65s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 231, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+
+While running game code:
+  File "game/script.rpy", line 231, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1529.03s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 232, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+
+While running game code:
+  File "game/script.rpy", line 232, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1530.77s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 234, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+
+While running game code:
+  File "game/script.rpy", line 234, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1533.99s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 234, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+
+While running game code:
+  File "game/script.rpy", line 234, in script
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+Exception: Image 'Quol' does not accept attributes 'Angry'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1535.71s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1537.44s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 1: expected statement.
+    ngry
+        ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1540.64s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 237, in script
+    J"(Quol and Renee, my bandmates, also speak up after witnessing the situation.)"
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 4175, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2782, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 909, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 676, in render
+    return cache.get(self, render=True)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 330, in get
+    surf = image.load()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 803, in load
+    raise e
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\im.py", line 757, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'characters/Quol .png'.
+
+While loading <renpy.display.im.Image object ('characters/Quol .png') at 0x00000000056b1580>:
+  File "game/script.rpy", line 237, in script
+    J"(Quol and Renee, my bandmates, also speak up after witnessing the situation.)"
+OSError: Couldn't find file 'characters/Quol .png'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1549.88s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1575.76s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 32: expected 'simple_expression' not found.
+    zoom     
+             ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1577.40s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1685.83s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.05s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -260,12 +4077,378 @@ Performance test:
 Interface start. took 0.03s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
+primary display bounds: (0, 0, 3840, 2160)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4070 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 546.01'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1520, 855) drawable=(1520, 855)
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
 Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1696.64s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.07s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 32: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    zoom 1.7
+    ^
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1701.30s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1915.96s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1923.74s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1940.56s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.09s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    show Renee bag at center_lower
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Renee' does not accept attributes 'bag'.
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    show Renee bag at center_lower
+Exception: Image 'Renee' does not accept attributes 'bag'.
+Resetting cache.
+Bootstrap to the start of init.init. took 1990.94s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1997.16s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+
+File "game/script.rpy", line 336: is not terminated with a newline. (Check strings and parenthesis.)
+        J"""An agent charges towards me, wielding a baton and swinging it with force."
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1998.83s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.08s
+Loading save slot metadata. took 0.02s
+Loading persistent. took 0.00s
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1845, 1038) drawable=(1845, 1038)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    show Renee bag at center_lower
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Renee' does not accept attributes 'bag'.
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    show Renee bag at center_lower
+Exception: Image 'Renee' does not accept attributes 'bag'.
