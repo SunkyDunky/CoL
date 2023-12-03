@@ -22,15 +22,20 @@ image Renee :
     "characters/Renee.png"
     zoom 1.5
 image Julia :   
-    "characters/Julia.png"
-    zoom 1.5
+    "characters/Julia-half.png"
+    zoom 0.2
 image Quol :   
     "characters/Quol.png"
     zoom 1.7
 image Quol Angry:   
     "characters/Quol Angry.png"
     zoom 1.7
-
+image Agent1:   
+    "characters/Agent.png"
+    zoom 0.5
+image Agent2:   
+    "characters/Agent.png"
+    zoom 0.5
 # defining bgs
 image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
 image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
@@ -48,6 +53,9 @@ transform left_center_lower:
 transform center_lower:
     xalign 0.5
     ypos 0.15
+transform textbox_over:
+    xalign 1
+    ypos 0.54
 
 
 #selection screen
@@ -98,7 +106,7 @@ label Julia_Start:
     show bg stage
     pause 1.0 
     window show
-    show Julia at center_lower
+    show Julia at textbox_over
 
     J"""(In the crowded and noisy venue, I find myself squished within the audience, my fingers absentmindedly gripping the neck of my guitar.)
 
@@ -241,7 +249,7 @@ label JS0:
 
     Q"God its them again, goddammit!!"
     
-    J"(Quol out of frustration, throws her bass towards the agents as it breaks into pieces upon contact with the floor, causing an echoing loud noise)"
+    J"(Quol out of frustration, swears towards the infiltrators)"
 
     Q"Fucking GOD!!"
     
@@ -284,7 +292,7 @@ label JH0:
 
 label JH1:
     show bg toilet 
-    show Julia at center_lower
+    show Julia at center_lower with Dissolve(0.3)
     J"""huff...huff...
 
     I'm safe...aren't I?
@@ -327,133 +335,245 @@ label JS1FS:
     
     hide Renee
     hide Quol
-    show Renee bag at center
+    show Renee bag at center with Dissolve(0.3)
     J"""(And then I spot it ... my trusty bat, safely tucked inside Renee's bag.)
 
     (But before I can fully process my next move, my attention is abruptly diverted.)"""
 
     hide Renee bag
     J"(An agent charges towards me, wielding a baton and swinging it with force.)"
-    show Agent at center_lower
+    show Agent1 at center_lower with Dissolve(0.3)
     menu:
         J"gasp!"
         "Try to dodge the attack":
             hide Agent
-            jump JS1FSa
+            jump js1fsa
         "Scream":
             $ hp - 3
-            jump JS1FSb
+            jump js1fsb
         "Reach for my bat":
             $ hp - 1
-            jump JS1FSc
+            jump js1fsc
 
 # fight scene JS1
-label JS1FSa:
-    J"I have to dodge this!"
-    pause 2.0
-    show Agent with moveinright
-    pause 1.0
-    hide Agent with moveoutleft
-    J"I dodged him!"
-    jump JS1FSd
+label js1fsa:
+    # Julia dodges attack
+    # No hp lost
+    
+    J"(Instinct kicks in, and I rely on my reflexes and agility.)"
+    play sound "SFX/JS1FS/batonswoosh1.mp3" volume 4
+    J"""(I lean to the side, narrowly dodging the incoming strike.)
+    
+    (I stare in disbelief as I try to process how close I was to being hit.)
+    
+    (But my relief is short-lived. The agent, undeterred by the missed strike, quickly regains their composure.)"""
+    
+    jump js1fsd
 
-label JS1FSb:
-    J"{b}'AAAAAH'{/b}"
-    Q"Whats happening?"
-    J"'help!'"
-    hide Agent
+label js1fsb:
+    # Julia gets struck with the baton
+    $hp - 3
+    
+    J"""(I'm overcome with shock and instinctively let out a loud, piercing scream.)
+    
+    (The sound reverberates through the air, momentarily filling the space with my alarm and surprise.)
+    
+    (I react instinctively, raising my arms in a desperate attempt to shield myself. In a split second, my forearms form an X-shaped barrier, intercepting the full impact of the baton.)"""
+    pause 0.5
+    play sound "SFX/JS1FS/batonhit.mp3" volume 4
     pause 1.0
-    show Agent at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
-    J"'OUCH!!!'"
-    hide Agent with moveoutbottom
-    jump JS1FSd
+    Q"Julia! are you alright?!?"
+    
+    J"(Quol's voice cuts through the chaos)"
+    
+    Q"I'll be there! Hang on Julia! Fight back!"
+    
+    J"(I gather up myself and endure the pain, then look upwards at the agent.)"
+    
+    jump js1fsd
 
-label JS1FSc:
-    J"I'm getting the bat!"
-    pause 1.0
-    J"'got it! OW!"
-    menu: 
+label js1fsc:
+    # Julia gets her bat but gets hit in the leg(?)
+    $hp - 1
+    
+    J"(As I swiftly dash towards Renee's bag, my eyes fixated on retrieving my bat, a sudden impact jolts through my leg.)"
+
+    play sound "SFX/JS1FS/batonhit.mp3" volume 4
+    
+    J"""(The agent's swinging baton connects with my lower leg, causing an intense burst of pain to surge through my body.)
+    
+    (The force of the blow sends me off balance, causing me to stumble and stagger in my attempt to reach the bag.)
+    
+    (However, I manage to snatch my bat from Renee's bag)"""
+    
+    menu:
+        "and next, I'll.."
         "Block":
-            jump JS1FSe
-        "Hit":
-            jump JS1FSf    
+            jump js1fse
+        "Hit him back":
+            jump js1fsf
 
-label JS1FSd:
-    show Agent with moveinbottom
-    J"he's trying to attack again!"
+label js1fsd:
+    J"(He quickly recovers himself and prepares for another hit)"
+    
     menu:
+        "What do I do..?"
         "Scream":
-            jump JS1FSg
-        "Dodge":
-            jump JS1FSh
-        "Get bat":
-            jump JS1FSi
+            jump js1fsg
+        "Try to dodge the attack":
+            jump js1fsh
+        "Reach for your bat":
+            jump js1fsi
 
-label JS1FSe:
-    hide Agent
-    show Agent at left_center_lower
-    show Julia at right_center_lower
-    J"I should block him.."
-    pause 2.0
-    J" and then.."
-    menu:
-        "and then.."
-        "Hit him back!":
-            jump JS1FSf
+label js1fsg:
+    J"""{b}AAAAAH!{/b}
+    
+    (I let out a startled cry.)
+    
+    (Voice trembling with fear and frustation, as well as an overwhelming hopelessness.)"""
 
-label JS1FSf:
-    J"'Uuuugahhhh!'"
-    pause 2.0
-    J"he's out...cold"
-    J"did I hit him a little too hard..?"
-    jump JS1FSafter
+    hide Agent1
+    show Quol at center_lower with Dissolve(0.3)
 
-label JS1FSg:
-    J"{b}'AAAAAH'{/b}"
-    hide Agent
-    show Quol with Dissolve(0.1)
-    Q"'You alright Julia?'" 
-    J"'Thank...Thank you..'"
-    Q"'better fight back yourself next time.'"
-    J"'Thanks..Oh, my bat!' "
-    Q"'keep it in your hands at all times.'"
+    "(However, before the baton makes contact with me, Quol swiftly intervenes.)"
+    
+    play sound "SFX/JS1FS/impactkick.mp3" volume 3
+
+    J"""(With a swift kick, she delivers a powerful blow to the agent, sending them crashing to the ground, unconscious.)
+    
+    (Afterwards, she extends a hand towards me, her voice filled with concern.) """
+    
+    Q"You alright, Julia?"
+    
+    J"""(I nod in response.)
+    
+    Thank...Thank you..."""
+    
+    Q"Better not trip next time."
+    
+    J"(I sliently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
+    
+    Q"Better keep it in your hands at all times."
+    
+    jump js1fsafter
+
+
+
+label js1fsh:
+    J"""I'll dodge, it'll be fin-
+    
+    Ah!"""
+    
+    pause 0.5
+    play sound "SFX/JS1FS/batonwoosh2.mp3" volume 5
+    pause 0.5
+
+    J"(Just as I gather my resolve to evade the agent's attack, I stumble over my own feet)"
+    
+    play sound "SFX/JS1FS/batonhitbat2.mp3" volume 4
+
+    J"""(I collide with the ground, as pain shoots through my body)
+    
+    Ouch!
+    
+    (The impact leaves me momentarily disoriented, my breath catching in my throat.)
+    
+    (Frustration and fear wells up within me as I watch the baton swinging down towards me.)"""
+    
+    hide Agent1
+    show Quol at center_lower with Dissolve(0.3)
+
+    "(However, before the baton makes contact with me, Quol swiftly intervenes.)"
+    
+    play sound "SFX/JS1FS/impactkick.mp3" volume 3
+
+    J"""(With a swift kick, she delivers a powerful blow to the agent, sending them crashing to the ground, unconscious.)
+    
+    (Afterwards, she extends a hand towards me, her voice filled with concern.) """
+    
+    Q"You alright, Julia?"
+    
+    J"""(I nod in response.)
+    
+    Thank...Thank you..."""
+    
+    Q"Better not trip next time."
+    
+    J"(I sliently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
+    
+    Q"Better keep it in your hands at all times."
+    
+    jump js1fsafter
+
+label js1fsi:
+    J"""(As the agent lunges towards me, their baton poised to strike, I gatrthered the courage to finally reach for my bat.)
+    
+    (Pouncing backwards, I land next to Renee's bag, and lifted my bat out of it.)
+    
+    (My grip tightens around the bat, my knuckles whitening as I prepare to meet the agent's attack head-on.)
+    
+    (The agent's baton hurtles towards me, and I brace myself for the impact.)"""
+
+    play sound "SFX/JS1FS/batonwoosh2.mp3" volume 5
+
+    pause 0.5
+
+    play sound "SFX/JS1FS/batonhitbat1.mp3" volume 3
+
+
+    J"(I skillfully parry the agent's attempts to strike back.)"
+    
+    play sound "SFX/JS1FS/batonhitbat2.mp3" volume 3
+
+    J"(I block again)"
+    
+    play sound "SFX/JS1FS/batonhit2.mp3" volume 3
+
+    J"(and finally deliver a hard blow, knocking the agent out cold.)"
+    
+    Q" Good job!"
+    
+    J"(Quol compliments my resolve.)"
+    
+    jump js1fsafter
+
+label js1fse:
+    J"I should block him"
+    
+    play sound "SFX/JS1FS/batonhitbat2.mp3" volume 3
+
+    J"""(As the agent launches their attack, I swiftly raise my bat, positioning it as a shield against the incoming strike.)
+    
+    (In the brief moment following the block, my mind races, preparing for the next move.)
+    
+    And then..I'll hit him back!"""
+    
+    jump js1fsf
+
+label js1fsf:
+    J"AAuaAGGGGHHHH!"
+    
+    play sound "SFX/JS1FS/batonhit.mp3" volume 5
+
+    J"""(With a surge of energy, I propel myself forward, As I channel a powerful swing towards the agent.)
+    
+    (I watch as the agent staggers backward, their eyes wide with disbelief.)
+    
+    (Moments later, they collapse to the ground.)"""
+    
+    jump js1fsafter
+
+label js1fsafter:
+    
     hide Quol
-    jump JS1FSafter
+    hide Agent1
 
-label JS1FSh:
-    J"I'll dodge, it'll be fin-"
-    J"'ah!'"
-    J"I tripped over myself..."
-    J"'ouch!'"
-    $ hp - 2
-    hide Agent
-    show Quol with Dissolve(0.1)
-    Q"'You alright Julia?'" 
-    J"'Thank...Thank you..'"
-    Q"'better not trip next time.'"
-    J"'Thanks..Oh, my bat!'"
-    Q"'keep it in your hands at all times.'"
-    hide Quol
-    jump JS1FSafter
-
-label JS1FSi:
-    J"I have to get my bat this time"
-    pause 1.0
-    J"yes! and I'll defend.."
-    pause 1.0
-    J"I blocked him!"
-    J"It should be fine if I hit back.."
-    pause 2.0
-    J"he's down"
-    jump JS1FSafter
-
-label JS1FSafter:
     J"he's down at least."
-    show Renee at right_center_lower
+    show Renee at right_center_lower with Dissolve(0.3)
     R "There are quite a lot of them."
 
     R "Trying to hold them back."
-    show Quol at left_center_lower
+    show Quol at left_center_lower with Dissolve(0.3)
     Q "Same."
 
     J"I want to help.."
@@ -467,9 +587,18 @@ label JS1FSafter:
 #JS2
 label JS2:
     show bg greenroom with wipeleft
-    J"Huff.."
-    show Layon with fade
-    L"Hey what happened? Are you alright?"
+    J"""I burst into the green room, slamming the door open and gasping for air. 
+
+    It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
+    show Layon with Dissolve(0.3)
+    L"""Holy mother of–
+
+    Jeez it's just you, Julia.
+
+    Concert done already? How does it feel like debuting?
+
+    You're drenched in sweat already, I get how tense it is!"""
+
     J"I....I..."
     menu:
         J"Layon.."
@@ -487,50 +616,3 @@ label JH2:
     "I..."
 
 
-label js5fs:
-    menu:
-        "JS5FSa":
-            jump js5fsa
-        "JS5FSb":
-            jump js5fsb
-
-label js5fsa:
-    menu:
-        "JS5FSd":
-            jump js5fsd
-        "JS5FSe":
-            jump js5fse
-
-label js5fsb:
-
-label js5fsd:
-    menu:
-        "JS5FSi":
-            jump js5fsi
-        "JS5FSj":
-            jump js5fsj
-
-label js5fse:
-    menu:
-        "JS5FSl":
-            jump js5fsl
-        "JS5FSm":
-            jump js5fsm
-        "JS5FSn":
-            jump js5fsn
-
-label js5fsi:
-    jump js5fsk
-
-label js5fsj:
-
-label js5fsk:
-
-label js5fsl:
-    jump js5fso
-
-label js5fsm:
-    jump js5fso
-
-label js5fsn:
-    jump js5fso

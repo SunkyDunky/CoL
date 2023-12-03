@@ -1,30 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 330, in script
-    show Renee bag at center_lower
-Exception: Image 'Renee' does not accept attributes 'bag'.
+  File "game/script.rpy", line 517, in script
+    pause 0.5
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+OSError: Couldn't find file 'SFX/JS1FS/batonswoosh2.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 330, in script
-    show Renee bag at center_lower
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
-    args.extraneous()
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'Renee' does not accept attributes 'bag'.
+  File "game/script.rpy", line 517, in script
+    pause 0.5
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 459, in execute_pause
+    renpy.pause(delay)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1638, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 4379, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1224, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1202, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1144, in periodic_pass
+    c.periodic()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'SFX/JS1FS/batonswoosh2.mp3'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Sun Dec  3 00:33:14 2023
+Mon Dec  4 03:36:59 2023
