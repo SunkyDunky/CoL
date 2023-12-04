@@ -108,7 +108,7 @@ label Julia_Start:
     window show
     show Julia at textbox_over
 
-    J"""(In the crowded and noisy venue, I find myself squished within the audience, my fingers absentmindedly gripping the neck of my guitar.)
+    J"""(In the crowded and noisy venue, I find myself standing above the stage, my fingers absentmindedly gripping the neck of my guitar.)
 
     (The vibrant lights and pulsating music create a whirlwind of sensory overload around me, but my senses are suddenly numbed as my gaze lands on a familiar figure.)
 
@@ -171,13 +171,13 @@ label J2:
     (I mutter to myself, trying to convince myself that everything will be fine if I simply pretend they're not there.)"""
 
 
-    show Agent at center_lower with Dissolve(0.3)
+    show Agent1 at center_lower with Dissolve(0.3)
     pause 0.5
-    hide Agent with Dissolve(0.3)
+    hide Agent1 with Dissolve(0.3)
 
     J"""(But as one of the agents takes a step closer, my heart leaps into my throat, and my previous confidence wavers.)
 
-    They... they are coming closer
+    They... they are coming closer...
 
     (I stammer, my voice barely above a whisper.)
 
@@ -203,15 +203,16 @@ label JS0:
 
     (In that moment, a scream erupts from deep within me, piercing the air and reverberating throughout the venue, carrying a raw mixture of terror and desperation.)
 
-    {b}Aaaah!{/b}
+    {b}{i}Aaaah!{/i}{/b}
 
     (My instinct kicks in, overriding my initial shock.)
 
-    (With every ounce of strength I can muster, I fight against the agent's grip, desperately wriggling and twisting in an attempt to break free.
+    (With every ounce of strength I can muster, I fight against the agent's grip, desperately wriggling and twisting in an attempt to break free.)
 
     "I have to back up! I have to back up!"
 
     (Uttering those words repeatedly, a blend of panic and a hint of newfound determination, I summon a surge of adrenaline.)
+
     (It fuels my movements as I manage to loosen the agent's hold.)
 
     (Stumbling backwards, I narrowly escape being pulled off the stage, my heart pounding in my chest.)"""
@@ -327,14 +328,16 @@ label JS1:
             jump JS1FS        
 
 label JS1FS:
+    hide Quol with Dissolve(0.3)
+    hide Renee with Dissolve(0.3)
     J"""(I can't stand idly by while they put themselves in harm's way. I need to help them.)
 
     (With a deep breath, I snap out of my daze, focusing my attention on the unfolding fight.) 
 
     (My eyes quickly scan the area, searching for anything that could aid me in this sudden battle for survival.)"""
     
-    hide Renee
-    hide Quol
+    hide Renee with Dissolve(0.3)
+    hide Quol with Dissolve(0.3)
     show Renee bag at center with Dissolve(0.3)
     J"""(And then I spot it ... my trusty bat, safely tucked inside Renee's bag.)
 
@@ -398,7 +401,7 @@ label js1fsc:
     
     J"(As I swiftly dash towards Renee's bag, my eyes fixated on retrieving my bat, a sudden impact jolts through my leg.)"
 
-    play sound "SFX/JS1FS/batonhit.mp3" volume 4
+    play sound "SFX/JS1FS/batonhit.mp3" volume 5
     
     J"""(The agent's swinging baton connects with my lower leg, causing an intense burst of pain to surge through my body.)
     
@@ -407,7 +410,7 @@ label js1fsc:
     (However, I manage to snatch my bat from Renee's bag)"""
     
     menu:
-        "and next, I'll.."
+        J"and next, I'll.."
         "Block":
             jump js1fse
         "Hit him back":
@@ -417,7 +420,7 @@ label js1fsd:
     J"(He quickly recovers himself and prepares for another hit)"
     
     menu:
-        "What do I do..?"
+        J"What do I do..?"
         "Scream":
             jump js1fsg
         "Try to dodge the attack":
@@ -449,7 +452,7 @@ label js1fsg:
     
     Thank...Thank you..."""
     
-    Q"Better not trip next time."
+    Q"Better fight back next time."
     
     J"(I sliently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
     
@@ -506,7 +509,7 @@ label js1fsh:
     jump js1fsafter
 
 label js1fsi:
-    J"""(As the agent lunges towards me, their baton poised to strike, I gatrthered the courage to finally reach for my bat.)
+    J"""(As the agent lunges towards me, their baton poised to strike, I gathered the courage to finally reach for my bat.)
     
     (Pouncing backwards, I land next to Renee's bag, and lifted my bat out of it.)
     
@@ -514,11 +517,11 @@ label js1fsi:
     
     (The agent's baton hurtles towards me, and I brace myself for the impact.)"""
 
-    play sound "SFX/JS1FS/batonwoosh2.mp3" volume 5
+    play sound "SFX/JS1FS/batonwoosh2.mp3" volume 7
 
     pause 0.5
 
-    play sound "SFX/JS1FS/batonhitbat1.mp3" volume 3
+    play sound "SFX/JS1FS/batonhitbat1.mp3" volume 5
 
 
     J"(I skillfully parry the agent's attempts to strike back.)"
@@ -528,6 +531,8 @@ label js1fsi:
     J"(I block again)"
     
     play sound "SFX/JS1FS/batonhit2.mp3" volume 3
+
+    hide Agent1 with Dissolve(0.3)
 
     J"(and finally deliver a hard blow, knocking the agent out cold.)"
     
@@ -565,8 +570,8 @@ label js1fsf:
 
 label js1fsafter:
     
-    hide Quol
-    hide Agent1
+    hide Quol with Dissolve(0.3)
+    hide Agent1 with Dissolve(0.3)
 
     J"he's down at least."
     show Renee at right_center_lower with Dissolve(0.3)
@@ -586,7 +591,7 @@ label js1fsafter:
 
 #JS2
 label JS2:
-    show bg greenroom with wipeleft
+    show bg greenroom with fade
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
