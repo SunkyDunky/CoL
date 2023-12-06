@@ -80,6 +80,24 @@ screen character_selection:
     text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
 
 
+#timer
+default downer = 0
+screen timerDown(rangeD, missed_event):
+    on "show" action SetVariable("downer", rangeD)
+    frame:
+        xalign 0.5
+        yalign 0.0
+        hbox:
+            timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
+
+            bar:
+                value AnimatedValue(value=downer, range=rangeD, delay= 0.5)
+                xalign 0.0
+                yalign 0.0
+                xmaximum 200
+
+
+
 
 # The game starts here.
 
@@ -154,6 +172,33 @@ label J1:
     J"""I should tell them about this.
     
     Who should I warn first though..."""
+
+    show screen timerDown(3, "missedit") #seconds, label to jump on fail
+    menu:
+        "This is a timed choice event, go fast!"
+        "Timed choice 1":
+            hide screen timerDown
+            jump choice1
+
+        "Timed choice 2":
+            hide screen timerDown
+            jump choice2
+
+label missedit:
+    "I missed it..."
+    jump finished
+
+label choice1:
+    "I picked choice 1. It was ok I guess."
+    jump finished
+
+label choice2:
+    "I picked choice 2. It was ok I guess."
+    jump finished
+
+label finished:
+    "And we're done"
+    return
     menu:
         J"Who should I warn first though..."
         "Quol":
@@ -570,18 +615,45 @@ label js1fsf:
 
 label js1fsafter:
     
-    hide Quol with Dissolve(0.3)
-    hide Agent1 with Dissolve(0.3)
+    hide Quol
+    hide Agent1
+    J"""he's down at least.
 
-    J"he's down at least."
+    (I let out a tired sigh as I cast a glance at the fallen body, sprawled on the ground.)
+
+    (The defeated foe lay motionless, a testament to our hard-won triumph.)
+
+    (With a heavy heart, I shifted my focus to assess the state of my companions.)"""
+
+
     show Renee at right_center_lower with Dissolve(0.3)
-    R "There are quite a lot of them."
 
-    R "Trying to hold them back."
+    R "There's quite a horde of them."
+
+    J"""(I observed Renee, her face etched with determination, desperately fending off two agile Agents.)
+
+    (With lightning-fast reflexes, she deftly swung her whip, each crack of the lash a symphony of defiance against overwhelming odds.)"""
+
+    R "Trying to hold them back, but it's getting intense."
+
     show Quol at left_center_lower with Dissolve(0.3)
-    Q "Same."
 
-    J"I want to help.."
+    Q"Same."
+
+    J"""(Quol, standing her ground nearby, fought off two relentless Agents of her own.)
+    
+    (They lunged at her, attempting to immobilize her, but she fought back with a flurry of kicks and evasive maneuvers.)"""
+
+    Q"I'm not letting them get the upper hand!"
+
+    J"""(The determination in Quol's voice echoed through the chaos as she unleashed her own brand of defiance, refusing to yield to their onslaught.)
+
+    (Watching them fight, I could feel a powerful momentum building within me, an irresistible urge to join the fight.)
+
+    I want to help..
+
+    (But who should I help first?)"""
+
     menu:
         J"I want to help.."
         "Help Quol first":
