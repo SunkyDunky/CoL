@@ -217,7 +217,7 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 1.5  # Aligns the box to the right of the screen
+    xalign 1.0  # Aligns the box to the right of the screen
     yalign 0.5  # Vertically centers the box
     spacing gui.choice_spacing
 
@@ -227,6 +227,30 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
     xalign 0.0  # Aligns the text to the left of the box
+
+
+## QTE choice buttons
+
+
+style qte_button is default:
+    xmaximum 300
+    ymaximum 300
+    text_align 0.5  # Center the text
+    idle_background im.Scale("gui/qte_button.png", 300, 300)  # Set a custom background image for the button when not hovered
+    hover_background im.Scale("gui/qte_button_hover.png", 300, 300)  # Set a custom background image for the button when hovered
+    size 10  # Change the text size
+    left_padding 25  # Adjust this value to move the text further to the right
+    top_padding 130  # Adjust this value to move the text further down
+    right_padding 15  # Adjust this value to move the text further to the left
+
+screen qte_choice(items):
+    style_prefix "qte"
+    vbox:
+        for i in items:
+            textbutton i.caption action i.action style "qte_button":
+                background im.Scale("gui/qte_button.png", 300, 300)
+
+
 
 
 

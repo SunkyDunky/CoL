@@ -82,19 +82,50 @@ screen character_selection:
 
 #timer
 default downer = 0
+
 screen timerDown(rangeD, missed_event):
     on "show" action SetVariable("downer", rangeD)
     frame:
         xalign 0.5
-        yalign 0.0
+        yalign 0.1
         hbox:
             timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
+            hbox:
+                xalign 0.5
+                bar:
+                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                    yalign 0.0
+                    xmaximum 500
+                    bar_invert True
+                    right_bar "gui/bar/left.png"
+                    left_bar "gui/bar/right.png"
+                    ysize 10  # Adjust this value to change the thickness of the bar
+                bar:
+                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                    yalign 0.0
+                    xmaximum 500
+                    ysize 10  # Adjust this value to change the thickness of the bar
+                    
 
-            bar:
-                value AnimatedValue(value=downer, range=rangeD, delay= 0.5)
-                xalign 0.0
-                yalign 0.0
-                xmaximum 200
+
+
+# QTE choice screen
+screen qte_choice(items):
+    style_prefix "qte"
+    zorder 1
+    for i in items:
+        frame:
+            xalign i[2]  # Adjust this to move the box horizontally
+            yalign i[3]  # Adjust this to move the box vertically
+            has vbox:
+                textbutton i[0] action [Hide("timerDown"), Jump(i[1])] style "qte_button"
+
+
+#Illustrations
+image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
+
+
+
 
 
 
@@ -173,16 +204,12 @@ label J1:
     
     Who should I warn first though..."""
 
-    show screen timerDown(3, "missedit") #seconds, label to jump on fail
-    menu:
-        "This is a timed choice event, go fast!"
-        "Timed choice 1":
-            hide screen timerDown
-            jump choice1
-
-        "Timed choice 2":
-            hide screen timerDown
-            jump choice2
+    show screen timerDown(3, "missedit")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Timed choice 1", "choice1", 0.2, 0.3),  # xpos and ypos for choice 1
+        ("Timed choice 2", "choice2", 0.8, 0.7)   # xpos and ypos for choice 2
+    ])
+    return
 
 label missedit:
     "I missed it..."
@@ -389,18 +416,21 @@ label JS1FS:
     (But before I can fully process my next move, my attention is abruptly diverted.)"""
 
     hide Renee bag
+    show JS1FS
     J"(An agent charges towards me, wielding a baton and swinging it with force.)"
-    show Agent1 at center_lower with Dissolve(0.3)
     menu:
         J"gasp!"
         "Try to dodge the attack":
-            hide Agent
             jump js1fsa
         "Scream":
             $ hp - 3
+            show bg stage
+            show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsb
         "Reach for my bat":
             $ hp - 1
+            show bg stage
+            show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsc
 
 # fight scene JS1
