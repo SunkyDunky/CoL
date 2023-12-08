@@ -625,7 +625,33 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("""This game was made possible by the hard work and dedication of the following individuals:
+
+{size=+5}Writing and Gameplay:{size=-5}
+- {b}RubbyBand{/b}: Director and main writer 
+- {b}Metabii{/b}: Overall Writing and gameplay experience
+- {b}Temarqus{/b}: Plot development and dialogue 
+- {b}Metume{/b}: Dialogue and characterization
+
+{size=+5}Art and Design:{size=-5}
+- {b}Lyn{/b}: Art direction, character designer, concept art, storyboarder, UI designer and main illustrator
+- {b}Aisi{/b}: Main sprites illustrator and UI designer
+- {b}RubbyBand{/b}: Character designer, concept art, animation
+- {b}Soup_Underscore{/b}: Storyboarder, Animation
+- {b}TheMutiplayerMick{/b}: 3D Modeling
+- {b}Fendy{/b}: Concept artist and backup illustrator
+
+{size=+5}Code and Programming:{size=-5}
+- {b}SunkyDunky{/b}: UI customization and stylization
+- {b}RubbyBand{/b}: Gameplay system and finalization
+
+{size=+5}Music, Audio and SFX:{size=-5}
+- {b}Almo{/b}: BGM
+- {b}Cipher{/b}: Audio and SFX
+
+We would like to express our deepest gratitude to all these individuals for their contributions. Their collective efforts have made this game a reality.
+
+Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]""")
 
 
 style about_label is gui_label
@@ -635,6 +661,103 @@ style about_text is gui_text
 style about_label_text:
     size gui.label_text_size
 
+###################################### ending credit screen
+
+transform credits_scroll(speed):
+    ypos 600
+    linear speed ypos -5000
+
+screen credits():
+
+    ## Ensure that the game_menu screens can't be stopped
+    key "K_ESCAPE" action NullAction()
+    key "K_MENU" action NullAction()
+    key "mouseup_3" action NullAction()
+
+    style_prefix "credits"
+
+    timer 24.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
+    ## returns to its normal flow.
+
+    frame at credits_scroll(65.0): #bigger is slower
+        ## Adjust this number to control the speed at which the credits scroll.
+        background None
+        xalign 0.5
+
+        vbox:
+            null height 75
+            label "{size=-70}Director and main writer{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}RubbyBand{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Overall Writing and gameplay experience{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Metabii{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Plot development and dialogue{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Temarqus{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Dialogue and characterization{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Metume{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Art direction, character designer, concept art, storyboarder, UI designer and main illustrator{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Lyn{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Main sprites illustrator and UI designer{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Aisi{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Character designer, concept art, animation{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}RubbyBand{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Storyboarder, Animation{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Soup_Underscore{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}3D Modeling{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}TheMutiplayerMick{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Concept artist and backup illustrator{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Fendy{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}UI customization and stylization{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}SunkyDunky{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Gameplay system and finalization{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}RubbyBand{/size}" xalign 0.5
+            null height 200
+            label "{size=-70}Thanks for Playing!{/size}" xalign 0.5
+            null height 80
+
+style credits_hbox:
+    spacing 40
+    ysize 30
+
+style credits_vbox:
+    xalign 0.5
+    text_align 0.5
+
+style credits_label_text:
+    xalign 0.5
+    justify True
+    size 125
+    text_align 0.5
+    color "#ffffff"
+
+style credits_text:
+    xalign 0.5
+    size 60
+    justify True
+    text_align 0.5
+    color "#ffffff"
 
 ## Load and Save screens #######################################################
 ##

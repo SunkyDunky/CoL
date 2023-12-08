@@ -126,10 +126,6 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 
 
 
-
-
-
-
 # The game starts here.
 
 label start:
@@ -145,6 +141,7 @@ label start:
 
 label Sorry:
     "sorry this character isn't available for now, Julia is available though."
+    call screen credits
     jump Julia_Start
     return
 
@@ -421,15 +418,16 @@ label JS1FS:
     menu:
         J"gasp!"
         "Try to dodge the attack":
+            hide JS1FS
             jump js1fsa
         "Scream":
             $ hp - 3
-            show bg stage
+            hide JS1FS
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsb
         "Reach for my bat":
             $ hp - 1
-            show bg stage
+            hide JS1FS
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsc
 
@@ -690,6 +688,245 @@ label js1fsafter:
             jump JS11
         "Help Renee first":
             jump JS12    
+
+
+label JS11:
+    hide Renee
+    hide Quol
+    J"I'll help Quol first!"
+
+    show Agent1 at center_lower with Dissolve(0.3)
+
+    J"""(Without hesitation, I propelled myself forward, instantly closing the distance between me and the Agent.)
+
+    (Gripping my bat firmly, I swung it with all my might, delivering a powerful blow that connected with the Agent's body.)"""
+
+    hide Agent1 with Dissolve(0.3)
+    
+    J"(The force of impact sent them sprawling to the ground, momentarily stunned.)"
+
+    show Quol at center_lower with Dissolve(0.3)
+
+    J"""(Quol's eyes widened briefly in surprise, but a grateful smile quickly spread across her face. )
+
+    (She wasted no time, using the opening I had created to knock down the second Agent with a swift kick swiftly.)
+
+    (The air crackled with a mix of adrenaline and relief as Quol, and I stood side by side, our united front a testament to our shared resolve.)
+
+    (The tides of battle seem to have shifted in our favour, even if just for a moment.)"""
+
+    hide Quol with Dissolve(0.3)
+
+    J"""(However, I turned my head towards the direction of Renee and witnessed her arm getting hit by the baton of one of the agents and tumbling to the floor.)
+
+    (My heart skipped a beat.)
+
+    (The sight sent a surge of worry coursing through me, momentarily overshadowing the triumph of our successful attack on the Agents.)"""
+
+    show Renee at center_lower with Dissolve(0.3)
+
+    J"""(Without a second thought, I rushed to her side, my concern overriding any other consideration.)
+
+    Renee, are you alright?
+
+    (I was trembling and had no idea what to do.)
+
+    (As panic threatened to consume me, my mind raced, desperately searching for a solution.)"""
+
+    hide Renee with Dissolve(0.3)
+
+    J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
+
+    "Show flashback"
+
+    J"""(My room was bathed in soft, warm light as Renee and I sat side by side on the edge of the bed.)
+
+    (It had been a long and challenging day, and we sought solace in this quiet moment of respite.)
+
+    (I looked at Renee, her presence a comforting anchor in the storm of uncertainty that swirled within me.)
+
+    (The weight of the future pressed heavily on my mind, filling me with a sense of unease.)
+
+    (I couldn't help but express my concerns.)
+
+    Renee...
+
+    I'm...uncertain about the future...
+    
+    It's like..like as if I'm standing at a crossroads, not knowing which path to take..
+
+    I'm scared... that I would make wrong choices or not I would not live up to my potential.
+
+    (Renee turned to me, her eyes filled with a mixture of understanding and compassion.)
+
+    (After a brief silence, she touched my shoulder gently.)"""
+
+    R """Julia.
+
+    I kind of understand that feeling. 
+
+    You see... there was a time when I was near death when everything seemed lost. 
+
+    But surviving taught me the value of life and each moment's preciousness."""
+
+    J"(Her words resonated deep within me, stirring a renewed perspective.)"
+
+    R """Being alive allows for endless possibilities, Julia. 
+
+    It opens doors to discovering the meaning of our existence and the roles we want to play in this world. 
+
+    It's not about finding all the answers right away, but about embracing the journey and exploring what truly matters to us."""
+
+    J"""(Her words held a profound truth, reminding me to cherish the gift of life and find solace in the process of self-discovery.)
+
+    (Renee's unwavering belief in the importance of protecting one another echoed in my heart, reminding me of the bond we shared.)
+
+    (Moved by her sincerity, I nodded, gratitude and determination shining in my eyes.)
+
+    Thank you... Renee.
+
+    (Renee smiled warmly, her gaze filled with trust and camaraderie.)"""
+
+    R "I wouldn't want to see my best friends being in pain, would I?"
+
+    J"""(I snapped back to reality and held my bat tightly as I knocked down the agent who injured Renee.)
+
+    (I realised that I had to protect everyone.)"""
+
+    jump JS13
+
+label JS12:
+    hide Renee
+    hide Quol
+    J"I'll help Renee first."
+
+    show Agent1 at center_lower with Dissolve(0.3)
+
+    J"""(Swiftly, I closed the distance between Renee and her assailant.)
+
+    (As I approached, I noticed an opening—a split second where my approach momentarily diverted the Agents' attention.)
+
+    (Seizing the opportunity, I gripped my bat firmly.)
+
+    (I swung it with all my might, delivering a powerful blow that connected with the Agent's body."""
+
+    hide Agent1 with Dissolve(0.3)
+
+    J"(The force of impact sent them sprawling to the ground, momentarily stunned.)"
+
+    show Renee at center_lower with Dissolve(0.3)
+
+    J"""(Fueled by my unexpected intervention, Renee swiftly took advantage of the moment.)
+
+    (Her whip cracked through the air, striking the other Agent with a resounding crack.)
+
+    (The enemy stumbled backwards, defeated and temporarily stunned.)
+
+    (A mixture of relief and determination washed over us. Renee's eyes met mine, gratitude and understanding passing between us in that fleeting moment.)"""
+
+    hide Renee with Dissolve(0.3)
+
+    J"""(However, I turned my head towards the direction of Quol and witness her leg getting hit by the baton of one of the agents and tumbling to the floor.)
+
+    (My heart skipped a beat.)
+
+    (The sight sent a surge of worry coursing through me, momentarily overshadowing the triumph of our successful attack on the Agents.)"""
+
+    show Quol at center_lower with Dissolve(0.3)
+
+    J"""(Without a second thought, I rushed to her side, my concern overriding any other consideration.)
+
+    Quol, are you alright?
+
+    (I was trembling and had no idea what to do.)
+
+    (As panic threatened to consume me, my mind raced, desperately searching for a solution.)
+
+    (And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Quol not too long ago.)"""
+
+    hide Quol with Dissolve(0.3)
+
+    J"""(It was 2 days after I ran away from Newfutures Institute, I was sitting near the stack of cargo containers, starving and getting worried of my scarred leg.)
+
+    (Suddenly, a person with distinct blue hair approached me.)"""
+
+    Q"""Julia!
+
+    "It's me, Quol! I can't believe I found you here!"""
+
+    J"""Quol...?
+
+    Who...are you?
+
+    (Quol's expression faltered for a moment, a flicker of disappointment passing across hrt face.)"""
+
+    Q"""I-I'm sorry.
+
+    You really don't remember me...I see.. We were friends during the Brookcastle incident."""
+
+    J"""(My confusion deepened as I stared at her face, trying to search for any instances where she had appeared in any of my memories.)
+
+    (But my mind drew a blank, leaving me feeling disoriented and uncertain.)
+
+    I... I don't remember.
+
+    ...
+
+    I don't understand what's happening... Why can't I remember? What happened during the Brookcastle Incident?
+
+    (Quol's face softened, and they offered a reassuring smile.)""" 
+
+    Q"""It's okay, Julia.
+
+    Nobody remembers what happened during the Brookcastle incident; only I do really, and I'll explain it all to you in due time."""
+
+    J"""(As we stood there, confusion swirling within me, Quol's face glimpsed a confident smirk as she stood up.)
+
+    (They reached into a bag slung over their shoulder and pulled out a small loaf of bread.)"""
+
+    Q"Here."
+
+    J"(Quol extended the bread towards me.)"
+
+    Q"Take this. It might help you feel better."
+
+    J"""(I accepted the bread, grateful for their kindness and willingness to help.)
+
+    (As I nibbled on the bread, Quol began recounting our supposed shared experiences.)
+
+    (They spoke of an adventure through lands, through villages, rivers, and valleys.)
+
+    (The journey of a young girl named Julia as she gathers strength and fortitude to end the Brookcastle event, developing from a frightened, shy kid to one who swings and fights for herself.)
+
+    (As Quol spoke, a sense of determination ignited within me.)
+
+    (Even though I couldn't remember our past, I felt a connection, an unspoken bond that made me let my guard down a little.)
+
+    I may not remember you, or my past,
+    
+    but I want to be like the Julia you described...
+
+    (Quol's eyes brightened with a mixture of relief and pride.)
+    
+    (She ripped off part of her shirt, and kneeled down in front of me.)"""
+
+    Q"""Then let's start by taking care of that injured leg.
+
+    We'll face the challenges together, Julia, and hopefully, you will grow as strong as you had back then."""
+
+    J"""(As Quol began to tend to my injured leg using the cloth, I couldn't help but feel a glimmer of hope.)
+    
+    (Though my confusion remained, I was determined to embrace this new chapter, starting a new life.)
+
+    (I snapped back to reality and held my bat tightly as I knocked down the agent who injured Quol.)
+
+    (I realised that I had to fight for myself.)"""
+
+    jump JS13
+
+label JS13:
+    "Fighting off all the agents, it seemed like they got backup."
+
 
 #JS2
 label JS2:
