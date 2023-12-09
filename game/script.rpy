@@ -22,16 +22,28 @@ define Z = Character("A spectator?",color="#6303ff")
 # define character sprites
 image Renee :   
     "characters/Renee.png"
-    zoom 0.5
+    zoom 0.49
+image Renee worried:   
+    "characters/Renee worried.png"
+    zoom 0.49  
+image Renee smile:   
+    "characters/Renee smile.png"
+    zoom 1.59
 image Julia :   
     "characters/Julia-half.png"
     zoom 0.2
+image Julia nervious:   
+    "characters/Julia-half nervious.png"
+    zoom 0.2    
+image Julia traumized:   
+    "characters/Julia-half traumized.png"  
+    zoom 0.2   
 image Quol :   
     "characters/Quol.png"
-    zoom 0.5
+    zoom 0.55
 image Quol Angry:   
     "characters/Quol Angry.png"
-    zoom 1.7
+    zoom 1.78
 image Agent1:   
     "characters/Agent.png"
     zoom 0.5
@@ -71,7 +83,7 @@ label splashscreen:
         show text """Disclaimer
 
         This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
-        pause 5
+        pause 5.0
         hide text with dissolve
         return
 
@@ -218,6 +230,22 @@ label J1:
     J"""I should tell them about this.
     
     Who should I warn first though..."""
+    show Julia at textbox_over
+    "a"
+    show Julia nervious at textbox_over
+    "a"
+    show Julia traumized at textbox_over
+    "a"
+    show Renee at center_lower
+    "a"
+    show Renee worried at center_lower
+    "a"
+    show Renee smile at center_lower
+    "a"
+    show Quol at center_lower
+    "a"
+    show Quol Angry at center_lower
+    "a"
 
     show screen timerDown(3, "missedit")  # seconds, label to jump on fail
     call screen qte_choice([

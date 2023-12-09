@@ -1,32 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 237, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 76, in script
-    return with fade
-SyntaxError: invalid syntax (game/script.rpy, line 76)
+  File "game/script.rpy", line 234, in script
+    show Julia worried at textbox_over
+Exception: Image 'Julia' does not accept attributes 'worried'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 237, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 76, in script
-    return with fade
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1787, in execute
-    renpy.store._return = renpy.python.py_eval(self.expression)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1151, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/script.rpy, line 76)
+  File "game/script.rpy", line 234, in script
+    show Julia worried at textbox_over
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
+    args.extraneous()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Julia' does not accept attributes 'worried'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation2 1.0
-Sun Dec 10 04:50:09 2023
+Sun Dec 10 05:02:28 2023
