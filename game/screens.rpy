@@ -668,7 +668,7 @@ style about_label_text:
 
 transform credits_scroll(speed):
     ypos 600
-    linear speed ypos -5000
+    linear speed ypos -4000
 
 screen credits():
 
@@ -679,7 +679,7 @@ screen credits():
 
     style_prefix "credits"
 
-    timer 24.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
+    timer 50.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
     ## returns to its normal flow.
 
     frame at credits_scroll(65.0): #bigger is slower
@@ -705,7 +705,7 @@ screen credits():
             null height 10
             text "{size=-20}Metume{/size}" xalign 0.5
             null height 75
-            label "{size=-70}Art direction, character designer, concept art, storyboarder, UI designer and main illustrator{/size}" xalign 0.5
+            label "{size=-70}Art direction{/size}" xalign 0.5
             null height 10
             text "{size=-20}Lyn{/size}" xalign 0.5
             null height 75
@@ -713,7 +713,7 @@ screen credits():
             null height 10
             text "{size=-20}Aisi{/size}" xalign 0.5
             null height 75
-            label "{size=-70}Character designer, concept art, animation{/size}" xalign 0.5
+            label "{size=-70}Character designer, concept art{/size}" xalign 0.5
             null height 10
             text "{size=-20}RubbyBand{/size}" xalign 0.5
             null height 75
