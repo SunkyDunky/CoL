@@ -646,8 +646,11 @@ screen about():
 - {b}RubbyBand{/b}: Gameplay system and finalization
 
 {size=+5}Music, Audio and SFX:{size=-5}
-- {b}Almo{/b}: BGM
+- {b}Almo{/b}: Composer
 - {b}Cipher{/b}: Audio and SFX
+
+{size=+5}Songs used:{size=-5}
+- {b}Uncertain Feelings{/b} by Peacefulorenz
 
 We would like to express our deepest gratitude to all these individuals for their contributions. Their collective efforts have made this game a reality.
 
@@ -733,6 +736,20 @@ screen credits():
             label "{size=-70}Gameplay system and finalization{/size}" xalign 0.5
             null height 10
             text "{size=-20}RubbyBand{/size}" xalign 0.5
+            null height 100
+            label "{size=-70}Lead Composer{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Peacefulorenz{/size}" xalign 0.5
+            null height 100
+            label "{size=-70}Sound effects{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}Cipher{/size}" xalign 0.5
+            null height 100
+            label "{size=-60}Songs used:{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Uncertain Feelings{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
             null height 200
             label "{size=-70}Thanks for Playing!{/size}" xalign 0.5
             null height 80
