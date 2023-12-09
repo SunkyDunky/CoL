@@ -66,6 +66,16 @@ transform textbox_over:
     ypos 0.54
 
 
+#disclaimer
+label splashscreen:
+        show text """Disclaimer
+
+        This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
+        pause 5
+        hide text with dissolve
+        return
+
+
 #selection screen
 image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
 screen character_selection:
@@ -156,13 +166,6 @@ label Sorry:
 label Julia_Start:
     window hide 
     pause 1.0 
-    scene black with fade
-    text """Disclaimer
-    
-    This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development.""" xalign 0.5 yalign 0.5
-    pause 5  # Pause for 5 seconds to let the player read the text
-    hide text with dissolve
-    pause 0.5 
     $ renpy.movie_cutscene("images/opening.webm")
     show bg stage
     pause 1.0 

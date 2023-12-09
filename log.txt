@@ -1,4 +1,4 @@
-Sun Dec 10 04:24:46 2023
+Sun Dec 10 04:50:02 2023
 Windows-10-10.0.22621
 Ren'Py 8.1.3.23091805
  
@@ -7,10 +7,10 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.02s
-Loading script. took 0.19s
+Loading script. took 0.13s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.02s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
@@ -28,77 +28,6 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 249, in Fade
-    return MultipleTransition(args, old_widget=old_widget, new_widget=new_widget)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 155, in __init__
-    super(MultipleTransition, self).__init__(sum(i.delay for i in self.transitions), **properties)
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
-
-While running game code:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
-Resetting cache.
-Bootstrap to the start of init.init. took 46.48s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
 Analyze screens took 0.00s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
@@ -106,126 +35,6 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 'black')  # Fade to black
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: Fade() missing 1 required positional argument: 'in_time'
-
-While running game code:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 'black')  # Fade to black
-TypeError: Fade() missing 1 required positional argument: 'in_time'
-Resetting cache.
-Bootstrap to the start of init.init. took 73.34s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.10s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 249, in Fade
-    return MultipleTransition(args, old_widget=old_widget, new_widget=new_widget)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 155, in __init__
-    super(MultipleTransition, self).__init__(sum(i.delay for i in self.transitions), **properties)
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
-
-While running game code:
-  File "game/script.rpy", line 158, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
-Resetting cache.
-Bootstrap to the start of init.init. took 154.53s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.09s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 141: expected 'image_name_component' not found.
-    show "Black.png"
-         ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
 Interface start. took 0.04s
 
 Initializing gl2 renderer:
@@ -238,79 +47,32 @@ Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
 Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 198.34s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.11s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 22.20.27.09.230330'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1680, 945) drawable=(1680, 945)
-Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 159, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 249, in Fade
-    return MultipleTransition(args, old_widget=old_widget, new_widget=new_widget)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transition.py", line 155, in __init__
-    super(MultipleTransition, self).__init__(sum(i.delay for i in self.transitions), **properties)
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 76, in script
+    return with fade
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1787, in execute
+    renpy.store._return = renpy.python.py_eval(self.expression)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1151, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 76)
 
 While running game code:
-  File "game/script.rpy", line 159, in script
-    scene black with Fade(1.0, 0, 'black')  # Fade to black
-TypeError: unsupported operand type(s) for +: 'float' and 'str'
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 76, in script
+    return with fade
+SyntaxError: invalid syntax (game/script.rpy, line 76)
 Resetting cache.
-Bootstrap to the start of init.init. took 222.51s
+Bootstrap to the start of init.init. took 18.62s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
@@ -323,7 +85,7 @@ Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\100ga\\AppData\\Roaming/RenPy/backups\\CoL':
-Dump and make backups. took 0.03s
+Dump and make backups. took 0.02s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.02s
