@@ -160,11 +160,9 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 
 label start:
     show bg entrance
-    pause 4.0
-    show bg black
-    with Dissolve(2.0)
-    # Show your screen
-    scene bg entrance_ticket_dark
+    pause 2.0
+    scene bg entrance_ticket_dark with Dissolve (4.0)
+    pause 0.5
     call screen character_selection
     with Fade(1.0,0.0,1.0)
     return
