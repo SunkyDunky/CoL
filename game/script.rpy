@@ -5,6 +5,7 @@
 
 #setting
 default hp = 15
+default havelayon = False
 
 # defining characters
 define J = Character("Julia",color="#F400FF")
@@ -16,17 +17,18 @@ define G1 = Character("Agent1",color="#cacaca")
 define G2 = Character("Agent2",color="#cacaca")
 define A1 = Character("Audience1",color="#cacaca")
 define A2 = Character("Audience2",color="#cacaca")
+define Z = Character("A spectator?",color="#6303ff")
 
 # define character sprites
 image Renee :   
     "characters/Renee.png"
-    zoom 1.5
+    zoom 0.5
 image Julia :   
     "characters/Julia-half.png"
     zoom 0.2
 image Quol :   
     "characters/Quol.png"
-    zoom 1.7
+    zoom 0.5
 image Quol Angry:   
     "characters/Quol Angry.png"
     zoom 1.7
@@ -42,6 +44,11 @@ image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
 image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
+
+# define other images
+image Renee bag :   
+    "Renee bag.png"
+    zoom 0.3
 
 #transform
 transform right_center_lower:
@@ -118,7 +125,7 @@ screen qte_choice(items):
             xalign i[2]  # Adjust this to move the box horizontally
             yalign i[3]  # Adjust this to move the box vertically
             has vbox:
-                textbutton i[0] action [Hide("timerDown"), Jump(i[1])] style "qte_button"
+                textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
 
 
 #Illustrations
@@ -399,7 +406,7 @@ label JS1:
 label JS1FS:
     hide Quol with Dissolve(0.3)
     hide Renee with Dissolve(0.3)
-    J"""(I can't stand idly by while they put themselves in harm's way. I need to help them.)
+    J"""(I can't stand idly while they put themselves in harm's way. I need to help them.)
 
     (With a deep breath, I snap out of my daze, focusing my attention on the unfolding fight.) 
 
@@ -407,7 +414,8 @@ label JS1FS:
     
     hide Renee with Dissolve(0.3)
     hide Quol with Dissolve(0.3)
-    show Renee bag at center with Dissolve(0.3)
+    show Renee bag at Transform(xalign=0.5, yalign=0.4) with Dissolve(0.3)
+
     J"""(And then I spot it ... my trusty bat, safely tucked inside Renee's bag.)
 
     (But before I can fully process my next move, my attention is abruptly diverted.)"""
@@ -506,7 +514,7 @@ label js1fsg:
     
     (I let out a startled cry.)
     
-    (Voice trembling with fear and frustation, as well as an overwhelming hopelessness.)"""
+    (Voice trembling with fear and frustration, as well as an overwhelming hopelessness.)"""
 
     hide Agent1
     show Quol at center_lower with Dissolve(0.3)
@@ -527,7 +535,7 @@ label js1fsg:
     
     Q"Better fight back next time."
     
-    J"(I sliently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
+    J"(I silently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
     
     Q"Better keep it in your hands at all times."
     
@@ -575,7 +583,7 @@ label js1fsh:
     
     Q"Better not trip next time."
     
-    J"(I sliently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
+    J"(I silently watched as she goes over to Renee's bag and pulls out my bat, then tosses it to me.)"
     
     Q"Better keep it in your hands at all times."
     
@@ -926,6 +934,7 @@ label JS12:
 
 label JS13:
     "Fighting off all the agents, it seemed like they got backup."
+    jump js42fs
 
 
 #JS2
@@ -960,3 +969,266 @@ label JH2:
     "I..."
 
 
+label js42fs:
+    "Four agents approched us"
+    if havelayon == True:
+        jump js42fsa
+    else:
+        jump js42fsb
+
+label js42fsa:
+    menu:
+        "JS42FSi":
+            jump js42fsi
+        "JS42FSj":
+            jump js42fsj
+
+label js42fsb:
+    J"""Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents
+    
+    In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent
+    
+    My heart raced as I realized that two agents still remained, their attention now squarely focused on me. 
+    
+    Fear mingled with determination within me as I braced myself for the impending confrontation.
+    
+    I noticed one of the agents accidentally slipped their baton out of their hand as they approached
+    "
+    Who should I focus on first?"""
+    
+    menu:
+        "Agent with a baton":
+            jump js42fsc
+        "Agent without a baton":
+            jump js42fsd
+
+label js42fsc:
+    J"As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."
+    
+    show screen timerDown(3, "misseditJS42FSc1")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Swing left", "choice1JS42FSc1", 0.2, 0.5),  # xpos and ypos for choice 1
+        ("Swing right", "choice2JS42FSc1", 0.8, 0.5)   # xpos and ypos for choice 2
+    ])
+    return
+    
+    label misseditJS42FSc1:
+        $hp - 1
+        J"I got hit in the arm because I was not quick enough to react"
+        jump finishedJS42FSc1
+    
+    label choice1JS42FSc1:
+        J"I swang left, and it blocked the baton."
+        jump finishedJS42FSc1
+    
+    label choice2JS42FSc1:
+        J"I swang right, and it blocked the baton."
+        jump finishedJS42FSc1
+    
+    label finishedJS42FSc1:
+        J"The agent is temportarily off guard"
+        
+    show screen timerDown(3, "misseditJS42FSc2")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Strike downwards", "choice1JS42FSc2", 0.5, 0.3),  # xpos and ypos for choice 1
+    ])
+    return
+    
+    label misseditJS42FSc2:
+        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes"
+        
+        J"They immedately fell on the ground motionless"
+        jump finishedJS42FSc2
+    
+    
+    label choice1JS42FSc2:
+        J"I striked down on the Agent and they immedately fell on the ground motionless"
+        jump finishedJS42FSc2
+    
+    label finishedJS42FSc2:
+        J"""He is down.
+        
+        My relief was short lived, as the other agent then tried to jump on me
+        
+        what should I do?"""
+       
+    menu:
+        "go for the kill":
+            jump js42fsl
+        "Play it defensively":
+            jump js42fsm
+
+label js42fsd:
+    J"""With the agent without the baton closed in, I see that it is trying to directly jump on me
+    
+    I held tight my bat, and decided on my next move"""
+    
+    menu:
+        "go for the kill":
+            jump js42fsg
+        "JPLay it defensively":
+            jump js42fsh
+
+label js42fsg:
+    J""" I decided to go for the kill
+    
+    I prepared my swing and gluped
+    
+    however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+    
+    The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+    
+    jump game_over
+
+label js42fsh:
+    J"I decided to get defensive and held my bat tight"
+    
+    show screen timerDown(3, "misseditJS42FSc5")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Block Horizontally", "choice1JS42FSc5", 0.2, 0.5),  # xpos and ypos for choice 1
+        ("Block Vertically", "choice2JS42FSc5", 0.8, 0.5)   # xpos and ypos for choice 2
+    ])
+    return
+    
+    label misseditJS42FSc5:
+        $hp - 1
+        J"I stumbled backwards mildly"
+        jump finishedJS42FSc5
+
+    label choice1JS42FSc5:
+        J"I held my bat horizontally, and it blocked the baton."
+        jump finishedJS42FSc5
+
+    label choice2JS42FSc5:
+        J"I held my bat vertically, and it blocked the baton."
+        jump finishedJS42FSc5
+
+    label finishedJS42FSc5:
+        J"""I then swing towards his torso, making sure he fainted off
+
+    The other sees that I've knocked down his comrade, and approches me
+
+    As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."""
+
+    show screen timerDown(3, "misseditJS42FSc3")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Swing left", "choice1JS42FSc3", 0.2, 0.5),  # xpos and ypos for choice 1
+        ("Swing right", "choice2JS42FSc3", 0.8, 0.5)   # xpos and ypos for choice 2
+    ])
+    return
+
+    label misseditJS42FSc3:
+        $hp - 1
+        J"I got hit in the arm because I was not quick enough to react"
+        jump finishedJS42FSc3
+
+    label choice1JS42FSc3:
+        J"I swang left, and it blocked the baton."
+        jump finishedJS42FSc3
+
+    label choice2JS42FSc3:
+        J"I swang right, and it blocked the baton."
+        jump finishedJS42FSc3
+
+    label finishedJS42FSc3:
+        J"The agent is temportarily off guard"
+        
+    show screen timerDown(3, "misseditJS42FSc4")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Strike downwards", "choice1JS42FSc4", 0.5, 0.3),  # xpos and ypos for choice 1
+    ])
+    return
+
+    label misseditJS42FSc4:
+        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes"
+        
+        J"They immedately fell on the ground motionless"
+        jump finishedJS42FSc4
+
+
+    label choice1JS42FSc4:
+        J"I striked down on the Agent and they immedately fell on the ground motionless"
+        jump finishedJS42FSc4
+
+    label finishedJS42FSc4:
+        jump js42fsafter
+
+    label js42fsi:
+        J""" I decided to go for the kill
+        
+        I prepared my swing and gluped
+        
+        however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+        
+        The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+        
+        jump game_over
+
+label js42fsj:
+    J"I decided to get defensive and held my bat tight"
+    
+    show screen timerDown(3, "misseditJS42FSc6")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Block Horizontally", "choice1JS42FSc6", 0.2, 0.5),  # xpos and ypos for choice 1
+        ("Block Vertically", "choice2JS42FSc6", 0.8, 0.5)   # xpos and ypos for choice 2
+    ])
+    return
+    
+    label misseditJS42FSc6:
+        $hp - 1
+        J"I stumbled backwards mildly"
+        jump finishedJS42FSc6
+    
+    label choice1JS42FSc6:
+        J"I held my bat horizontally, and it blocked the baton."
+        jump finishedJS42FSc6
+    
+    label choice2JS42FSc6:
+        J"I held my bat vertically, and it blocked the baton."
+        jump finishedJS42FSc6
+    
+    label finishedJS42FSc6:
+        J"""I then swing towards his torso, making sure he fainted off
+    
+        The other sees that I've knocked down his comrade, and approches me
+        
+        As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."""
+        
+        jump js42fsafter
+
+label js42fsl:
+    J""" I decided to go for the kill
+    
+    I prepared my swing and gluped
+    
+    however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+    
+    The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+    
+    jump game_over
+
+label js42fsm:
+    $hp - 1
+    J""" I held my bat horizontally to block the agent as he jumps on me
+    
+    He hits my shoulder mildly, but I manage to swing him off and throw him on the ground
+    
+    I then swing towards his torso, making sure he fainted off"""
+    
+    jump js42fsafter
+
+label js42fsafter:
+    "All the agents have passed out, and we all had a sigh of relief"
+
+
+
+
+
+label game_over:
+    show bg BLACK
+    Z"""Huh, that wasn't fun.
+
+    Not a great way to end a story, is it?
+
+    let's try this again."""
+    return

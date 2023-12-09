@@ -231,17 +231,26 @@ style choice_button_text is default:
 
 ## QTE choice buttons
 
+init python:
+    # Define the style for the button text
+    style.qte_button_text = Style(style.button_text)
+    style.qte_button_text.color = "#808080"  # Grey color when idle
+    style.qte_button_text.hover_color = "#FFFFFF"  # White color when hovered
+
+define gui.qte_button_text_xalign = 0.5
 
 style qte_button is default:
     xmaximum 300
     ymaximum 300
-    text_align 0.5  # Center the text
+    text_align gui.qte_button_text_xalign  # Use the defined alignment for qte_button
     idle_background im.Scale("gui/qte_button.png", 300, 300)  # Set a custom background image for the button when not hovered
     hover_background im.Scale("gui/qte_button_hover.png", 300, 300)  # Set a custom background image for the button when hovered
-    size 10  # Change the text size
-    left_padding 25  # Adjust this value to move the text further to the right
-    top_padding 130  # Adjust this value to move the text further down
-    right_padding 15  # Adjust this value to move the text further to the left
+    top_padding 140  # Adjust this value to move the text up or down
+    bottom_padding 140  # Adjust this value to move the text up or down
+    left_padding 60  # Adjust this value to move the text to the right
+    right_padding 40  # Adjust this value to move the text to the left
+
+
 
 screen qte_choice(items):
     style_prefix "qte"
