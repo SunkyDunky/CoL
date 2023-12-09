@@ -44,6 +44,7 @@ image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
 image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
+image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
 
 # define other images
 image Renee bag :   
@@ -138,7 +139,7 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 label start:
     show bg entrance
     pause 4.0
-    scene bg entrance_ticket
+    show bg black
     with Dissolve(2.0)
     # Show your screen
     scene bg entrance_ticket_dark
@@ -154,6 +155,13 @@ label Sorry:
 
 label Julia_Start:
     window hide 
+    pause 1.0 
+    scene black with fade
+    text """Disclaimer
+    
+    This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development.""" xalign 0.5 yalign 0.5
+    pause 5  # Pause for 5 seconds to let the player read the text
+    hide text with dissolve
     pause 0.5 
     $ renpy.movie_cutscene("images/opening.webm")
     show bg stage
@@ -1225,8 +1233,10 @@ label js42fsafter:
 
 
 label game_over:
-    show bg BLACK
-    Z"""Huh, that wasn't fun.
+    show bg black
+    Z"""Huh, you're down
+    
+    that wasn't fun.
 
     Not a great way to end a story, is it?
 
