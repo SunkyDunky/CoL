@@ -655,7 +655,7 @@ screen about():
 - {b}RubbyBand{/b}: Gameplay system and finalization
 
 {size=+5}Music, Audio and SFX:{size=-5}
-- {b}Almo{/b}: Composer
+- {b}Peacefulorenz{/b}: Composer
 - {b}Cipher{/b}: Audio and SFX
 
 {size=+5}Songs used:{size=-5}
