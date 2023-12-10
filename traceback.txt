@@ -1,30 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 234, in script
-    show Julia worried at textbox_over
-Exception: Image 'Julia' does not accept attributes 'worried'.
+  File "game/script.rpy", line 199, in script
+    show Lenorra at Transform (yalign=0.1, xaligh=0.5) with Dissolve(0.5)
+  File "game/script.rpy", line 199, in <module>
+    show Lenorra at Transform (yalign=0.1, xaligh=0.5) with Dissolve(0.5)
+Exception: Unknown transform property: 'xaligh'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 234, in script
-    show Julia worried at textbox_over
+  File "game/script.rpy", line 199, in script
+    show Lenorra at Transform (yalign=0.1, xaligh=0.5) with Dissolve(0.5)
   File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 1043, in _duplicate
-    args.extraneous()
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'Julia' does not accept attributes 'worried'.
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 199, in <module>
+    show Lenorra at Transform (yalign=0.1, xaligh=0.5) with Dissolve(0.5)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\display\transform.py", line 617, in __init__
+    raise Exception("Unknown transform property: %r" % k)
+Exception: Unknown transform property: 'xaligh'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
-Concert of Liberation2 1.0
-Sun Dec 10 05:02:28 2023
+Concert of Liberation 1.0
+Sun Dec 10 23:59:39 2023

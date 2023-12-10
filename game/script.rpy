@@ -5,13 +5,13 @@
 
 #setting
 default hp = 15
-default havelayon = False
+default haveAndrew = False
 
 # defining characters
 define J = Character("Julia",color="#F400FF")
 define R = Character("Renee", color= "#FF8700")
 define Q = Character("Quol", color="#0094FF")
-define L = Character("Layon", color= "#ff0000")
+define A = Character("Andrew", color= "#ff0000")
 define LQ = Character("Lenorra", color="#00ff11")
 define G1 = Character("Agent1",color="#cacaca")
 define G2 = Character("Agent2",color="#cacaca")
@@ -44,6 +44,9 @@ image Quol :
 image Quol Angry:   
     "characters/Quol Angry.png"
     zoom 1.78
+image Lenorra:   
+    "characters/Lenorra.png"
+    zoom 0.5  
 image Agent1:   
     "characters/Agent.png"
     zoom 0.5
@@ -161,7 +164,7 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 label start:
     show bg entrance
     pause 2.0
-    scene bg entrance_ticket_dark with Dissolve (4.0)
+    scene bg entrance_ticket_dark with Dissolve (3.0)
     pause 0.5
     call screen character_selection
     with Fade(1.0,0.0,1.0)
@@ -193,7 +196,8 @@ label Julia_Start:
     play music "StageBGM.mp3"
     show Agent1 at left_center_lower with Dissolve(0.5)
     show Agent2 at right_center_lower with Dissolve(0.5)
-    show Lenorra at center_lower with Dissolve(0.5)
+    show Lenorra at Transform (yalign=5.5, xalign=0.5) with Dissolve(0.5)
+
    
     J"""(I can barely comprehend what I'm seeing.)
 
@@ -300,7 +304,7 @@ label J2:
 
 
     menu:
-        J"what do I do.."
+        J"What do I do.."
         "Stand my ground, don't move a muscle..":
             jump JS0
         "I have to leave, I have to go!":
@@ -414,7 +418,7 @@ label JH1:
     What can I do now...what do I do??"""
 
     menu:
-        "Go find layon":
+        "Go find Andrew":
             hide Julia
             jump JS2
         "Rush and help your friends":
@@ -464,6 +468,7 @@ label JS1FS:
         J"gasp!"
         "Try to dodge the attack":
             hide JS1FS
+            show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsa
         "Scream":
             $ hp - 3
@@ -654,7 +659,11 @@ label js1fsi:
 
     J"(and finally deliver a hard blow, knocking the agent out cold.)"
     
+    show Quol at center_lower with Dissolve(0.3)
+
     Q" Good job!"
+
+    hide Quol with Dissolve(0.3)
     
     J"(Quol compliments my resolve.)"
     
@@ -680,7 +689,7 @@ label js1fsf:
 
     J"""(With a surge of energy, I propel myself forward, As I channel a powerful swing towards the agent.)
     
-    (I watch as the agent staggers backward, their eyes wide with disbelief.)
+    (I watch as the agent staggers backward, shaking with disbelief.)
     
     (Moments later, they collapse to the ground.)"""
     
@@ -747,6 +756,8 @@ label JS11:
     (Gripping my bat firmly, I swung it with all my might, delivering a powerful blow that connected with the Agent's body.)"""
 
     hide Agent1 with Dissolve(0.3)
+
+    play sound "SFX/JS1FS/batonhit2.mp3" volume 3
     
     J"(The force of impact sent them sprawling to the ground, momentarily stunned.)"
 
@@ -754,7 +765,7 @@ label JS11:
 
     J"""(Quol's eyes widened briefly in surprise, but a grateful smile quickly spread across her face. )
 
-    (She wasted no time, using the opening I had created to knock down the second Agent with a swift kick swiftly.)
+    (She wasted no time, using the opening I had created to knock down the second Agent with a kick swiftly.)
 
     (The air crackled with a mix of adrenaline and relief as Quol, and I stood side by side, our united front a testament to our shared resolve.)
 
@@ -781,8 +792,6 @@ label JS11:
     hide Renee with Dissolve(0.3)
 
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
-
-    "Show flashback"
 
     J"""(My room was bathed in soft, warm light as Renee and I sat side by side on the edge of the bed.)
 
@@ -854,6 +863,8 @@ label JS12:
     (Seizing the opportunity, I gripped my bat firmly.)
 
     (I swung it with all my might, delivering a powerful blow that connected with the Agent's body."""
+
+    play sound "SFX/JS1FS/batonhit2.mp3" volume 3
 
     hide Agent1 with Dissolve(0.3)
 
@@ -970,7 +981,7 @@ label JS12:
     jump JS13
 
 label JS13:
-    "Fighting off all the agents, it seemed like they got backup."
+    J"Fighting off all the agents, it seemed like they got backup."
     jump js42fs
 
 
@@ -980,8 +991,8 @@ label JS2:
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
-    show Layon with Dissolve(0.3)
-    L"""Holy mother of–
+    show Andrew with Dissolve(0.3)
+    A"""Holy mother of–
 
     Jeez it's just you, Julia.
 
@@ -991,7 +1002,7 @@ label JS2:
 
     J"I....I..."
     menu:
-        J"Layon.."
+        J"Andrew.."
         "I left them behind..":
             jump JS21
         "Can you come to the front stage now?...please?":
@@ -999,7 +1010,7 @@ label JS2:
 
 label JH2:
     hide Julia
-    "Without hesitation, Julia stepped inside and locked the door behind her. The silence enveloped her, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
+    "Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
     show Julia at center_lower
     J"She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
     show bg Julia_toilet
@@ -1007,8 +1018,8 @@ label JH2:
 
 
 label js42fs:
-    "Four agents approched us"
-    if havelayon == True:
+    J"Four agents approched us"
+    if haveAndrew == True:
         jump js42fsa
     else:
         jump js42fsb
@@ -1021,17 +1032,17 @@ label js42fsa:
             jump js42fsj
 
 label js42fsb:
-    J"""Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents
+    J"""(Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents.)
     
-    In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent
+    (In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent.)
     
-    My heart raced as I realized that two agents still remained, their attention now squarely focused on me. 
+    (My heart raced as I realized that two agents still remained, their attention now squarely focused on me. )
     
-    Fear mingled with determination within me as I braced myself for the impending confrontation.
+    (Fear mingled with determination within me as I braced myself for the impending confrontation.)
     
-    I noticed one of the agents accidentally slipped their baton out of their hand as they approached
-    "
-    Who should I focus on first?"""
+    (I noticed one of the agents accidentally slipped their baton out of their hand as they approached.)
+    
+    (Who should I focus on first?)"""
     
     menu:
         "Agent with a baton":
@@ -1055,11 +1066,11 @@ label js42fsc:
         jump finishedJS42FSc1
     
     label choice1JS42FSc1:
-        J"I swang left, and it blocked the baton."
+        J"I swung left, and it blocked the baton."
         jump finishedJS42FSc1
     
     label choice2JS42FSc1:
-        J"I swang right, and it blocked the baton."
+        J"I swung right, and it blocked the baton."
         jump finishedJS42FSc1
     
     label finishedJS42FSc1:
@@ -1072,38 +1083,38 @@ label js42fsc:
     return
     
     label misseditJS42FSc2:
-        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes"
+        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes."
         
         J"They immedately fell on the ground motionless"
         jump finishedJS42FSc2
     
     
     label choice1JS42FSc2:
-        J"I striked down on the Agent and they immedately fell on the ground motionless"
+        J"I striked down on the Agent and they immediately fell on the ground motionless."
         jump finishedJS42FSc2
     
     label finishedJS42FSc2:
         J"""He is down.
         
-        My relief was short lived, as the other agent then tried to jump on me
+        My relief was short lived, as the other agent then tried to jump on me.
         
-        what should I do?"""
+        What should I do?"""
        
     menu:
-        "go for the kill":
+        "Go for the kill":
             jump js42fsl
         "Play it defensively":
             jump js42fsm
 
 label js42fsd:
-    J"""With the agent without the baton closed in, I see that it is trying to directly jump on me
+    J"""With the agent without the baton closed in, I see that it is trying to directly jump on me.
     
     I held tight my bat, and decided on my next move"""
     
     menu:
-        "go for the kill":
+        "Go for the kill":
             jump js42fsg
-        "JPLay it defensively":
+        "PLay it defensively":
             jump js42fsh
 
 label js42fsg:
@@ -1160,11 +1171,11 @@ label js42fsh:
         jump finishedJS42FSc3
 
     label choice1JS42FSc3:
-        J"I swang left, and it blocked the baton."
+        J"I swung left, and it blocked the baton."
         jump finishedJS42FSc3
 
     label choice2JS42FSc3:
-        J"I swang right, and it blocked the baton."
+        J"I swung right, and it blocked the baton."
         jump finishedJS42FSc3
 
     label finishedJS42FSc3:
