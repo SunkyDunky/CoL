@@ -47,6 +47,9 @@ image Quol Angry:
 image Lenorra:   
     "characters/Lenorra.png"
     zoom 0.5  
+image Andrew:   
+    "characters/Andrew.png"
+    zoom 0.5    
 image Agent1:   
     "characters/Agent.png"
     zoom 0.5
@@ -361,7 +364,7 @@ label JS0:
 
     J"(Quol and Renee, tightly grasping their instruments, finally speaks up)"
 
-    R"I...It's them, I did everything they wanted, why are they here?"
+    R "I...It's them, I did everything they wanted, why are they here?"
 
     J"(her voice trembling mildly, her hands shakingly reaches for her whip.)"
 
@@ -707,13 +710,13 @@ label js1fsafter:
 
     show Renee at right_center_lower with Dissolve(0.3)
 
-    R"Look! There's still more of them coming in from the entrance."
+    R "Look! There's still more of them coming in from the entrance."
 
     J"""(I observed Renee, her face etched with her unyielding will, desperately fending off two agile Agents.)
 
     (With lightning-fast reflexes, she deftly swung her whip, each crack of the lash a symphony of defiance against overwhelming odds.)"""
 
-    R"I can't hold this up forever."
+    R "I can't hold this up forever."
 
     show Quol at left_center_lower with Dissolve(0.3)
 
@@ -988,7 +991,7 @@ label JS2:
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
-    show Andrew with Dissolve(0.3)
+    show Andrew at center_lower with Dissolve(0.3)
     A"""Holy mother of–
 
     Jeez it's just you, Julia.
