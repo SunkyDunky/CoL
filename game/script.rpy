@@ -1038,7 +1038,9 @@ label js42fsb:
     
     (Fear mingled with determination within me as I braced myself for the impending confrontation.)
     
-    (I noticed one of the agents accidentally slipped their baton out of their hand as they approached.)
+    (One of the agents, slightly taller than the others, took a strong stance.)
+
+    (He confidently threw his baton on the floor and came charging at me in full speed.)
     
     (Who should I focus on first?)"""
     
@@ -1105,7 +1107,7 @@ label js42fsc:
             jump js42fsm
 
 label js42fsd:
-    J"""(With the agent without the baton closed in, I see that it is trying to directly jump on me.()
+    J"""(The agent without the baton approached rapidly, I see that he is trying to directly jump on me.()
     
     (I held tight my bat, and decided on my next move)"""
     
