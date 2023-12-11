@@ -340,9 +340,9 @@ label JS0:
 
     (Whispers and murmurs ripple through the air as people grapple to make sense of the chaotic scene unfolding before them.)"""
 
-    A1"It's NewFutures, why are they here?"
+    A1"It's The Institute, why are they here?"
  
-    A2"Even a small event like this caught the attention of NewFutures... I wonder why they are here?"
+    A2"Even a small event like this caught the attention of The Institute... I wonder why they are here?"
 
     J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding from the fragments of information swirling around.)
 
@@ -1051,7 +1051,7 @@ label js42fsb:
             jump js42fsd
 
 label js42fsc:
-    J"As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."
+    J"(As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them.)"
     
     show screen timerDown(3, "misseditJS42FSc1")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1062,19 +1062,19 @@ label js42fsc:
     
     label misseditJS42FSc1:
         $hp - 1
-        J"I got hit in the arm because I was not quick enough to react"
+        J"(I got hit in the arm because I was not quick enough to react.)"
         jump finishedJS42FSc1
     
     label choice1JS42FSc1:
-        J"I swung left, and it blocked the baton."
+        J"(I swung left, and it blocked the baton.)"
         jump finishedJS42FSc1
     
     label choice2JS42FSc1:
-        J"I swung right, and it blocked the baton."
+        J"(I swung right, and it blocked the baton.)"
         jump finishedJS42FSc1
     
     label finishedJS42FSc1:
-        J"The agent is temportarily off guard"
+        J"(The agent is temportarily off guard.)"
         
     show screen timerDown(3, "misseditJS42FSc2")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1083,22 +1083,22 @@ label js42fsc:
     return
     
     label misseditJS42FSc2:
-        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes."
+        J"(I got hit on the waist, then came to my senses and attacked his head out of reflexes.)"
         
-        J"They immedately fell on the ground motionless"
+        J"(They immedately fell on the ground motionless)"
         jump finishedJS42FSc2
     
     
     label choice1JS42FSc2:
-        J"I striked down on the Agent and they immediately fell on the ground motionless."
+        J"(I striked down on the Agent and they immediately fell on the ground motionless.)"
         jump finishedJS42FSc2
     
     label finishedJS42FSc2:
-        J"""He is down.
+        J"""(He is down.)
         
-        My relief was short lived, as the other agent then tried to jump on me.
+        (My relief was short lived, as the other agent then tried to jump on me.)
         
-        What should I do?"""
+        (What should I do?)"""
        
     menu:
         "Go for the kill":
@@ -1107,9 +1107,9 @@ label js42fsc:
             jump js42fsm
 
 label js42fsd:
-    J"""With the agent without the baton closed in, I see that it is trying to directly jump on me.
+    J"""(With the agent without the baton closed in, I see that it is trying to directly jump on me.()
     
-    I held tight my bat, and decided on my next move"""
+    (I held tight my bat, and decided on my next move)"""
     
     menu:
         "Go for the kill":
@@ -1118,18 +1118,18 @@ label js42fsd:
             jump js42fsh
 
 label js42fsg:
-    J""" I decided to go for the kill
+    J"""(I decided to go for the kill)
     
-    I prepared my swing and gluped
+    (I prepared my swing and gluped()
     
-    however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+    (However, I lost my train of thought and when I came to my senses was when my back hits the ground.)
     
-    The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+    (The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground.)"""
     
     jump game_over
 
 label js42fsh:
-    J"I decided to get defensive and held my bat tight"
+    J"(I decided to get defensive and held my bat tight.)"
     
     show screen timerDown(3, "misseditJS42FSc5")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1140,23 +1140,23 @@ label js42fsh:
     
     label misseditJS42FSc5:
         $hp - 1
-        J"I stumbled backwards mildly"
+        J"(I stumbled backwards mildly.)"
         jump finishedJS42FSc5
 
     label choice1JS42FSc5:
-        J"I held my bat horizontally, and it blocked the baton."
+        J"(I held my bat horizontally, and it blocked the baton.)"
         jump finishedJS42FSc5
 
     label choice2JS42FSc5:
-        J"I held my bat vertically, and it blocked the baton."
+        J"(I held my bat vertically, and it blocked the baton.)"
         jump finishedJS42FSc5
 
     label finishedJS42FSc5:
-        J"""I then swing towards his torso, making sure he fainted off
+        J"""(I then swing towards his torso, making sure he fainted off.)
 
-    The other sees that I've knocked down his comrade, and approches me
+    (The other sees that I've knocked down his comrade, and approches me.)
 
-    As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."""
+    (As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them.)"""
 
     show screen timerDown(3, "misseditJS42FSc3")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1167,19 +1167,19 @@ label js42fsh:
 
     label misseditJS42FSc3:
         $hp - 1
-        J"I got hit in the arm because I was not quick enough to react"
+        J"(I got hit in the arm because I was not quick enough to react.)"
         jump finishedJS42FSc3
 
     label choice1JS42FSc3:
-        J"I swung left, and it blocked the baton."
+        J"(I swung left, and it blocked the baton.)"
         jump finishedJS42FSc3
 
     label choice2JS42FSc3:
-        J"I swung right, and it blocked the baton."
+        J"(I swung right, and it blocked the baton.)"
         jump finishedJS42FSc3
 
     label finishedJS42FSc3:
-        J"The agent is temportarily off guard"
+        J"(The agent is temportarily off guard.)"
         
     show screen timerDown(3, "misseditJS42FSc4")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1188,32 +1188,32 @@ label js42fsh:
     return
 
     label misseditJS42FSc4:
-        J"I got hit on the waist, then came to my senses and attacked his head out of reflexes"
+        J"(I got hit on the waist, then came to my senses and attacked his head out of reflexes.)"
         
-        J"They immedately fell on the ground motionless"
+        J"(They immedately fell on the ground motionless)"
         jump finishedJS42FSc4
 
 
     label choice1JS42FSc4:
-        J"I striked down on the Agent and they immedately fell on the ground motionless"
+        J"(I striked down on the Agent and they immedately fell on the ground motionless.)"
         jump finishedJS42FSc4
 
     label finishedJS42FSc4:
         jump js42fsafter
 
     label js42fsi:
-        J""" I decided to go for the kill
+        J"""(I decided to go for the kill.)
         
-        I prepared my swing and gluped
+        (I prepared my swing and gluped.)
         
-        however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+        (However, I lost my train of thought and when I came to my senses was when my back hits the ground.)
         
-        The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+        (The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground.)"""
         
         jump game_over
 
 label js42fsj:
-    J"I decided to get defensive and held my bat tight"
+    J"(I decided to get defensive and held my bat tight.)"
     
     show screen timerDown(3, "misseditJS42FSc6")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1224,49 +1224,50 @@ label js42fsj:
     
     label misseditJS42FSc6:
         $hp - 1
-        J"I stumbled backwards mildly"
+        J"(I stumbled backwards mildly.)"
         jump finishedJS42FSc6
     
     label choice1JS42FSc6:
-        J"I held my bat horizontally, and it blocked the baton."
+        J"(I held my bat horizontally, and it blocked the baton.)"
         jump finishedJS42FSc6
     
     label choice2JS42FSc6:
-        J"I held my bat vertically, and it blocked the baton."
+        J"(I held my bat vertically, and it blocked the baton.)"
         jump finishedJS42FSc6
     
     label finishedJS42FSc6:
-        J"""I then swing towards his torso, making sure he fainted off
+        J"""(I then swing towards his torso, making sure he fainted off.)
     
-        The other sees that I've knocked down his comrade, and approches me
+        (The other sees that I've knocked down his comrade, and approches me.)
         
-        As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them."""
+        (As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them.)"""
         
         jump js42fsafter
 
 label js42fsl:
-    J""" I decided to go for the kill
+    J"""(I decided to go for the kill.)
     
-    I prepared my swing and gluped
+    (I prepared my swing and gluped.)
     
-    however, I lost my train of thought and when I came to my senses was when my back hits the ground.
+    (However, I lost my train of thought and when I came to my senses was when my back hits the ground.)
     
-    The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground."""
+    (The agent has swiftly took my bat away from my hands and threw it away, while pinning me to the ground.)"""
     
     jump game_over
 
 label js42fsm:
     $hp - 1
-    J""" I held my bat horizontally to block the agent as he jumps on me
+    J"""(I held my bat horizontally to block the agent as he jumps on me.)
     
-    He hits my shoulder mildly, but I manage to swing him off and throw him on the ground
+    (He hits my shoulder mildly, but I manage to swing him off and throw him on the ground.)
     
-    I then swing towards his torso, making sure he fainted off"""
+    (I then swing towards his torso, making sure he fainted off.)"""
     
     jump js42fsafter
 
 label js42fsafter:
-    "All the agents have passed out, and we all had a sigh of relief"
+    "(All the agents have passed out, and we all had a sigh of relief.)"
+    return
 
 
 
