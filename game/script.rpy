@@ -315,14 +315,12 @@ label J2:
 
 label JS0:
     # agent tries dragging her
-    J"(As I stand there, frozen in fear, the agent's sudden lunge towards me catches me off guard.)"
+    J"(As I was frozen in fear, I was caught off guard by the agent suddenly lunging at me from below the stage)"
 
     show Agent1 at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
     
     J"""(Panic courses through my veins as their grip tightens around my leg, threatening to drag me off the stage.)
-
-    (In that moment, a scream erupts from deep within me, piercing the air and reverberating throughout the venue, carrying a raw mixture of terror and desperation.)
-
+    
     {b}{i}Aaaah!{/i}{/b}
 
     (My instinct kicks in, overriding my initial shock.)
@@ -331,7 +329,7 @@ label JS0:
 
     "I have to back up! I have to back up!"
 
-    (Uttering those words repeatedly, a blend of panic and a hint of newfound determination, I summon a surge of adrenaline.)
+    (With a blend of panic and a hint of newfound determination, I felt a surge of adrenaline.)
 
     (It fuels my movements as I manage to loosen the agent's hold.)
 
@@ -339,15 +337,15 @@ label JS0:
 
     hide Agent1 with Dissolve(0.3)
 
-    J"""(The sudden commotion disrupts the once-lively concert, casting a hushed silence over the audience.)
+    J"""(The sudden commotion disrupted the liveliness of the concert, a deafening silence)
 
-    (Whispers and murmurs ripple through the air as people grapple to make sense of the chaotic scene unfolding before them.)"""
+    (The crowd errupted as people were panicking from the chaotic scene unfolding before them.)"""
 
     A1"It's The Institute!"
  
     A2"Wha- Why would The Institute be here?"
 
-    J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding from the fragments of information swirling around.)
+    J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding of the situation.)
 
     (However, before I can piece together the puzzle, the agents, realizing that their presence has been exposed, yells out to the audience.)"""
 
