@@ -361,7 +361,7 @@ label JS0:
 
     J"(Quol and Renee, tightly grasping their instruments, finally speaks up)"
 
-    R "I...It's them, I did everything they wanted, why are they here?"
+    R"I...It's them, I did everything they wanted, why are they here?"
 
     J"(her voice trembling mildly, her hands shakingly reaches for her whip.)"
 
@@ -429,9 +429,9 @@ label JH1:
 
 
 label JS1:
-    J"""(As the chaos ensues and my initial shock begins to fade, a surge of determination courses through my veins.)
+    J"""(As the chaos ensues and my initial shock begins to fade, a fire ignites within me.)
 
-    (The sight of my bandmates valiantly defending me from the agents' onslaught ignites a fire within me.)"""
+    (Seeing as my bandmates valiantly defending me from the agents' onslaught, a surge of determination courses through my veins.)"""
 
     menu:
         J"Calm down...calm down..."
@@ -659,7 +659,7 @@ label js1fsi:
     
     show Quol at center_lower with Dissolve(0.3)
 
-    Q" Good job!"
+    Q"Good job!"
 
     hide Quol with Dissolve(0.3)
     
@@ -697,7 +697,7 @@ label js1fsafter:
     
     hide Quol
     hide Agent1
-    J"""he's down at least.
+    J"""At least we have one less to deal with now.
 
     (I let out a tired sigh as I cast a glance at the fallen body, sprawled on the ground.)
 
@@ -705,26 +705,25 @@ label js1fsafter:
 
     (With a heavy heart, I shifted my focus to assess the state of my companions.)"""
 
-
     show Renee at right_center_lower with Dissolve(0.3)
 
-    R "There's quite a horde of them."
+    R"Look! There's still more of them coming in from the entrance."
 
-    J"""(I observed Renee, her face etched with determination, desperately fending off two agile Agents.)
+    J"""(I observed Renee, her face etched with her unyielding will, desperately fending off two agile Agents.)
 
     (With lightning-fast reflexes, she deftly swung her whip, each crack of the lash a symphony of defiance against overwhelming odds.)"""
 
-    R "Trying to hold them back, but it's getting intense."
+    R"I can't hold this up forever."
 
     show Quol at left_center_lower with Dissolve(0.3)
 
-    Q"Same."
+    Q"Same!"
 
     J"""(Quol, standing her ground nearby, fought off two relentless Agents of her own.)
     
-    (They lunged at her, attempting to immobilize her, but she fought back with a flurry of kicks and evasive maneuvers.)"""
+    (They lunged at her, attempting to subdue her, but she fought back with a flurry of kicks and quick dodges.)"""
 
-    Q"I'm not letting them get the upper hand!"
+    Q"Get away from us or you'll end up like your fucking friend!"
 
     J"""(The determination in Quol's voice echoed through the chaos as she unleashed her own brand of defiance, refusing to yield to their onslaught.)
 
@@ -874,7 +873,7 @@ label JS12:
 
     (Her whip cracked through the air, striking the other Agent with a resounding crack.)
 
-    (The enemy stumbled backwards, defeated and temporarily stunned.)
+    (The enemy stumbled backwards, defeated and unconscious.)
 
     (A mixture of relief and determination washed over us. Renee's eyes met mine, gratitude and understanding passing between us in that fleeting moment.)"""
 
@@ -912,7 +911,7 @@ label JS12:
 
     Who...are you?
 
-    (Quol's expression faltered for a moment, a flicker of disappointment passing across hrt face.)"""
+    (Quol's expression faltered for a moment, a flicker of disappointment passing across her face.)"""
 
     Q"""I-I'm sorry.
 
@@ -972,7 +971,7 @@ label JS12:
     
     (Though my confusion remained, I was determined to embrace this new chapter, starting a new life.)
 
-    (I snapped back to reality and held my bat tightly as I knocked down the agent who injured Quol.)
+    (I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
 
     (I realised that I had to fight for myself.)"""
 
