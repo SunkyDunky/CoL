@@ -340,17 +340,17 @@ label JS0:
 
     (Whispers and murmurs ripple through the air as people grapple to make sense of the chaotic scene unfolding before them.)"""
 
-    A1"It's The Institute, why are they here?"
+    A1"It's The Institute!"
  
-    A2"Even a small event like this caught the attention of The Institute... I wonder why they are here?"
+    A2"Wha- Why would The Institute be here?"
 
     J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding from the fragments of information swirling around.)
 
     (However, before I can piece together the puzzle, the agents, realizing that their presence has been exposed, yells out to the audience.)"""
 
-    G1"{b}EVERYONE, LEAVE THE VENUE NOW!!!{/b}"
+    G1"{b}CIVILLIANS, PLEASE EXIT THE VENUE!!!{/b}"
 
-    J"""(The audience obeys their command, and rushes towards the exit.)
+    J"""(The audience, rushes and funnels out the exit like a frantic river, leaving us alone with the agents in the hall.)
 
     What... what just happened? 
 
@@ -359,25 +359,23 @@ label JS0:
     show Quol Angry at left_center_lower with Dissolve(0.3)
     show Renee at right_center_lower with Dissolve(0.3)
 
-    J"(Quol and Renee, my bandmates, also speak up after witnessing the situation.)"
+    J"(Quol and Renee, tightly grasping their instruments, finally speaks up)"
 
     R "I...It's them, I did everything they wanted, why are they here?"
 
-    J"(her voice trembling mildly, her hands shaking, while grasping her whip tight.)"
+    J"(her voice trembling mildly, her hands shakingly reaches for her whip.)"
 
-    Q"God its them again, goddammit!!"
+    Q"These fuckers again!!"
     
-    J"(Quol out of frustration, swears towards the infiltrators)"
-
-    Q"Fucking GOD!!"
+    J"(Quol barked at the infiltrators in frustration)"
     
-    Q"Don't you all DARE lay a finger on any of us!"
+    Q"Don't you DARE lay a finger on any of us!"
 
-    J"""(her voice laced with anger and infuriation roars, as she pulls up her sleeves.)
+    J"""(Her voice now raspy and laced with anger, she pulls up her sleeves in preperation.)
 
     (I find myself at the back of the stage, overwhelmed and at a loss for words.)
 
-    (My eyes dart between the chaotic scene unfolding before me and the unwavering support of my bandmates.)
+    (My eyes darted between the chaotic scene unfolding before me and the unwavering bravery of Quol.)
 
     (It's in this moment, that I realise I must do something other than stay in this vulnerable position.)"""
 
