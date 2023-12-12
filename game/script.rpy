@@ -35,13 +35,15 @@ image Julia :
 image Julia nervious:   
     "characters/Julia-half nervious.png"
     zoom 0.2    
-image Julia traumized:   
-    "characters/Julia-half traumized.png"  
-image Julia exahuasted:   
-    "characters/Julia-half exhuasted.png"  
+image Julia traumatized:   
+    "characters/Julia-half traumatized.png"  
+    zoom 0.2
+image Julia exhausted:   
+    "characters/Julia-half exhausted.png"  
+    zoom 0.2
 image Quol :   
     "characters/Quol.png"
-    zoom 0.55
+    zoom 1.59
 image Quol Angry:   
     "characters/Quol Angry.png"
     zoom 1.78
@@ -63,7 +65,7 @@ image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
 image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
-image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.png", config.screen_width, config.screen_height)
+image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.jpg", config.screen_width, config.screen_height)
 image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
 image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
 
@@ -228,11 +230,14 @@ label Julia_Start:
     hide Agent1
     hide Agent2
     hide Lenorra
-
+    show Julia exhausted at textbox_over
     menu:
         J"(What should I do?)"
         "Warn my bandmates about them":
-            jump J1
+            hide Julia
+            Z"That option is unavailable...for now."
+            show Julia exhausted at textbox_over
+            jump J2
         "Ignore them and hope it doesn't worsen the situation":
             jump J2
 
@@ -246,7 +251,7 @@ label J1:
     "a"
     show Julia nervious at textbox_over
     "a"
-    show Julia traumized at textbox_over
+    show Julia traumatized at textbox_over
     "a"
     show Renee at center_lower
     "a"
@@ -291,16 +296,19 @@ label finished:
 
 #J2-Julia self routes
 label J2:
+    show Julia nervious at textbox_over
     J"""(I ignore the agents, not wanting to deal with any confrontations.)
 
-    I should just ignore them
+    I should just ignore them...
 
     (I mutter to myself, trying to convince myself that everything will be fine if I simply pretend they're not there.)"""
-
+    hide Julia
 
     show Agent1 at center_lower with Dissolve(0.3)
     pause 0.5
     hide Agent1 with Dissolve(0.3)
+
+    show Julia traumatized at textbox_over
 
     J"""(But as one of the agents takes a step closer, my heart leaps into my throat, and my previous confidence wavers.)
 
@@ -322,8 +330,9 @@ label J2:
 
 label JS0:
     # agent tries dragging her
+    show Julia nervious at textbox_over
     J"(As I was frozen in fear, I was caught off guard by the agent suddenly lunging at me from below the stage)"
-
+    hide Julia
     show Agent1 at Transform(xalign=0.5, yalign=0.1, zoom=1.5)
     
     J"""(Panic courses through my veins as their grip tightens around my leg, threatening to drag me off the stage.)
@@ -344,34 +353,48 @@ label JS0:
 
     hide Agent1 with Dissolve(0.3)
 
+    show Julia traumatized at textbox_over
+
     J"""(The sudden commotion disrupted the liveliness of the concert, a deafening silence)
 
     (The crowd errupted as people were panicking from the chaotic scene unfolding before them.)"""
-
+    hide Julia
     A1"It's The Institute!"
  
     A2"Wha- Why would The Institute be here?"
+
+    show Julia nervious at textbox_over
 
     J"""(Amidst the confusion, I strain to catch snippets of their conversations, hoping to glean some understanding of the situation.)
 
     (However, before I can piece together the puzzle, the agents, realizing that their presence has been exposed, yells out to the audience.)"""
 
+    hide Julia
+
+    show Agent1 at center_lower with Dissolve(0.3)
+
     G1"{b}CIVILLIANS, PLEASE EXIT THE VENUE!!!{/b}"
 
+    hide Agent1 with Dissolve(0.3)
+
+    show Julia exhausted at textbox_over
+    
     J"""(The audience, rushes and funnels out the exit like a frantic river, leaving us alone with the agents in the hall.)
 
     What... what just happened? 
 
     (Sweat trickles down my forehead, my hands trembling uncontrollably.)"""
 
+    hide Julia
+
     show Quol Angry at left_center_lower with Dissolve(0.3)
-    show Renee at right_center_lower with Dissolve(0.3)
+    show Renee worried at right_center_lower with Dissolve(0.3)
 
     J"(Quol and Renee, tightly grasping their instruments, finally speaks up)"
 
     R "I...It's them, I did everything they wanted, why are they here?"
 
-    J"(her voice trembling mildly, her hands shakingly reaches for her whip.)"
+    J"(Her voice trembling mildly, her hands shakingly reaches for her whip.)"
 
     Q"These fuckers again!!"
     
@@ -398,6 +421,7 @@ label JS0:
 
 label JH0:
     show bg stage 
+    show Julia traumatized at textbox_over
     J"""(As panic grips my racing mind, I sprint towards the backstage area, my breath coming in ragged gasps.)
 
     (The urgency of the situation propels me forward, my heart pounding in my chest.)
@@ -438,6 +462,9 @@ label JH1:
 
 
 label JS1:
+    hide Quol with Dissolve(0.3)
+    hide Renee with Dissolve(0.3)
+    show Julia at textbox_over
     J"""(As the chaos ensues and my initial shock begins to fade, a fire ignites within me.)
 
     (Seeing as my bandmates valiantly defending me from the agents' onslaught, a surge of determination courses through my veins.)"""
@@ -452,8 +479,7 @@ label JS1:
             jump JS1FS        
 
 label JS1FS:
-    hide Quol with Dissolve(0.3)
-    hide Renee with Dissolve(0.3)
+    show Julia nervious at textbox_over
     J"""(I can't stand idly while they put themselves in harm's way. I need to help them.)
 
     (With a deep breath, I snap out of my daze, focusing my attention on the unfolding fight.) 
@@ -491,6 +517,7 @@ label JS1FS:
                 # If hp is 0, jump to the game_over label
                 jump game_over
             hide JS1FS
+            hide Julia
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsc
 
@@ -712,7 +739,10 @@ label js1fsafter:
     
     hide Quol
     hide Agent1
-    J"""At least we have one less to deal with now.
+
+    show Julia exhausted at textbox_over
+
+    J"""At least we have one less to deal with now...
 
     (I let out a tired sigh as I cast a glance at the fallen body, sprawled on the ground.)
 
@@ -720,7 +750,9 @@ label js1fsafter:
 
     (With a heavy heart, I shifted my focus to assess the state of my companions.)"""
 
-    show Renee at right_center_lower with Dissolve(0.3)
+    hide Julia
+
+    show Renee worried at right_center_lower with Dissolve(0.3)
 
     R "Look! There's still more of them coming in from the entrance."
 
@@ -728,7 +760,7 @@ label js1fsafter:
 
     (With lightning-fast reflexes, she deftly swung her whip, each crack of the lash a symphony of defiance against overwhelming odds.)"""
 
-    R "I can't hold this up forever."
+    R "I can't hold this up forever!"
 
     show Quol at left_center_lower with Dissolve(0.3)
 
@@ -759,7 +791,12 @@ label js1fsafter:
 label JS11:
     hide Renee
     hide Quol
+
+    show Julia traumatized at textbox_over
+
     J"I'll help Quol first!"
+
+    hide Julia
 
     show Agent1 at center_lower with Dissolve(0.3)
 
@@ -769,9 +806,13 @@ label JS11:
 
     hide Agent1 with Dissolve(0.3)
 
+    show Julia exhausted at textbox_over
+
     play sound "SFX/JS1FS/batonhit2.mp3" volume 3
     
     J"(The force of impact sent them sprawling to the ground, momentarily stunned.)"
+
+    hide Julia
 
     show Quol at center_lower with Dissolve(0.3)
 
@@ -785,13 +826,17 @@ label JS11:
 
     hide Quol with Dissolve(0.3)
 
+    show Julia traumatized at textbox_over
+
     J"""(However, I turned my head towards the direction of Renee and witnessed her arm getting hit by the baton of one of the agents and tumbling to the floor.)
 
     (My heart skipped a beat.)
 
     (The sight sent a surge of worry coursing through me, momentarily overshadowing the triumph of our successful attack on the Agents.)"""
 
-    show Renee at center_lower with Dissolve(0.3)
+    hide Julia
+
+    show Renee worried at center_lower with Dissolve(0.3)
 
     J"""(Without a second thought, I rushed to her side, my concern overriding any other consideration.)
 
@@ -802,16 +847,18 @@ label JS11:
     (As panic threatened to consume me, my mind raced, desperately searching for a solution.)"""
 
     hide Renee with Dissolve(0.3)
-
+   
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
 
     show bg ReneeBedroom
 
     J"""(Renee's room was bathed in soft, warm light as she and I sat side by side on the edge of the bed.)
 
-    (It had been a long and challenging day, and we sought solace in this quiet moment of respite.)
+    (It had been a long and challenging day, and we sought solace in this quiet moment of respite.)"""
+   
+    show Renee at center_lower with Dissolve(0.3)
 
-    (I looked at Renee, her presence a comforting anchor in the storm of uncertainty that swirled within me.)
+    J"""(I looked at Renee, her presence a comforting anchor in the storm of uncertainty that swirled within me.)
 
     (The weight of the future pressed heavily on my mind, filling me with a sense of unease.)
 
@@ -823,7 +870,7 @@ label JS11:
     
     It's like..like as if I'm standing at a crossroads, not knowing which path to take..
 
-    I'm scared... that I would make wrong choices or not I would not live up to my potential.
+    I'm scared... that I would make wrong choices or I would not live up to my potential.
 
     (Renee turned to me, her eyes filled with a mixture of understanding and compassion.)
 
@@ -838,6 +885,8 @@ label JS11:
     But surviving taught me the value of life and each moment's preciousness."""
 
     J"(Her words resonated deep within me, stirring a renewed perspective.)"
+
+    show Renee smile at center_lower
 
     R """Being alive allows for endless possibilities, Julia. 
 
@@ -857,7 +906,8 @@ label JS11:
 
     R "I wouldn't want to see my best friends being in pain, would I?"
 
-    show bg stage
+    hide Renee with Dissolve(0.3)
+    show bg stage with fade
 
     J"""(I snapped back to reality and held my bat tightly as I knocked down the agent who injured Renee.)
 
@@ -1012,6 +1062,8 @@ label JS2:
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
+    hide Julia
+    $ haveAndrew = True
     show Andrew at center_lower with Dissolve(0.3)
     A"""Holy mother of–
 
@@ -1133,19 +1185,46 @@ label JS22:
 label JS23:
     J"I got my spirits up after talking with Andrew."
 
+    
+
     menu:
         "what should we do?"
         "Return to our friends":
-            jump JS24
+            hide Andrew
+            show bg stage
+            jump js42fs
         "Exit through the backdoor":
             jump JS25    
+
+label JS25:
+    J"""(We decided to run towards the backdoor, our hearts pounding with a mix of fear and resolve. )
+
+    (Adrenaline fueled our every step as we sprinted, desperately seeking an escape route from the perilous situation we found ourselves in.)
+
+    (Reaching the backdoor, a glimmer of hope ignited within us. )
+
+    (With a surge of anticipation, we swung the door open, expecting to find a path to freedom. )
+    
+    (However, our hopes were shattered as we were met with an unexpected sight:) 
+
+    (Six agents, standing in a calculated formation, blocking our way.)
+    
+    AH-
+    
+    (Andrew immedately grabbed my arm and attempted to run the opposite direction, but their hands were already grabbing my arm tight.)
+    
+    (After a moment of stuggle, both of us were apprehended.)"""
+    hide Andrew with Dissolve(0.3)
+    jump badend
+
+
 
 
 
 
 label JH2:
     hide Julia
-    "Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
+    J"Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
     show Julia at center_lower
     J"She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
     show bg Julia_toilet
@@ -1155,29 +1234,32 @@ label JH2:
 
 
 label js42fs:
-    J"Four agents approched us"
+    J"(Four agents approched us)"
     if haveAndrew == True:
         jump js42fsa
     else:
         jump js42fsb
 
 label js42fsa:
-    """(Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents.)
+    J"""(Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents.)
     
     (In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent.)
-    
-    Layon looked at the two, shrugged, and pulled up his sleeves as he dashes towards the third agent"
 
-    (My heart raced as I realized that there is one agent left, their attention now squarely focused on me.)
-    
+    (Layon looked at the two, shrugged, and pulled up his sleeves as he dashes towards the third agent)
+
+    (My heart raced as I realized that there is one agent left, their attention now squarely focused on me.
+
     How should I approach this?"""
     menu:
+        J"How should I approach this?"
         "Go for the kill":
             jump js42fsi
         "Play it defensively":
             jump js42fsj
 
 label js42fsb:
+    show Julia exhausted at textbox_over with Dissolve(0.3)
+
     J"""(Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents.)
     
     (In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent.)
@@ -1193,12 +1275,14 @@ label js42fsb:
     (Who should I focus on first?)"""
     
     menu:
+        J"(Who should I focus on first?)"
         "Agent with a baton":
             jump js42fsc
         "Agent without a baton":
             jump js42fsd
 
 label js42fsc:
+    show Julia nervious at textbox_over
     J"(As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them.)"
     
     show screen timerDown(3, "misseditJS42FSc1")  # seconds, label to jump on fail
@@ -1213,6 +1297,7 @@ label js42fsc:
         if hp <= 0:
             # If hp is 0, jump to the game_over label
             jump game_over
+        show Julia traumatized at textbox_over
         J"(I got hit in the arm because I was not quick enough to react.)"
         jump finishedJS42FSc1
     
@@ -1241,10 +1326,12 @@ label js42fsc:
         J"(I got hit on the waist, then came to my senses and attacked his head out of reflexes.)"
         
         J"(They immedately fell on the ground motionless)"
+        show Julia exhausted at textbox_over
         jump finishedJS42FSc2
     
     
     label choice1JS42FSc2:
+        show Julia exhausted at textbox_over
         J"(I striked down on the Agent and they immediately fell on the ground motionless.)"
         jump finishedJS42FSc2
     
@@ -1256,6 +1343,7 @@ label js42fsc:
         (What should I do?)"""
        
     menu:
+        J"(What should I do?)"
         "Go for the kill":
             jump js42fsl
         "Play it defensively":
@@ -1269,7 +1357,7 @@ label js42fsd:
     menu:
         "Go for the kill":
             jump js42fsg
-        "PLay it defensively":
+        "Play it defensively":
             jump js42fsh
 
 label js42fsg:
@@ -1405,11 +1493,18 @@ label js42fsj:
     
     label finishedJS42FSc6:
         J"""(I then swing towards his torso, making sure he fainted off.)
-    
-        (The other sees that I've knocked down his comrade, and approches me.)
+
+        Another agent who was combating Andrew decided to run towards me to attempt to strike me
         
-        (As the agent with the baton closed in, I mustered all my strength and swung my weapon towards them.)"""
+        But Andrew swipes his leg under him in time to trip him down.
         
+        He then ends it by stomping on his face and then walking over him."""
+        show Andrew at center_lower with Dissolve(0.3)
+        A"You seem fine now right, Julia?"
+
+        J"He giggles"
+        hide Andrew with Dissolve(0.3)
+
         jump js42fsafter
 
 label js42fsl:
@@ -1437,12 +1532,13 @@ label js42fsm:
     jump js42fsafter
 
 label js42fsafter:
-    "(All the agents have passed out, and we all had a sigh of relief.)"
-    return
+    J"(All the agents have passed out, and we all had a sigh of relief.)"
+    jump cliff
 
 
 
 label jhfs5:
+    show Julia traumatized at textbox_over
     J"""(As I reach the front stage, a sinking feeling settles in the pit of my stomach.) 
     
     (I glance behind me and discover that two agents have been tailing me, closing in on the stage. )
@@ -1452,6 +1548,7 @@ label jhfs5:
     (I cannot go back now)
     
     (Quol and Renee looked towards me and recongizes the issue)"""
+    hide Julia
     show Quol Angry at left_center_lower with Dissolve(0.3)
     Q "We can take down all of them! They can't just keep coming at us forever!"
     
@@ -1464,6 +1561,7 @@ label jhfs5:
     hide Quol with Dissolve(0.3)
     hide Renee with Dissolve(0.3)
 
+    show Julia nervious at textbox_over
     J"(What should I do?)"
     
     menu:
@@ -1484,9 +1582,7 @@ label jhfs5a:
     
     hide Renee bag
 
-    J"""(I notice that the two agents behind are preparing to strike)
-    
-    (what should I do?)"""
+    J"(I notice that the two agents behind are preparing to strike)"
     
     show screen timerDown(3, "misseditJHFS5a1")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1576,6 +1672,69 @@ label jhfs5a:
             jump jhfs5d
         "Call for help":
             jump jhfs5e
+
+
+label jhfs5b:
+    J"""lets make the run to it!
+    
+    I started to dash towards the entrance. 
+    
+    Renee and Quol notices and follows suit
+    
+    The agents reacted to our escape attempt and tries to intercept us."""
+    show screen timerDown(3, "misseditjhfs5b1")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Dodge left", "choice1jhfs5b1", 0.2, 0.5),  # xpos and ypos for choice 1
+    ])
+    return
+
+    label misseditjhfs5b1:
+        $ hp -= 2
+        "I bumped into an agent mildly and kept running"
+        jump finishedjhfs5b1
+
+    label choice1jhfs5b1:
+        "I swiftly dodged one of the agents"
+        jump finishedjhfs5b1
+
+    label finishedjhfs5b1:
+        "Another agent comes from the right, tring to swing down at me"
+        show screen timerDown(3, "misseditjhfs5b2")  # seconds, label to jump on fail
+        call screen qte_choice([
+        ("Block", "choice1jhfs5b2", 0.8, 0.5),  # xpos and ypos for choice 1
+        ])
+        return
+
+    label misseditjhfs5b2:
+        "I got hit heavily."
+        $ hp -= 5
+        "I sluggishly try to keep going."
+        jump finishedjhfs5b2
+
+    label choice1jhfs5b2:
+        "I block the attack and continuse running."
+        jump finishedjhfs5b2
+
+    label finishedjhfs5b2:
+        "When i looked back forward, I see an agent right in front of my path, I dash towards him and.."
+        show screen timerDown(3, "misseditjhfs5b3")  # seconds, label to jump on fail
+        call screen qte_choice([
+        ("Hit him", "choice1jhfs5b3", 0.5, 0.3),  # xpos and ypos for choice 1
+        ])
+        return
+
+    label misseditjhfs5b3:
+        "I smash right into the Agent as I mess up my swing."
+        $hp -= 5
+        jump finishedjhfs5b3
+
+    label choice1jhfs5b3:
+        "I swing right on his head, bringing him down with a powerful blow."
+        jump finishedjhfs5b3
+
+    label finishedjhfs5b3:
+        "We were halfway to our distination"
+        jump cliff
 
 label jhfs5d:
     J"""I am strong, I can fend them all!
@@ -1747,7 +1906,9 @@ label jhfs5j:
     jump jhfs5k
 
 label jhfs5k:
+    show Julia exhausted at textbox_over
     J"We have managed to knock out all the agents in the venue"
+    jump cliff
 
 label jhfs5l:
     J"""(I call out for Quol)
@@ -1755,9 +1916,11 @@ label jhfs5l:
     Quol! Please help me here..!
     
     (Quol, ever vigilant and quick to respond, turns their attention toward me.)"""
-    
+
+    hide Julia with Dissolve(0.3)
     Q"Coming!"
     
+    show Quol Angry at center_lower with Dissolve(0.3)
     J"""(Their eyes meet mine, and without hesitation, they rush to my aid.) 
      
     (With a swift and powerful roundhouse kick, Quol unleashes an force upon the agent, targeting their head with precision.) 
@@ -1766,10 +1929,12 @@ label jhfs5l:
     
     Q"Finish off the last one, Julia. I have my own agent to beat up."
     
+    hide Quol with Dissolve(0.3)
+
     jump jhfs5o
 
 label jhfs5o:
-    J"Taking the hint, I raised my bat high"
+    J"(Taking the hint, I raised my bat high.)"
     
     show screen timerDown(3, "misseditJHFS5o")  # seconds, label to jump on fail
     call screen qte_choice([
@@ -1778,6 +1943,7 @@ label jhfs5o:
     return
     
     label misseditJHFS5o:
+        show Julia traumatized at textbox_over
         J"""I hesitated and missed my shot.
 
         The agent hits my shoulder"""
@@ -1787,7 +1953,7 @@ label jhfs5o:
             # If hp is 0, jump to the game_over label
             jump game_over
 
-        """Renee notices and swings her whip towards the agent's legs, while Quol does the final blow
+        J"""Renee notices and swings her whip towards the agent's legs, while Quol does the final blow
         
         Their eyes gleam with a mix of understanding and dissappointment."""
         jump finishedJHFS5o
@@ -1800,30 +1966,68 @@ label jhfs5o:
     jump jhfs5k
 
 label jhfs5m:
-    J"""I call out for Renee
+    J"""(I call out for Renee)
     
     Renee! Please help me here..!
     
-    Without hesitation, Renee responds to my plea, her eyes locking onto the remaining agent. """
+    (Without hesitation, Renee responds to my plea, her eyes locking onto the remaining agent.) """
+    hide Julia with Dissolve(0.3)
+    R "Alright! Stay back!"
+    show Renee at center_lower with Dissolve(0.3)
+    J"""(She swiftly maneuvers her whip, seamlessly striking with precision.)
     
-    "Alright! Stay back!"
+    (With a deft flick of her wrist, the whip cracks through the air, its tip finding its mark.) 
+     
+    (In a dazzling display of skill, Renee incapacitates the agent, rendering them unable to continue their assault.) 
     
-    J"""She swiftly maneuvers her whip, seamlessly striking with precision.
+    (The agent's movements falter, and they crumble to the ground, immobilized by the force of the whip.)"""
     
-    With a deft flick of her wrist, the whip cracks through the air, its tip finding its mark. 
-    
-    In a dazzling display of skill, Renee incapacitates the agent, rendering them unable to continue their assault. 
-    
-    The agent's movements falter, and they crumble to the ground, immobilized by the force of the whip."""
-    
-    Q"I'll help you more later, I'm taking on another agent as well!"
+    R "I'll help you more later, I'm taking on another agent as well! Try manage the last one yourself!"
+
+    hide Renee with Dissolve(0.3)
     
     jump jhfs5o
+
+label cliff:
+    J"""We all stared at our target- the entrance of the concert
+    
+    As quick as our legs can take us, we sprinted towards it."""
+
+    hide Julia
+
+    show Lenorra at center_lower with Dissolve(0.3)
+
+    LQ"Not so fast, traitors."
+
+    J"We immediately halted and braced oursleves for combat."
+
+    "..."
+    hide Lenorra with Dissolve(0.3)
+    show bg black with fade
+    "..."
+
+    Z"""I haven't finished writing the best part yet!
+    
+    You guys are here too early!
+    
+    oh well credits roll."""
+    window hide
+    call screen credits
+    return
 
 
 
 label game_over:
-    show bg black
+    hide Julia
+    hide Quol
+    hide Renee
+    hide Lenorra
+    hide Andrew
+    hide Agent1
+    show bg black with fade
+    show text "{size=100}{color=#ff0000}BAD END{/color}{/size}\n{size=30}{color=#ffffff}you died{/color}{/size}" at truecenter with dissolve
+    pause 5.0
+    hide text with dissolve
     Z"""Huh, you're down
     
     that wasn't fun.
@@ -1832,4 +2036,21 @@ label game_over:
 
     let's try this again."""
     $ hp == 15
+    return
+
+
+label badend:
+    show bg black with fade
+    show text "{size=100}{color=#ff0000}BAD END{/color}{/size}\n{size=30}{color=#ffffff}you were caught{/color}{/size}" at truecenter with dissolve
+    pause 5.0
+    hide text with dissolve
+
+    Z"""Ah, what a tragedy.
+    
+    However.. it's quite a brillant show.
+
+    What a shame it ends this way.
+    
+    Let's restart this play, shall we?"""
+
     return

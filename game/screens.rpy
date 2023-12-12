@@ -655,11 +655,14 @@ screen about():
 - {b}RubbyBand{/b}: Gameplay system and finalization
 
 {size=+5}Music, Audio and SFX:{size=-5}
-- {b}Peacefulorenz{/b}: Composer
+- {b}Peacefulorenz{/b}: Lead Composer
 - {b}Cipher{/b}: Audio and SFX
 
 {size=+5}Songs used:{size=-5}
 - {b}Uncertain Feelings{/b} by Peacefulorenz
+- {b}Temporary Bliss{/b} by Peacefulorenz
+- {b}Anxiety Shows{/b} by Peacefulorenz
+
 
 We would like to express our deepest gratitude to all these individuals for their contributions. Their collective efforts have made this game a reality.
 
@@ -676,7 +679,7 @@ style about_label_text:
 ###################################### ending credit screen
 
 transform credits_scroll(speed):
-    ypos 600
+    ypos 1000
     linear speed ypos -4000
 
 screen credits():
@@ -688,7 +691,7 @@ screen credits():
 
     style_prefix "credits"
 
-    timer 50.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
+    timer 70.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
     ## returns to its normal flow.
 
     frame at credits_scroll(65.0): #bigger is slower
@@ -697,6 +700,7 @@ screen credits():
         xalign 0.5
 
         vbox:
+            label"Credits" xalign 0.5
             null height 75
             label "{size=-70}Director and main writer{/size}" xalign 0.5
             null height 10
@@ -759,7 +763,15 @@ screen credits():
             label "{size=-70}Uncertain Feelings{/size}" xalign 0.5
             null height 10
             text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
-            null height 200
+            null height 75
+            label "{size=-70}Temporary Bliss{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Anxiety Shows{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
+            null height 400
             label "{size=-70}Thanks for Playing!{/size}" xalign 0.5
             null height 80
 

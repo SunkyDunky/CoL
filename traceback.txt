@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1721, in script
-    call screen qte_choice([
-ScriptError: could not find label 'misseditJHFS5ij3'.
+  File "game/script.rpy", line 1716, in script
+    jump finishedjhfs5b2
+ScriptError: could not find label 'finishedjhfs5b2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\main.py", line 144, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "game/script.rpy", line 1721, in script
-    call screen qte_choice([
+  File "game/script.rpy", line 1716, in script
+    jump finishedjhfs5b2
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
   File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\script.py", line 1013, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'misseditJHFS5ij3'.
+ScriptError: could not find label 'finishedjhfs5b2'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation DEMO 1.0
-Tue Dec 12 18:36:01 2023
+Tue Dec 12 22:31:13 2023
