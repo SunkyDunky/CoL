@@ -174,7 +174,6 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 # The game starts here.
 
 label start:
-    show screen display_hp
     show bg entrance
     pause 2.0
     scene bg entrance_ticket_dark with Dissolve (3.0)
@@ -191,21 +190,26 @@ label Sorry:
 label Julia_Start:
     window hide 
     pause 1.0 
-    $ renpy.movie_cutscene("images/opening.webm")
+    play music "Audio/Athena.mp3"
+    play movie "images/opening.webm"
     show bg stage
     pause 1.0 
     window show
     show Julia at textbox_over
+    $ renpy.pause(25, hard=True)
+    J"(In the crowded and noisy venue, I find myself standing above the stage, my fingers absentmindedly gripping the neck of my guitar.)"
 
-    J"""(In the crowded and noisy venue, I find myself standing above the stage, my fingers absentmindedly gripping the neck of my guitar.)
+    stop music fadeout 20.0
 
-    (The vibrant lights and pulsating music create a whirlwind of sensory overload around me, but my senses are suddenly numbed as my gaze lands on a familiar figure.)
+    J"""(The vibrant lights and pulsating music create a whirlwind of sensory overload around me, but my senses are suddenly numbed as my gaze lands on a familiar figure.)
 
     (Standing at the back of the venue are two enigmatic individuals, dressed in sleek white suits, their presence sending a jolt of disbelief through my core.)"""
 
     hide Julia
-    
-    play music "StageBGM.mp3"
+
+    # Fade in the new music over 5 seconds
+    play music "StageBGM.mp3" fadein 10.0
+
     show Agent1 at left_center_lower with Dissolve(0.5)
     show Agent2 at right_center_lower with Dissolve(0.5)
     show Lenorra at Transform (yalign=5.5, xalign=0.5) with Dissolve(0.5)
@@ -496,6 +500,7 @@ label JS1FS:
 
     hide Renee bag
     show JS1FS
+    show screen display_hp
     J"(An agent charges towards me, wielding a baton and swinging it with force.)"
     menu:
         J"gasp!"
@@ -739,6 +744,7 @@ label js1fsafter:
     
     hide Quol
     hide Agent1
+    hide screen display_hp
 
     show Julia exhausted at textbox_over
 
@@ -1218,10 +1224,6 @@ label JS25:
     jump badend
 
 
-
-
-
-
 label JH2:
     hide Julia
     J"Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
@@ -1234,6 +1236,7 @@ label JH2:
 
 
 label js42fs:
+    show screen display_hp
     J"(Four agents approched us)"
     if haveAndrew == True:
         jump js42fsa
@@ -1532,6 +1535,7 @@ label js42fsm:
     jump js42fsafter
 
 label js42fsafter:
+    hide screen display_hp
     J"(All the agents have passed out, and we all had a sigh of relief.)"
     jump cliff
 
@@ -1539,6 +1543,7 @@ label js42fsafter:
 
 label jhfs5:
     show Julia traumatized at textbox_over
+    show screen display_hp
     J"""(As I reach the front stage, a sinking feeling settles in the pit of my stomach.) 
     
     (I glance behind me and discover that two agents have been tailing me, closing in on the stage. )
@@ -1907,6 +1912,7 @@ label jhfs5j:
 
 label jhfs5k:
     show Julia exhausted at textbox_over
+    hide screen display_hp
     J"We have managed to knock out all the agents in the venue"
     jump cliff
 

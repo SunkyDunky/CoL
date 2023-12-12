@@ -659,6 +659,7 @@ screen about():
 - {b}Cipher{/b}: Audio and SFX
 
 {size=+5}Songs used:{size=-5}
+- {b}Athena{/b} by Polkadot Stingray (placeholder song for opening)
 - {b}Uncertain Feelings{/b} by Peacefulorenz
 - {b}Temporary Bliss{/b} by Peacefulorenz
 - {b}Anxiety Shows{/b} by Peacefulorenz
@@ -759,6 +760,11 @@ screen credits():
             text "{size=-20}Cipher{/size}" xalign 0.5
             null height 100
             label "{size=-60}Songs used:{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Athena{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Polkadot Stingray{/size}" xalign 0.5
+            text "{size=-10}Placeholder song for opening{/size}" xalign 0.5
             null height 75
             label "{size=-70}Uncertain Feelings{/size}" xalign 0.5
             null height 10
