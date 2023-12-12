@@ -37,7 +37,8 @@ image Julia nervious:
     zoom 0.2    
 image Julia traumized:   
     "characters/Julia-half traumized.png"  
-    zoom 0.2   
+image Julia exahuasted:   
+    "characters/Julia-half exhuasted.png"  
 image Quol :   
     "characters/Quol.png"
     zoom 0.55
@@ -62,6 +63,8 @@ image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config
 image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
 image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
 image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
+image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.png", config.screen_width, config.screen_height)
+image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
 image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
 
 # define other images
@@ -175,7 +178,6 @@ label start:
 
 label Sorry:
     "sorry this character isn't available for now, Julia is available though."
-    call screen credits
     jump Julia_Start
     return
 
@@ -791,7 +793,9 @@ label JS11:
 
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
 
-    J"""(My room was bathed in soft, warm light as Renee and I sat side by side on the edge of the bed.)
+    show bg ReneeBedroom
+
+    J"""(Renee's room was bathed in soft, warm light as she and I sat side by side on the edge of the bed.)
 
     (It had been a long and challenging day, and we sought solace in this quiet moment of respite.)
 
@@ -840,6 +844,8 @@ label JS11:
     (Renee smiled warmly, her gaze filled with trust and camaraderie.)"""
 
     R "I wouldn't want to see my best friends being in pain, would I?"
+
+    show bg stage
 
     J"""(I snapped back to reality and held my bat tightly as I knocked down the agent who injured Renee.)
 
@@ -894,11 +900,13 @@ label JS12:
 
     (I was trembling and had no idea what to do.)
 
-    (As panic threatened to consume me, my mind raced, desperately searching for a solution.)
-
-    (And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Quol not too long ago.)"""
+    (As panic threatened to consume me, my mind raced, desperately searching for a solution.)"""
 
     hide Quol with Dissolve(0.3)
+
+    J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Quol not too long ago.)"
+
+    show bg Hotelalley
 
     J"""(It was 2 days after I ran away from Newfutures Institute, I was sitting near the stack of cargo containers, starving and getting worried of my scarred leg.)
 
@@ -970,9 +978,11 @@ label JS12:
 
     J"""(As Quol began to tend to my injured leg using the cloth, I couldn't help but feel a glimmer of hope.)
     
-    (Though my confusion remained, I was determined to embrace this new chapter, starting a new life.)
+    (Though my confusion remained, I was determined to embrace this new chapter, starting a new life.)"""
 
-    (I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
+    show bg stage
+
+    J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.
 
     (I realised that I had to fight for myself.)"""
 
@@ -986,6 +996,7 @@ label JS13:
 #JS2
 label JS2:
     show bg greenroom with fade
+    play music "GreenBGM.mp3"
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
@@ -1006,6 +1017,120 @@ label JS2:
         "Can you come to the front stage now?...please?":
             jump JS22   
 
+label JS21:
+    J"They are here for us ... the institute.."
+
+    J"(I bury my face deep into my hands.)"
+
+    J"(My thoughts... it's spiraling back and forth between the present and the past.)"
+    
+    A"They're here...?"
+
+    J"i don't know anything.."
+
+    J"I don't know anything!"
+
+    J"... iam weak. Compared to who I was..."
+
+    A"Julia. What are you talking about? Your past self? Pull yourself together!"
+
+    J"(Andrew gently grabs my shoulders, as my hands slowly fall from my face, revealing my teary eyes.)"
+
+    J"I was really dissatisfied, with my life...I..."
+
+    J"I have to keep running away..."
+
+    J"do I have to keep running away? from my past? F-from...them?"
+
+    A"Everyone feels that way, Julia. It's fine."
+
+    A"while pursuited, there's a point where it feels like there's no end to it. I think that's more reason for you to find more happiness in small things. I'd say you already did a great job."
+
+    J"...I don't get it. What did...I do?"
+
+    A"Julia. Why did you join this band in the first place?"
+
+    J"..."
+
+    A"Any small, atomic efforts are already admirable. Have some self respect for yourself Julia. You might be better than you think you are right now. And you should realize that sooner."
+
+    A"your initiative of agreeing to join the band is already an effort to have great little things in your journey. Alongside people that you can share moments and grow with."
+
+    J"""(...I think I do get it now.)
+
+    (My friends... I should be more thankful to them. Leaving them behind just like that was a mistake. I frown and look down to the floor, feeling heavy guilt deep within my chest, I can hardly speak up.)"""
+    jump JS23
+
+label JS22:
+    A"Huh..?"
+
+    A"What happened? is there a problem? or someone wants my autograph? Ehhe.."
+
+    A"..."
+
+    J"(I bury my face deep into my hands.)"
+
+    J"(My thoughts... it's spiraling back and forth between the present and the past.)"
+
+    A"...So... somethin' wrong then."
+
+    J"i dont know anything.."
+
+    J"I don't know anything!"
+
+    A"H-hey! Julia! Calm down..."
+
+    J"the institute..."
+
+    A"I know... Julia. Everyone feels the same way too."
+
+    J"h-how long... how long do we have to keep running away..? From the past ... from them..."
+
+    J"i wish I could be stronger as who I was...but at the same time I... dont like it... the past... i... I don't ..."
+
+    J"(My breath gets heavier.)"
+
+    J"(Andrew gently grabs my shoulders, as my hands slowly fall from my face, revealing my teary eyes.)"
+
+    J"I am scared...scared of whatever happened back then, whatever I did back then, whatever that haunts us! I don't know what to do! Who I was?! Who were we?! I–"
+
+    A"Julia."
+
+    J"(Andrew shook my shoulders lightly as he stares at me, genuine concern is visible on his face, but encouragement is vivid in his eyes.)"
+
+    A"Does that matter now?! All we need to do is to just... face whatever the present gives us on the way, hangin' too much back there will get you nowhere and keep being there!"
+
+    J"B...But–"
+
+    A"Snap out of it, okay? Whatever happened, whatever it was, I don't want to hear if's and but's! What's happening is now! And that's what matters!"
+
+    J"...Andrew... but..."
+
+    J"...would you...even understand?...i..."
+
+    A"Trust me. I have my own history too. Everyone does."
+
+    A"And the only thing that matters now is what you want to do now, and what you choose to be."
+
+    J"..."
+
+    J"(...I think I get what he's saying.)"
+
+    jump JS23
+
+label JS23:
+    J"I got my spirits up after talking with Andrew."
+
+    menu:
+        "what should we do?"
+        "Return to our friends":
+            jump JS24
+        "Exit through the backdoor":
+            jump JS25    
+
+
+
+
 label JH2:
     hide Julia
     "Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
@@ -1023,10 +1148,19 @@ label js42fs:
         jump js42fsb
 
 label js42fsa:
+    """(Without hesitation, Renee sprang into action, her movements swift and precise as she lunged towards one of the agents.)
+    
+    (In a blur of motion, Quol followed suit, her agility and strength on full display as she engaged another agent.)
+    
+    Layon looked at the two, shrugged, and pulled up his sleeves as he dashes towards the third agent"
+
+    (My heart raced as I realized that there is one agent left, their attention now squarely focused on me.)
+    
+    How should I approach this?"""
     menu:
-        "JS42FSi":
+        "Go for the kill":
             jump js42fsi
-        "JS42FSj":
+        "Play it defensively":
             jump js42fsj
 
 label js42fsb:
