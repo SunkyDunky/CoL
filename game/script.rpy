@@ -159,6 +159,10 @@ screen qte_choice(items):
             has vbox:
                 textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
 
+#temp hp screen
+screen display_hp:
+    text "HP: [hp]" xpos 0.1 ypos 0.1
+
 
 #Illustrations
 image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
@@ -168,6 +172,7 @@ image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_heigh
 # The game starts here.
 
 label start:
+    show screen display_hp
     show bg entrance
     pause 2.0
     scene bg entrance_ticket_dark with Dissolve (3.0)
@@ -411,7 +416,7 @@ label JH0:
 
 label JH1:
     show bg toilet 
-    show Julia at center_lower with Dissolve(0.3)
+    show Julia at textbox_over with Dissolve(0.3)
     J"""huff...huff...
 
     I'm safe...aren't I?
@@ -424,7 +429,8 @@ label JH1:
             jump JS2
         "Rush and help your friends":
             hide Julia
-            jump Jh5
+            show bg stage with fade
+            jump jhfs5
         "Don't go outside":
             hide Julia
             jump JH2
@@ -472,12 +478,18 @@ label JS1FS:
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsa
         "Scream":
-            $ hp - 3
+            $ hp -= 3
+            if hp <= 0:
+                # If hp is 0, jump to the game_over label
+                jump game_over
             hide JS1FS
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsb
         "Reach for my bat":
-            $ hp - 1
+            $ hp -= 1
+            if hp <= 0:
+                # If hp is 0, jump to the game_over label
+                jump game_over
             hide JS1FS
             show Agent1 at center_lower with Dissolve(0.3)
             jump js1fsc
@@ -499,7 +511,7 @@ label js1fsa:
 
 label js1fsb:
     # Julia gets struck with the baton
-    $hp - 3
+    $hp -= 3
     
     J"""(I'm overcome with shock and instinctively let out a loud, piercing scream.)
     
@@ -521,7 +533,7 @@ label js1fsb:
 
 label js1fsc:
     # Julia gets her bat but gets hit in the leg(?)
-    $hp - 1
+    $hp -= 1
     
     J"(As I swiftly dash towards Renee's bag, my eyes fixated on retrieving my bat, a sudden impact jolts through my leg.)"
 
@@ -1140,6 +1152,8 @@ label JH2:
     "I..."
 
 
+
+
 label js42fs:
     J"Four agents approched us"
     if haveAndrew == True:
@@ -1195,7 +1209,10 @@ label js42fsc:
     return
     
     label misseditJS42FSc1:
-        $hp - 1
+        $ hp -= 1
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I got hit in the arm because I was not quick enough to react.)"
         jump finishedJS42FSc1
     
@@ -1217,6 +1234,10 @@ label js42fsc:
     return
     
     label misseditJS42FSc2:
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I got hit on the waist, then came to my senses and attacked his head out of reflexes.)"
         
         J"(They immedately fell on the ground motionless)"
@@ -1254,7 +1275,7 @@ label js42fsd:
 label js42fsg:
     J"""(I decided to go for the kill)
     
-    (I prepared my swing and gluped()
+    (I prepared my swing and gluped)
     
     (However, I lost my train of thought and when I came to my senses was when my back hits the ground.)
     
@@ -1273,7 +1294,10 @@ label js42fsh:
     return
     
     label misseditJS42FSc5:
-        $hp - 1
+        $ hp -= 1
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I stumbled backwards mildly.)"
         jump finishedJS42FSc5
 
@@ -1300,7 +1324,10 @@ label js42fsh:
     return
 
     label misseditJS42FSc3:
-        $hp - 1
+        $ hp -= 1
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I got hit in the arm because I was not quick enough to react.)"
         jump finishedJS42FSc3
 
@@ -1322,6 +1349,10 @@ label js42fsh:
     return
 
     label misseditJS42FSc4:
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I got hit on the waist, then came to my senses and attacked his head out of reflexes.)"
         
         J"(They immedately fell on the ground motionless)"
@@ -1357,7 +1388,10 @@ label js42fsj:
     return
     
     label misseditJS42FSc6:
-        $hp - 1
+        $ hp -= 1
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
         J"(I stumbled backwards mildly.)"
         jump finishedJS42FSc6
     
@@ -1390,7 +1424,10 @@ label js42fsl:
     jump game_over
 
 label js42fsm:
-    $hp - 1
+    $ hp -= 1
+    if hp <= 0:
+        # If hp is 0, jump to the game_over label
+        jump game_over
     J"""(I held my bat horizontally to block the agent as he jumps on me.)
     
     (He hits my shoulder mildly, but I manage to swing him off and throw him on the ground.)
@@ -1405,6 +1442,384 @@ label js42fsafter:
 
 
 
+label jhfs5:
+    J"""(As I reach the front stage, a sinking feeling settles in the pit of my stomach.) 
+    
+    (I glance behind me and discover that two agents have been tailing me, closing in on the stage. )
+    
+    (Panic courses through my veins.)
+    
+    (I cannot go back now)
+    
+    (Quol and Renee looked towards me and recongizes the issue)"""
+    show Quol Angry at left_center_lower with Dissolve(0.3)
+    Q "We can take down all of them! They can't just keep coming at us forever!"
+    
+    show Renee worried at right_center_lower with Dissolve(0.3)
+
+    R "No..no! we have to back up! Lets not get oursleves too hurt!"
+    
+    J"""(Caught between these conflicting viewpoints, my mind races.)"""
+
+    hide Quol with Dissolve(0.3)
+    hide Renee with Dissolve(0.3)
+
+    J"(What should I do?)"
+    
+    menu:
+        J"(What should I do?)"
+        "Fight them":
+            jump jhfs5a
+        "Make an escape for it":
+            jump jhfs5b
+
+label jhfs5a:
+    J"(I decided that we have to fight them)"
+
+    show Renee bag at Transform(xalign=0.5, yalign=0.4) with Dissolve(0.3)
+    
+    J"""(In the midst of the chaos, I catch sight of my weapon—a bat sticking out of Renee's bag, carefully placed behind the drum set.)
+
+    (Without hesitation, I dash towards the bag, swiftly grabbing it.)"""
+    
+    hide Renee bag
+
+    J"""(I notice that the two agents behind are preparing to strike)
+    
+    (what should I do?)"""
+    
+    show screen timerDown(3, "misseditJHFS5a1")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Go offensive", "choice1JHFS5a1", 0.2, 0.3),  # xpos and ypos for choice 1
+        ("Go defensive", "choice2JHFS5a1", 0.8, 0.7)   # xpos and ypos for choice 2
+    ])
+    return
+    
+    label misseditJHFS5a1:
+        J"""(I faltered and couldn't decide)
+        
+        (One of the agents swing towards me and I got hit)"""
+        $ hp -= 4
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5a1
+    
+    label choice1JHFS5a1:
+        J"""(With a surge of adrenaline, I decide to go on the offensive.) 
+        
+        (I swiftly pivot on my heel, channeling my momentum into a powerful swing of the bat.) 
+        
+        (The first agent lunges forward, and I time my strike perfectly, hitting his arm.) 
+        
+        (The crack of impact fills the air as the agent staggers backward, momentarily stunned.)
+        
+        (But he quickly regains his composure.)"""
+        jump finishedJHFS5a1
+    
+    label choice2JHFS5a1:
+        J"""(Feeling a pang of caution, I opt for a defensive strategy.) 
+        
+        (As the first agent lunges, I quickly sidestep their attack, narrowly evading their grasp.) 
+        
+        (With a calculated move, I position myself for a swift counter.) 
+        
+        (The second agent moves in, but I remain focused on evasion, waiting for the opportune moment to strike.)"""
+        
+        jump finishedJHFS5a1
+    
+    label finishedJHFS5a1:
+        J"(I quickly access the situation and do my next move.)"
+        
+        show screen timerDown(3, "misseditJHFS5a2")  # seconds, label to jump on fail
+        call screen qte_choice([
+            ("Strike", "choice1JHFS5a2", 0.2, 0.3),  # xpos and ypos for choice 1
+            ("Retreat", "choice2JHFS5a2", 0.8, 0.7)   # xpos and ypos for choice 2
+        ])
+        return
+    
+    label misseditJHFS5a2:
+        J"""(I faltered and couldn't decide)
+        
+        (One of the agents swing towards me and I got hit)"""
+        $ hp -= 4
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5a2
+    
+    label choice1JHFS5a2:
+        J"""(Seizing the opportunity, I decide to press the advantage.) 
+        
+        (With a surge of confidence, I prepare to deliver a powerful strike to the agent.)
+        
+        (Unfortunately I missed my swing and the agents are unharmed.)
+        
+        (I leaped backwards and tried to give myself some space.)"""
+        jump finishedJHFS5a2
+    
+    label choice2JHFS5a2:
+        J"""(I choose to prioritize my safety.)
+        
+        (Recognizing that the second agent is closing in, I decide to disengage temporarily and create some distance.)
+        
+        (I leaped backwards and tried to regroup with my team.)"""
+        jump finishedJHFS5a2
+    
+    label finishedJHFS5a2:
+        J"""(I scanned around the stage to see that my comrades are all each fighting aganist an agent, whilst I am fending off two)
+        
+        (What should I do?)"""
+    
+    menu:
+        "Keep fighting them":
+            jump jhfs5d
+        "Call for help":
+            jump jhfs5e
+
+label jhfs5d:
+    J"""I am strong, I can fend them all!
+    
+    (As the two agents rapidly approach, I tighten my grip on the bat, ready to face them head-on.)
+    
+    (I have to choose who I should target first.)"""
+    
+    menu:
+        "The one on the right":
+            jump jhfs5i
+        "The one on the left":
+            jump jhfs5j
+
+label jhfs5e:
+    J"""(I decided that i should call my teammates for help)
+    
+    (who should I call?)"""
+    menu:
+        "Quol":
+            jump jhfs5l
+        "Renee":
+            jump jhfs5m
+
+label jhfs5i:
+    J"""(I choose to strike the agent on the right, aiming to catch them off guard.)
+    
+    (but to my surprise, they skillfully block my attack.)"""
+    
+    show screen timerDown(3, "misseditJHFS5i1")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Block", "choice1JHFS5i1", 0.2, 0.3),  # xpos and ypos for choice 1
+    ])
+    return
+    
+    label misseditJHFS5i1:
+        "(I get striked by the agent)"
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5i1
+    
+    label choice1JHFS5i1:
+        "(I block the agent.)"
+        jump finishedJHFS5i1
+    
+    
+    label finishedJHFS5i1:
+        show screen timerDown(3, "misseditJHFS5i2")  # seconds, label to jump on fail
+        call screen qte_choice([
+            ("Parry", "choice1JHFS5i2", 0.2, 0.3),  # xpos and ypos for choice 1
+        ])
+        return
+    
+    label misseditJHFS5i2:
+        "(I get striked by the Agent)"
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5i2
+    
+    label choice1JHFS5i2:
+        "(I parry the agent's strike.)"
+        jump finishedJHFS5i2
+    
+    
+    label finishedJHFS5i2:
+        show screen timerDown(3, "misseditJHFS5i3")  # seconds, label to jump on fail
+        call screen qte_choice([
+            ("Dodge", "choice1JHFS5i3", 0.2, 0.3),  # xpos and ypos for choice 1
+        ])
+        return
+    
+    label misseditJHFS5i3:
+        "(I get striked by the agent)"
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5i3
+    
+    label choice1JHFS5i3:
+        "(I dodge the agent's strike.)"
+        jump finishedJHFS5i3
+    
+    
+    label finishedJHFS5i3:
+        """(Amidst the flurry of blows, I spot a brief opening—a split second where the agent's guard wavers.)
+        
+        S(eizing the opportunity, I deliver a powerful swing, channeling all my strength into the strike. )
+        
+        T(he bat connects with a resounding impact, sending the agent sprawling to the ground.)
+        
+        (As I try to turn my attention to the Second Agent, I found out Quol has already taken care of him)"""
+    jump jhfs5k
+
+label jhfs5j:
+    """(I choose to strike the agent on the left, aiming to catch them off guard.)
+    
+    (The bat strikes the Agent, and he seems to be stunned)
+    
+    (He swings at me sluggishly, trying to hit me down)"""
+    
+    show screen timerDown(3, "misseditJHFS5j1")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("Block", "choice1JHFS5j1", 0.2, 0.3),  # xpos and ypos for choice 1
+    ])
+    return
+    
+    label misseditJHFS5j1:
+        "(I get striked by the agent)"
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+        jump finishedJHFS5j1
+    
+    label choice1JHFS5j1:
+        "(I block the agent.)"
+        jump finishedJHFS5j1
+    
+    
+    label finishedJHFS5j1:
+        show screen timerDown(3, "misseditJHFS5j2")  # seconds, label to jump on fail
+        call screen qte_choice([
+            ("Swing", "choice1JHFS5j2", 0.2, 0.3),  # xpos and ypos for choice 1
+        ])
+        return
+    
+    label misseditJHFS5j2:
+        J"(I miss the swing.)"
+        jump finishedJHFS5j2
+    
+    label choice1JHFS5j2:
+        J"(I striked the Agent and he falls down on the floor.)"
+        jump finishedJHFS5j3
+    
+    
+    label finishedJHFS5j2:
+        show screen timerDown(3, "misseditJHFS5j3")  # seconds, label to jump on fail
+        call screen qte_choice([
+            ("Swing again", "choice1JHFS5j3", 0.2, 0.3),  # xpos and ypos for choice 1
+        ])
+        return
+    
+    label misseditJHFS5j3:
+        J"(I get striked by the agent)"
+
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+         
+        """(From a distance, a thin string appears in front of my eyes, violently hitting the agent down)
+         
+        (Renee assisted me in taking him down)"""
+        jump finishedJHFS5j3
+    
+    label choice1JHFS5j3:
+        J"(I striked the Agent and he falls down on the floor.)"
+        jump finishedJHFS5j3
+    
+    
+    label finishedJHFS5j3:
+        J"(I try to turn my attention to the Second Agent, I found out Renee has already taken care of him)"
+    
+    jump jhfs5k
+
+label jhfs5k:
+    J"We have managed to knock out all the agents in the venue"
+
+label jhfs5l:
+    J"""(I call out for Quol)
+    
+    Quol! Please help me here..!
+    
+    (Quol, ever vigilant and quick to respond, turns their attention toward me.)"""
+    
+    Q"Coming!"
+    
+    J"""(Their eyes meet mine, and without hesitation, they rush to my aid.) 
+     
+    (With a swift and powerful roundhouse kick, Quol unleashes an force upon the agent, targeting their head with precision.) 
+    
+    (The impact reverberates through the air as the agent's body crumples under the sheer force of the blow.)"""
+    
+    Q"Finish off the last one, Julia. I have my own agent to beat up."
+    
+    jump jhfs5o
+
+label jhfs5o:
+    J"Taking the hint, I raised my bat high"
+    
+    show screen timerDown(3, "misseditJHFS5o")  # seconds, label to jump on fail
+    call screen qte_choice([
+        ("SLAM", "choice1JHFS5o", 0.5, 0.5),  # xpos and ypos for choice 1
+    ])
+    return
+    
+    label misseditJHFS5o:
+        J"""I hesitated and missed my shot.
+
+        The agent hits my shoulder"""
+
+        $ hp -= 3
+        if hp <= 0:
+            # If hp is 0, jump to the game_over label
+            jump game_over
+
+        """Renee notices and swings her whip towards the agent's legs, while Quol does the final blow
+        
+        Their eyes gleam with a mix of understanding and dissappointment."""
+        jump finishedJHFS5o
+    
+    label choice1JHFS5o:
+        J"I striked down at the last agent, delivering a fatal blow."
+        jump finishedJHFS5o
+    
+    label finishedJHFS5o:
+    jump jhfs5k
+
+label jhfs5m:
+    J"""I call out for Renee
+    
+    Renee! Please help me here..!
+    
+    Without hesitation, Renee responds to my plea, her eyes locking onto the remaining agent. """
+    
+    "Alright! Stay back!"
+    
+    J"""She swiftly maneuvers her whip, seamlessly striking with precision.
+    
+    With a deft flick of her wrist, the whip cracks through the air, its tip finding its mark. 
+    
+    In a dazzling display of skill, Renee incapacitates the agent, rendering them unable to continue their assault. 
+    
+    The agent's movements falter, and they crumble to the ground, immobilized by the force of the whip."""
+    
+    Q"I'll help you more later, I'm taking on another agent as well!"
+    
+    jump jhfs5o
+
 
 
 label game_over:
@@ -1416,4 +1831,5 @@ label game_over:
     Not a great way to end a story, is it?
 
     let's try this again."""
+    $ hp == 15
     return
