@@ -30,6 +30,15 @@ image Renee worried:
 image Renee smile:   
     "characters/Renee smile.png"
     zoom 1.59
+image Renee alt:   
+    "characters/Renee alt.png"
+    zoom 0.49       
+image Renee alt smile:   
+    "characters/Renee alt smile.png"
+    zoom 0.49    
+image Renee alt worried:   
+    "characters/Renee alt worried.png"
+    zoom 0.49       
 image Julia :   
     "characters/Julia-half.png"
     zoom 0.2
@@ -859,12 +868,13 @@ label JS11:
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
 
     show bg ReneeBedroom
+    play music "Calm_After_the_Storm.mp3"
 
     J"""(Renee's room was bathed in soft, warm light as she and I sat side by side on the edge of the bed.)
 
     (It had been a long and challenging day, and we sought solace in this quiet moment of respite.)"""
    
-    show Renee at center_lower with Dissolve(0.3)
+    show Renee alt at center_lower with Dissolve(0.3)
 
     J"""(I looked at Renee, her presence a comforting anchor in the storm of uncertainty that swirled within me.)
 
@@ -894,7 +904,7 @@ label JS11:
 
     J"(Her words resonated deep within me, stirring a renewed perspective.)"
 
-    show Renee smile at center_lower
+    show Renee alt smile at center_lower
 
     R """Being alive allows for endless possibilities, Julia. 
 
@@ -914,6 +924,8 @@ label JS11:
 
     R "I wouldn't want to see my best friends being in pain, would I?"
 
+
+    play music "StageBGM.mp3"
     hide Renee with Dissolve(0.3)
     show bg stage with fade
 
@@ -977,6 +989,7 @@ label JS12:
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—the scent of rain and mud..)"
 
     show bg Hotelalley with fade
+    play music "Anxiety_Shows.mp3"
 
     J"""(A few weeks after I escaped from the NewFutures Institute and first meeting Quol.)
 
@@ -1015,6 +1028,7 @@ label JS12:
     J"(Lars returns to the hotel, closing the door behind him.)"
 
     show Quol at center_lower with Dissolve(0.3)
+    stop music fadeout 5.0
 
     Q"Let's go back now before someone sees us."
 
@@ -1025,18 +1039,19 @@ label JS12:
     (I scan the dimly lit alleyway, hoping that no one is around to see us. I turned towards Quol, who was ready to leave.)"""
 
     hide Quol with Dissolve(0.3)
+    play music "Fear_And_Terror.mp3"
     
     J"""(As I was about to take my step, something caught my attention. From the corner of my eye, I spot a silhouette of a man holding a few trash bags, frozen in place, his gaze locked onto us.)
    
     (Being caught off guard, I instinctively freeze, feeling my heartbeat undergo a sudden shift.)
     
-    (The man drops the trash bags he was carrying and in a panic dashes away.)"""
-
-    show Quol at center_lower with Dissolve(0.3)
+    (The man drops the trash bags he was carrying and in a panic dashes away.)
     
-    J"""(Oh no! Are we gonna get caught?!)
+    (Oh no! Are we gonna get caught?!)"""
 
-    (I turn to Quol and without hesitation, she bolts into action in pursuing him.)
+    show Quol Angry at center_lower with Dissolve(0.3)
+    
+    J"""(I turn to Quol and without hesitation, she bolts into action in pursuing him.)
 
     (I stand there, paralyzed and uncertain, unable to shake off the initial shock as I watch Quol chase after the fleeing figure.)
     
@@ -1092,7 +1107,7 @@ label JS12:
     show bg black with fade
     pause 0.8
 
-    play sound "SFX/JS1FS/batonhit.mp3" volume 7
+    play sound "SFX/JS1FS/falltofloor.mp3" volume 7
 
     pause 1
     show bg Hotelalley with fade
@@ -1107,10 +1122,10 @@ label JS12:
     show Quol at center_lower with Dissolve(0.3)
     J"(I turn to Quol. She gives me a smile and a nod of admiration.)"
 
-    Q"Nice work."   
+    Q"You did well, Julia."   
 
     hide Quol with Dissolve(0.3)
-
+    play music "StageBGM.mp3"
     show bg stage with fade
 
     J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
