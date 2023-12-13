@@ -1050,7 +1050,7 @@ label JS12:
 
     Q"""... We can't keep him alive.
 
-    ... We have to get rid of him.
+    ... He'd tell on Lars. He'd tell on you.
 
     ...
     
@@ -1058,7 +1058,7 @@ label JS12:
 
     J"""(Quol wants me to do it...)
 
-    (My body shakes in anxiety and fear, should I really do it?)
+    (My body shakes in anxiety and fear, should I do it?)
 
     (... Can I do it?)"""
 
@@ -1072,9 +1072,9 @@ label JS12:
 
     J"(I clutch my bat tightly, hesitantly walking towards the guy.)"
 
-    Q"""Your life is yours to shape, Julia.
+    Q"""Julia. Think about yourself.
 
-    You have to learn to take control of it."""
+    You would risk Lars' safety and all that he had sacrificed for us?"""
 
     J"""(I look at the man, then my bat...)
 
@@ -1105,9 +1105,13 @@ label JS12:
 
     (...)"""
     show Quol at center_lower with Dissolve(0.3)
-    J"(I turn to Quol. She gives me a smile and a nod of admiration.)"
+    J"(I turn to Quol. She gives me a nod of admiration.)"
 
-    Q"Nice work."   
+    Q"""I'm sorry, Julia.
+
+    life is full of funny choices huh?"""
+
+    J"(She let out a forced chuckle.)"
 
     hide Quol with Dissolve(0.3)
 
