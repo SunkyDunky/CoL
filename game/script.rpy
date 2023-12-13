@@ -17,6 +17,7 @@ define G1 = Character("Agent1",color="#cacaca")
 define G2 = Character("Agent2",color="#cacaca")
 define A1 = Character("Audience1",color="#cacaca")
 define A2 = Character("Audience2",color="#cacaca")
+define L = Character("Lars",color="#fcff2e")
 define Z = Character("A spectator?",color="#6303ff")
 
 # define character sprites
@@ -196,7 +197,7 @@ label Julia_Start:
     pause 1.0 
     window show
     show Julia at textbox_over
-    $ renpy.pause(25, hard=True)
+    $ renpy.pause(23, hard=True)
     J"(In the crowded and noisy venue, I find myself standing above the stage, my fingers absentmindedly gripping the neck of my guitar.)"
 
     stop music fadeout 20.0
@@ -443,6 +444,7 @@ label JH0:
             jump JH1    
 
 label JH1:
+    play music "ToiletBGM.mp3"
     show bg toilet 
     show Julia at textbox_over with Dissolve(0.3)
     J"""huff...huff...
@@ -934,7 +936,7 @@ label JS12:
 
     (Seizing the opportunity, I gripped my bat firmly.)
 
-    (I swung it with all my might, delivering a powerful blow that connected with the Agent's body."""
+    (I swung it with all my might, delivering a powerful blow that connected with the Agent's body.)"""
 
     play sound "SFX/JS1FS/batonhit2.mp3" volume 3
 
@@ -972,85 +974,144 @@ label JS12:
 
     hide Quol with Dissolve(0.3)
 
-    J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Quol not too long ago.)"
+    J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—the scent of rain and mud..)"
 
-    show bg Hotelalley
+    show bg Hotelalley with fade
 
-    J"""(It was 2 days after I ran away from Newfutures Institute, I was sitting near the stack of cargo containers, starving and getting worried of my scarred leg.)
+    J"""(A few weeks after I escaped from the NewFutures Institute and first meeting Quol.)
 
-    (Suddenly, a person with distinct blue hair approached me.)"""
+    (We tried to stay low, trying our hardest to scrape by, with the anxiety of being caught constantly looming over my mind.)
 
-    Q"""Julia!
+    (I had contacted someone who works for my family-run hotel, the only person who agreed to risk themselves and help me out.)
+    
+    (I was waiting in a dark alleyway behind the hotel with Quol beside me, I kept fiddling my thumbs)
+    
+    (This is a bad idea, this is a bad idea...)
+    
+    (The rain falling deafeningly on the hood of my raincoat, as the backdoor of the hotel swings open.)"""
+    
+    L"""Sorry to keep you all out in the rain, today's a hectic shift.
+    
+    I can't be out here for too long or they'd realize I'm gone, since you left this place became like The Institute's personal playground.
+    
+    There's that one girl from The Institute, Lenorra. 
+    
+    She acts all nice and dutiful when her boss is looking, but as soon as the Head Scientist turns around she'd just order us around like we are her personal servant or somethi-"""
+    
+    show Quol at center_lower with Dissolve(0.3)
 
-    "It's me, Quol! I can't believe I found you here!"""
+    J"(Quol glares at Lars in annoyance)"
+    
+    hide Quol with Dissolve(0.3)
 
-    J"""Quol...?
+    L" Aha- Sorry, yeah, that's all I could gather before they would start asking questions."
 
-    Who...are you?
+    J"(Lars quickly hands me a bag of supplies, filled with canned foods, hygiene items and a few pieces of clothes.)"
+    
+    L"""I have to return to my shift now, I have more orders to deal with otherwise I'm in deep trouble. 
+    
+    Take care and be careful."""
+    
+    J"(Lars returns to the hotel, closing the door behind him.)"
 
-    (Quol's expression faltered for a moment, a flicker of disappointment passing across her face.)"""
+    show Quol at center_lower with Dissolve(0.3)
 
-    Q"""I-I'm sorry.
+    Q"Let's go back now before someone sees us."
 
-    You really don't remember me...I see.. We were friends during the Brookcastle incident."""
+    J"""(I nod in response, swiftly zipping the bag shut.)
 
-    J"""(My confusion deepened as I stared at her face, trying to search for any instances where she had appeared in any of my memories.)
+    (I sling the bag over my shoulder, taking a deep breath of relief.)
 
-    (But my mind drew a blank, leaving me feeling disoriented and uncertain.)
+    (I scan the dimly lit alleyway, hoping that no one is around to see us. I turned towards Quol, who was ready to leave.)"""
 
-    I... I don't remember.
+    hide Quol with Dissolve(0.3)
+    
+    J"""(As I was about to take my step, something caught my attention. From the corner of my eye, I spot a silhouette of a man holding a few trash bags, frozen in place, his gaze locked onto us.)
+   
+    (Being caught off guard, I instinctively freeze, feeling my heartbeat undergo a sudden shift.)
+    
+    (The man drops the trash bags he was carrying and in a panic dashes away.)"""
+
+    show Quol at center_lower with Dissolve(0.3)
+    
+    J"""(Oh no! Are we gonna get caught?!)
+
+    (I turn to Quol and without hesitation, she bolts into action in pursuing him.)
+
+    (I stand there, paralyzed and uncertain, unable to shake off the initial shock as I watch Quol chase after the fleeing figure.)
+    
+    (With a burst of speed, Quol closes the gap. In a sudden, precise movement, she tackles the figure, pinning him down as he struggles to escape.)
+    
+    (It all happened so fast, my head couldn't wrap itself around the sudden turn of events.)
+    
+    (In one swift, powerful movement, Quol hits the man with a heavy bash to his head, knocking him out cold.)
+    
+    (She turns to me, her expression dead serious.)"""
+
+    Q"""... We can't keep him alive.
+
+    ... We have to get rid of him.
 
     ...
-
-    I don't understand what's happening... Why can't I remember? What happened during the Brookcastle Incident?
-
-    (Quol's face softened, and they offered a reassuring smile.)""" 
-
-    Q"""It's okay, Julia.
-
-    Nobody remembers what happened during the Brookcastle incident; only I do really, and I'll explain it all to you in due time."""
-
-    J"""(As we stood there, confusion swirling within me, Quol's face glimpsed a confident smirk as she stood up.)
-
-    (They reached into a bag slung over their shoulder and pulled out a small loaf of bread.)"""
-
-    Q"Here."
-
-    J"(Quol extended the bread towards me.)"
-
-    Q"Take this. It might help you feel better."
-
-    J"""(I accepted the bread, grateful for their kindness and willingness to help.)
-
-    (As I nibbled on the bread, Quol began recounting our supposed shared experiences.)
-
-    (They spoke of an adventure through lands, through villages, rivers, and valleys.)
-
-    (The journey of a young girl named Julia as she gathers strength and fortitude to end the Brookcastle event, developing from a frightened, shy kid to one who swings and fights for herself.)
-
-    (As Quol spoke, a sense of determination ignited within me.)
-
-    (Even though I couldn't remember our past, I felt a connection, an unspoken bond that made me let my guard down a little.)
-
-    I may not remember you, or my past,
     
-    but I want to be like the Julia you described...
+    Julia."""
 
-    (Quol's eyes brightened with a mixture of relief and pride.)
-    
-    (She ripped off part of her shirt, and kneeled down in front of me.)"""
+    J"""(Quol wants me to do it...)
 
-    Q"""Then let's start by taking care of that injured leg.
+    (My body shakes in anxiety and fear, should I really do it?)
 
-    We'll face the challenges together, Julia, and hopefully, you will grow as strong as you had back then."""
+    (... Can I do it?)"""
 
-    J"""(As Quol began to tend to my injured leg using the cloth, I couldn't help but feel a glimmer of hope.)
-    
-    (Though my confusion remained, I was determined to embrace this new chapter, starting a new life.)"""
+    menu:
+        "Yes":
+            pause 0.0000001
+        "...":
+            pause 0.0000001
 
-    show bg stage
+    hide Quol
 
-    J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.
+    J"(I clutch my bat tightly, hesitantly walking towards the guy.)"
+
+    Q"""Your life is yours to shape, Julia.
+
+    You have to learn to take control of it."""
+
+    J"""(I look at the man, then my bat...)
+
+    (My breath is short and fast, my hands trembling. The sound of the rain seems to intensify around me.)
+
+    (I take a moment, closing my eyes, holding my bat tightly and taking a deep breath.)
+
+    (...)
+
+    (... This is the moment. The sound of the rain becoming quiet.)
+
+    (I raise my bat over my head... and...)"""
+    show bg black with fade
+    pause 0.8
+
+    play sound "SFX/JS1FS/batonhit.mp3" volume 7
+
+    pause 1
+    show bg Hotelalley with fade
+
+    J"""(I lift my bat back up... seeing some blood painted on my bat...)
+
+    (The sound of the rain returns to its deafening tone.)
+
+    (I did it.)
+
+    (...)"""
+    show Quol at center_lower with Dissolve(0.3)
+    J"(I turn to Quol. She gives me a smile and a nod of admiration.)"
+
+    Q"Nice work."   
+
+    hide Quol with Dissolve(0.3)
+
+    show bg stage with fade
+
+    J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
 
     (I realised that I had to fight for myself.)"""
 
@@ -1058,7 +1119,49 @@ label JS12:
 
 label JS13:
     J"Fighting off all the agents, it seemed like they got backup."
-    jump js42fs
+
+    menu:
+        J"What will I decide on.."
+        "I should keep fighting!":
+            jump js42fs
+        "I should tell everyone to back up to the backstage":
+            jump JS3
+
+label JS3:
+    J"""We should go to the back!
+    
+    (We ran towards the back entrance, Quol a little more hesistant than me or Renee but she also came along.)
+
+    (Adrenaline fueled our every step as we sprinted, desperately seeking an escape route from the perilous situation we found ourselves in.)
+
+    (Reaching the backdoor, a glimmer of hope ignited within us. )
+
+    (With a surge of anticipation, we swung the door open, expecting to find a path to freedom. )
+    
+    (However, our hopes were shattered as we were met with an unexpected sight:) 
+
+    (Six agents, standing in a calculated formation, blocking our way.)"""
+
+    show Renee worried at right_center_lower with Dissolve(0.3)
+
+    R "It's an ambush!"
+
+    show Quol at left_center_lower with Dissolve(0.3)
+
+    Q"Go back!"
+
+    J"""(I was stunned at this scene and before I knew it, an agent has already grabbed my arm.)
+    
+    (Renee and Quol noticed and tried to pull me away from the agents)
+    
+    (But it was too late)
+    
+    (After a moment of stuggle, all three of us were apprehended.)"""
+    hide Renee
+    hide Quol
+    jump badend
+
+
 
 
 #JS2

@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 195, in script
-    movie play "images/opening.webm"
-Exception: Sayer 'movie' is not defined.
+  File "game/script.rpy", line 1020, in script
+    J"""(I nod in response, swiftly zipping the bag shut.)
+SyntaxError: invalid syntax (game/script.rpy, line 1020)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 195, in script
-    movie play "images/opening.webm"
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'movie' is not defined.
+  File "game/script.rpy", line 1020, in script
+    J"""(I nod in response, swiftly zipping the bag shut.)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 916, in execute
+    args, kwargs = self.arguments.evaluate()
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 344, in evaluate
+    value = renpy.python.py_eval(v, locals=scope)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1151, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 1020)
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation DEMO 1.0
-Wed Dec 13 00:45:41 2023
+Wed Dec 13 02:08:24 2023
