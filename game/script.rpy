@@ -1086,7 +1086,9 @@ label JS12:
 
     (... This is the moment. The sound of the rain becoming quiet.)
 
-    (I raise my bat over my head... and...)"""
+    (I raise my bat over my head...)
+    
+    (and...)"""
     show bg black with fade
     pause 0.8
 
@@ -1095,7 +1097,7 @@ label JS12:
     pause 1
     show bg Hotelalley with fade
 
-    J"""(I lift my bat back up... seeing some blood painted on my bat...)
+    J"""(I lift my bat back up... the smell of rusted nails lined my bat...)
 
     (The sound of the rain returns to its deafening tone.)
 
@@ -1113,7 +1115,7 @@ label JS12:
 
     J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
 
-    (I realised that I had to fight for myself.)"""
+    (I realised that I had to protect my friends at all cost..)"""
 
     jump JS13
 
