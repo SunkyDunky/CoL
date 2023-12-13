@@ -1097,7 +1097,7 @@ label JS12:
     pause 1
     show bg Hotelalley with fade
 
-    J"""(I lift my bat back up... the smell of rusted nails lined my bat...)
+    J"""(I lift my bat back up... the smell of rusted metal lined my bat...)
 
     (The sound of the rain returns to its deafening tone.)
 
