@@ -444,7 +444,7 @@ label JH0:
             jump JH1    
 
 label JH1:
-    play music "ToiletBGM.mp3"
+    play music "Fear_And_Terror.mp3"
     show bg toilet 
     show Julia at textbox_over with Dissolve(0.3)
     J"""huff...huff...
