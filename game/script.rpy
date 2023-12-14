@@ -977,6 +977,7 @@ label JS12:
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—the scent of rain and mud..)"
 
     show bg Hotelalley with fade
+    play music "Anxiety_Shows.mp3"
 
     J"""(A few weeks after I escaped from the NewFutures Institute and first meeting Quol.)
 
@@ -1015,6 +1016,7 @@ label JS12:
     J"(Lars returns to the hotel, closing the door behind him.)"
 
     show Quol at center_lower with Dissolve(0.3)
+    stop music fadeout 5
 
     Q"Let's go back now before someone sees us."
 
@@ -1033,6 +1035,7 @@ label JS12:
     (The man drops the trash bags he was carrying and in a panic dashes away.)"""
 
     show Quol at center_lower with Dissolve(0.3)
+    play music "Fear_And_Terror.mp3"
     
     J"""(Oh no! Are we gonna get caught?!)
 
