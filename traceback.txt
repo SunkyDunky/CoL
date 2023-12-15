@@ -1,22 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 474, in script
-    Lq" Be not afraid my child, you are the key to a potential breakthrough that will change the future as we know it..."
-Exception: Sayer 'Lq' is not defined.
+  File "game/script.rpy", line 478, in script
+    show Lenorra at lowe with Dissolve(0.3)
+  File "game/script.rpy", line 478, in <module>
+    show Lenorra at lowe with Dissolve(0.3)
+NameError: name 'lowe' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 474, in script
-    Lq" Be not afraid my child, you are the key to a potential breakthrough that will change the future as we know it..."
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Lq' is not defined.
+  File "game/script.rpy", line 478, in script
+    show Lenorra at lowe with Dissolve(0.3)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1387, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 478, in <module>
+    show Lenorra at lowe with Dissolve(0.3)
+NameError: name 'lowe' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation DEMO 1.0
-Sat Dec 16 01:59:31 2023
+Sat Dec 16 04:52:27 2023

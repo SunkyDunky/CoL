@@ -4,197 +4,197 @@
 # name of the character.
 
 #setting
-    default hp = 15
-    default haveAndrew = False
+default hp = 15
+default haveAndrew = False
 
 # defining characters
-    define J = Character("Julia",color="#F400FF")
-    define R = Character("Renee", color= "#FF8700")
-    define Q = Character("Quol", color="#0094FF")
-    define A = Character("Andrew", color= "#ff0000")
-    define LQ = Character("Lenorra", color="#00ff11")
-    define G1 = Character("Agent1",color="#cacaca")
-    define G2 = Character("Agent2",color="#cacaca")
-    define A1 = Character("Audience1",color="#cacaca")
-    define A2 = Character("Audience2",color="#cacaca")
-    define L = Character("Lars",color="#fcff2e")
-    define Z = Character("A spectator?",color="#6303ff")
+define J = Character("Julia",color="#F400FF")
+define R = Character("Renee", color= "#FF8700")
+define Q = Character("Quol", color="#0094FF")
+define A = Character("Andrew", color= "#ff0000")
+define LQ = Character("Lenorra", color="#00ff11")
+define G1 = Character("Agent1",color="#cacaca")
+define G2 = Character("Agent2",color="#cacaca")
+define A1 = Character("Audience1",color="#cacaca")
+define A2 = Character("Audience2",color="#cacaca")
+define L = Character("Lars",color="#fcff2e")
+define Z = Character("A spectator?",color="#6303ff")
 
 # define character sprites
-    #Renee
-        image Renee :   
-            "characters/Renee.png"
-            zoom 0.49
-        image Renee worried:   
-            "characters/Renee worried.png"
-            zoom 0.49  
-        image Renee smile:   
-            "characters/Renee smile.png"
-            zoom 1.59
-    #Julia        
-        image Julia :   
-            "characters/Julia-half.png"
-            zoom 0.2
-        image Julia nervious:   
-            "characters/Julia-half nervious.png"
-            zoom 0.2    
-        image Julia traumatized:   
-            "characters/Julia-half traumatized.png"  
-            zoom 0.2
-        image Julia exhausted:   
-            "characters/Julia-half exhausted.png"  
-        image Julia alt:   
-            "characters/Julia-half alt.png"
-            zoom 0.2
-        image Julia alt nervious:   
-            "characters/Julia-half alt nervious.png"
-            zoom 0.2    
-        image Julia alt traumatized:   
-            "characters/Julia-half alt traumatized.png"  
-            zoom 0.2
-        image Julia alt exhausted:   
-            "characters/Julia-half alt exhausted.png"  
-            zoom 0.2
-        image Julia raincoat:   
-            "characters/Julia-half raincoat.png"
-            zoom 0.2
-        image Julia raincoat nervious:   
-            "characters/Julia-half raincoat nervious.png"
-            zoom 0.2    
-        image Julia raincoat traumatized:   
-            "characters/Julia-half raincoat traumatized.png"  
-            zoom 0.2
-        image Julia raincoat exhausted:   
-            "characters/Julia-half raincoat exhausted.png"  
-            zoom 0.2        
-    #Quol    
-        image Quol :   
-            "characters/Quol.png"
-            zoom 1.59
-        image Quol Angry:   
-            "characters/Quol Angry.png"
-            zoom 1.78
-        image Quol raincoat:   
-            "characters/Quol raincoat.png"
-            zoom 1.59
-        image Quol raincoat Angry:   
-            "characters/Quol raincoat Angry.png"
-            zoom 1.78    
-    image Lenorra:   
-        "characters/Lenorra.png"
-        zoom 0.5  
-    image Andrew:   
-        "characters/Andrew.png"
-        zoom 0.5    
-    image Agent1:   
-        "characters/Agent.png"
-        zoom 0.5
-    image Agent2:   
-        "characters/Agent.png"
-        zoom 0.5
+#Renee
+image Renee :   
+    "characters/Renee.png"
+    zoom 0.49
+image Renee worried:   
+    "characters/Renee worried.png"
+    zoom 0.49  
+image Renee smile:   
+    "characters/Renee smile.png"
+    zoom 1.59
+#Julia        
+image Julia :   
+    "characters/Julia-half.png"
+    zoom 0.2
+image Julia nervious:   
+    "characters/Julia-half nervious.png"
+    zoom 0.2    
+image Julia traumatized:   
+    "characters/Julia-half traumatized.png"  
+    zoom 0.2
+image Julia exhausted:   
+    "characters/Julia-half exhausted.png"  
+image Julia alt:   
+    "characters/Julia-half alt.png"
+    zoom 0.2
+image Julia alt nervious:   
+    "characters/Julia-half alt nervious.png"
+    zoom 0.2    
+image Julia alt traumatized:   
+    "characters/Julia-half alt traumatized.png"  
+    zoom 0.2
+image Julia alt exhausted:   
+    "characters/Julia-half alt exhausted.png"  
+    zoom 0.2
+image Julia raincoat:   
+    "characters/Julia-half raincoat.png"
+    zoom 0.2
+image Julia raincoat nervious:   
+    "characters/Julia-half raincoat nervious.png"
+    zoom 0.2    
+image Julia raincoat traumatized:   
+    "characters/Julia-half raincoat traumatized.png"  
+    zoom 0.2
+image Julia raincoat exhausted:   
+    "characters/Julia-half raincoat exhausted.png"  
+    zoom 0.2        
+#Quol    
+image Quol :   
+    "characters/Quol.png"
+    zoom 1.59
+image Quol Angry:   
+    "characters/Quol Angry.png"
+    zoom 1.78
+image Quol raincoat:   
+    "characters/Quol raincoat.png"
+    zoom 1.59
+image Quol raincoat Angry:   
+    "characters/Quol raincoat Angry.png"
+    zoom 1.78    
+image Lenorra:   
+    "characters/Lenorra.png"
+    zoom 0.5  
+image Andrew:   
+    "characters/Andrew.png"
+    zoom 0.5    
+image Agent1:   
+    "characters/Agent.png"
+    zoom 0.5
+image Agent2:   
+    "characters/Agent.png"
+    zoom 0.5
 
 # defining bgs
-    image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
-    image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
-    image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
-    image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
-    image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
-    image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.jpg", config.screen_width, config.screen_height)
-    image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
-    image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
+image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
+image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
+image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
+image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
+image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
+image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.jpg", config.screen_width, config.screen_height)
+image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
+image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
 
 # define other images
-    image Renee bag :   
-        "Renee bag.png"
-        zoom 0.3
+image Renee bag :   
+    "Renee bag.png"
+    zoom 0.3
 
 #transform
-    transform right_center_lower:
-        xalign 0.75
-        ypos 0.15
-    transform left_center_lower:
-        xalign 0.25
-        ypos 0.15
-    transform center_lower:
-        xalign 0.5
-        ypos 0.15
-    transform textbox_over:
-        xalign 1
-        ypos 0.54
+transform right_center_lower:
+    xalign 0.75
+    ypos 0.15
+transform left_center_lower:
+    xalign 0.25
+    ypos 0.15
+transform center_lower:
+    xalign 0.5
+    ypos 0.15
+transform textbox_over:
+    xalign 1
+    ypos 0.54
 
 #disclaimer
-    label splashscreen:
-            show text """Disclaimer
+label splashscreen:
+        show text """Disclaimer
 
-            This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
-            pause 5.0
-            hide text with dissolve
-            return
+        This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
+        pause 5.0
+        hide text with dissolve
+        return
 
 #selection screen
-    image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
-    screen character_selection:
-        vbox:
-            xalign 0.5
-            yalign 0.5
-            hbox spacing 40:  # Add space between each option
-                imagebutton:
-                    idle Transform("ticket_Renee.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                    hover Transform("ticket_Renee.png", zoom=1.1)
-                    action Jump("Sorry")
-                imagebutton:
-                    idle Transform("ticket_Julia.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                    hover Transform("ticket_Julia.png", zoom=1.1)
-                    action Jump("Julia_Start")
-                imagebutton:
-                    idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                    hover Transform("ticket_Quol.png", zoom=1.1)
-                    action Jump("Sorry")
-        text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
+image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
+screen character_selection:
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        hbox spacing 40:  # Add space between each option
+            imagebutton:
+                idle Transform("ticket_Renee.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Renee.png", zoom=1.1)
+                action Jump("Sorry")
+            imagebutton:
+                idle Transform("ticket_Julia.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Julia.png", zoom=1.1)
+                action Jump("Julia_Start")
+            imagebutton:
+                idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                hover Transform("ticket_Quol.png", zoom=1.1)
+                action Jump("Sorry")
+    text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
 
 #timer
-    default downer = 0
+default downer = 0
 
-    screen timerDown(rangeD, missed_event):
-        on "show" action SetVariable("downer", rangeD)
-        frame:
-            xalign 0.5
-            yalign 0.1
+screen timerDown(rangeD, missed_event):
+    on "show" action SetVariable("downer", rangeD)
+    frame:
+        xalign 0.5
+        yalign 0.1
+        hbox:
+            timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
             hbox:
-                timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
-                hbox:
-                    xalign 0.5
-                    bar:
-                        value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
-                        yalign 0.0
-                        xmaximum 500
-                        bar_invert True
-                        right_bar "gui/bar/left.png"
-                        left_bar "gui/bar/right.png"
-                        ysize 10  # Adjust this value to change the thickness of the bar
-                    bar:
-                        value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
-                        yalign 0.0
-                        xmaximum 500
-                        ysize 10  # Adjust this value to change the thickness of the bar            
+                xalign 0.5
+                bar:
+                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                    yalign 0.0
+                    xmaximum 500
+                    bar_invert True
+                    right_bar "gui/bar/left.png"
+                    left_bar "gui/bar/right.png"
+                    ysize 10  # Adjust this value to change the thickness of the bar
+                bar:
+                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                    yalign 0.0
+                    xmaximum 500
+                    ysize 10  # Adjust this value to change the thickness of the bar            
 
 # QTE choice screen
-    screen qte_choice(items):
-        style_prefix "qte"
-        zorder 1
-        for i in items:
-            frame:
-                xalign i[2]  # Adjust this to move the box horizontally
-                yalign i[3]  # Adjust this to move the box vertically
-                has vbox:
-                    textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
+screen qte_choice(items):
+    style_prefix "qte"
+    zorder 1
+    for i in items:
+        frame:
+            xalign i[2]  # Adjust this to move the box horizontally
+            yalign i[3]  # Adjust this to move the box vertically
+            has vbox:
+                textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
 
 #temp hp screen
-    screen display_hp:
-        text "HP: [hp]" xpos 0.1 ypos 0.1
+screen display_hp:
+    text "HP: [hp]" xpos 0.1 ypos 0.1
 
 #Illustrations
-    image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
+image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
 
 
 
@@ -475,7 +475,7 @@ label JH1:
     show bg black with fade
     #(Story Beat 1 Part 1)
     J"..."
-
+    show Lenorra at center_lower with Dissolve(0.3)
     LQ"""This is her right? 
 
     (Lenorra's colleagues nod and promptly scatter, preparing an operation room for memory extraction.)"""
@@ -515,6 +515,8 @@ label JH1:
     (...At that moment, what Lenorra had said was true, and because of this, she radiated as light I felt a temporary warmth in.)
     
     (Though I still shook where I sat. Something was missing...)"""
+
+    hide Lenorra with Dissolve(0.3)
     show bg toilet with fade
     #(Transition back to reality)
 
@@ -542,7 +544,7 @@ label JH1:
     show bg black with fade
     #(Transition back to story beat)
 
-    J"(Lenorra lets out a soft chuckle as she sits beside me now... I am confused, it felt like Lenora knew more than she let on...)"
+    J"(Lenorra lets out a soft chuckle as she sits beside me now... I am confused, it felt like Lenorra knew more than she let on...)"
 
     LQ"""The Amanita muscaria lacks this flaw. It is an example of why I adore fungi. 
     
@@ -684,7 +686,7 @@ label JH1:
 
     J"I'm not making excuses... "
 
-    J"""(it seems like Lenora could hear me, but she chose to ignore my words...) 
+    J"""(it seems like Lenorra could hear me, but she chose to ignore my words...) 
     
     (I look at my body, I'm weak, the stress is getting to me... )
     
@@ -1517,7 +1519,7 @@ label JS2:
 
     J"(and her...)"
 
-    J"""(I feel nervous, scared, it feels impossible to let out words in this state.)
+    J"""(I feel nervious, scared, it feels impossible to let out words in this state.)
     
     (But Andrew's reassuring smile makes it feel a bit...easier for me to do so.)"""
 
@@ -1529,7 +1531,7 @@ label JS2:
 
     A"Ah...um... everyone feels that way, Julia. It's... it's fine."
 
-    J"(I noticed how he said that so apprehensively...his smile becomes more nervous and unsure.)"
+    J"(I noticed how he said that so apprehensively...his smile becomes more nervious and unsure.)"
 
     A"Don't be scared... be...Happy that you still have your friends alongside you."
 
