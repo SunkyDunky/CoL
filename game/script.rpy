@@ -4,171 +4,197 @@
 # name of the character.
 
 #setting
-default hp = 15
-default haveAndrew = False
+    default hp = 15
+    default haveAndrew = False
 
 # defining characters
-define J = Character("Julia",color="#F400FF")
-define R = Character("Renee", color= "#FF8700")
-define Q = Character("Quol", color="#0094FF")
-define A = Character("Andrew", color= "#ff0000")
-define LQ = Character("Lenorra", color="#00ff11")
-define G1 = Character("Agent1",color="#cacaca")
-define G2 = Character("Agent2",color="#cacaca")
-define A1 = Character("Audience1",color="#cacaca")
-define A2 = Character("Audience2",color="#cacaca")
-define L = Character("Lars",color="#fcff2e")
-define Z = Character("A spectator?",color="#6303ff")
+    define J = Character("Julia",color="#F400FF")
+    define R = Character("Renee", color= "#FF8700")
+    define Q = Character("Quol", color="#0094FF")
+    define A = Character("Andrew", color= "#ff0000")
+    define LQ = Character("Lenorra", color="#00ff11")
+    define G1 = Character("Agent1",color="#cacaca")
+    define G2 = Character("Agent2",color="#cacaca")
+    define A1 = Character("Audience1",color="#cacaca")
+    define A2 = Character("Audience2",color="#cacaca")
+    define L = Character("Lars",color="#fcff2e")
+    define Z = Character("A spectator?",color="#6303ff")
 
 # define character sprites
-image Renee :   
-    "characters/Renee.png"
-    zoom 0.49
-image Renee worried:   
-    "characters/Renee worried.png"
-    zoom 0.49  
-image Renee smile:   
-    "characters/Renee smile.png"
-    zoom 1.59
-image Julia :   
-    "characters/Julia-half.png"
-    zoom 0.2
-image Julia nervious:   
-    "characters/Julia-half nervious.png"
-    zoom 0.2    
-image Julia traumatized:   
-    "characters/Julia-half traumatized.png"  
-    zoom 0.2
-image Julia exhausted:   
-    "characters/Julia-half exhausted.png"  
-    zoom 0.2
-image Quol :   
-    "characters/Quol.png"
-    zoom 1.59
-image Quol Angry:   
-    "characters/Quol Angry.png"
-    zoom 1.78
-image Lenorra:   
-    "characters/Lenorra.png"
-    zoom 0.5  
-image Andrew:   
-    "characters/Andrew.png"
-    zoom 0.5    
-image Agent1:   
-    "characters/Agent.png"
-    zoom 0.5
-image Agent2:   
-    "characters/Agent.png"
-    zoom 0.5
+    #Renee
+        image Renee :   
+            "characters/Renee.png"
+            zoom 0.49
+        image Renee worried:   
+            "characters/Renee worried.png"
+            zoom 0.49  
+        image Renee smile:   
+            "characters/Renee smile.png"
+            zoom 1.59
+    #Julia        
+        image Julia :   
+            "characters/Julia-half.png"
+            zoom 0.2
+        image Julia nervious:   
+            "characters/Julia-half nervious.png"
+            zoom 0.2    
+        image Julia traumatized:   
+            "characters/Julia-half traumatized.png"  
+            zoom 0.2
+        image Julia exhausted:   
+            "characters/Julia-half exhausted.png"  
+        image Julia alt:   
+            "characters/Julia-half alt.png"
+            zoom 0.2
+        image Julia alt nervious:   
+            "characters/Julia-half alt nervious.png"
+            zoom 0.2    
+        image Julia alt traumatized:   
+            "characters/Julia-half alt traumatized.png"  
+            zoom 0.2
+        image Julia alt exhausted:   
+            "characters/Julia-half alt exhausted.png"  
+            zoom 0.2
+        image Julia raincoat:   
+            "characters/Julia-half raincoat.png"
+            zoom 0.2
+        image Julia raincoat nervious:   
+            "characters/Julia-half raincoat nervious.png"
+            zoom 0.2    
+        image Julia raincoat traumatized:   
+            "characters/Julia-half raincoat traumatized.png"  
+            zoom 0.2
+        image Julia raincoat exhausted:   
+            "characters/Julia-half raincoat exhausted.png"  
+            zoom 0.2        
+    #Quol    
+        image Quol :   
+            "characters/Quol.png"
+            zoom 1.59
+        image Quol Angry:   
+            "characters/Quol Angry.png"
+            zoom 1.78
+        image Quol raincoat:   
+            "characters/Quol raincoat.png"
+            zoom 1.59
+        image Quol raincoat Angry:   
+            "characters/Quol raincoat Angry.png"
+            zoom 1.78    
+    image Lenorra:   
+        "characters/Lenorra.png"
+        zoom 0.5  
+    image Andrew:   
+        "characters/Andrew.png"
+        zoom 0.5    
+    image Agent1:   
+        "characters/Agent.png"
+        zoom 0.5
+    image Agent2:   
+        "characters/Agent.png"
+        zoom 0.5
+
 # defining bgs
-image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
-image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
-image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
-image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
-image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
-image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.jpg", config.screen_width, config.screen_height)
-image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
-image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
+    image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
+    image bg entrance_ticket = im.Scale("backgrounds/bg_entrance_ticket.png", config.screen_width, config.screen_height)
+    image bg stage = im.Scale("backgrounds/stage.png", config.screen_width, config.screen_height)
+    image bg greenroom = im.Scale("backgrounds/greenroom.png", config.screen_width, config.screen_height)
+    image bg toilet = im.Scale("backgrounds/toilet1.png", config.screen_width, config.screen_height)
+    image bg ReneeBedroom = im.Scale("backgrounds/ReneeBedroom.jpg", config.screen_width, config.screen_height)
+    image bg Hotelalley = im.Scale("backgrounds/HotelAlley.png", config.screen_width, config.screen_height)
+    image bg black = im.Scale("backgrounds/black.png", config.screen_width, config.screen_height)
 
 # define other images
-image Renee bag :   
-    "Renee bag.png"
-    zoom 0.3
+    image Renee bag :   
+        "Renee bag.png"
+        zoom 0.3
 
 #transform
-transform right_center_lower:
-    xalign 0.75
-    ypos 0.15
-transform left_center_lower:
-    xalign 0.25
-    ypos 0.15
-transform center_lower:
-    xalign 0.5
-    ypos 0.15
-transform textbox_over:
-    xalign 1
-    ypos 0.54
-
+    transform right_center_lower:
+        xalign 0.75
+        ypos 0.15
+    transform left_center_lower:
+        xalign 0.25
+        ypos 0.15
+    transform center_lower:
+        xalign 0.5
+        ypos 0.15
+    transform textbox_over:
+        xalign 1
+        ypos 0.54
 
 #disclaimer
-label splashscreen:
-        show text """Disclaimer
+    label splashscreen:
+            show text """Disclaimer
 
-        This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
-        pause 5.0
-        hide text with dissolve
-        return
-
+            This demo of Concert of Liberation is a work in progress and intended solely as a test of concept. Please be aware that all content within this demo is unfinished and may not represent the final quality or features of the intended game. Bugs, glitches, and incomplete elements are expected. Your feedback and insights are highly appreciated as they will help us improve and shape the final product. Thank you for participating in this early stage of development."""with dissolve 
+            pause 5.0
+            hide text with dissolve
+            return
 
 #selection screen
-image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
-screen character_selection:
-    vbox:
-        xalign 0.5
-        yalign 0.5
-        hbox spacing 40:  # Add space between each option
-            imagebutton:
-                idle Transform("ticket_Renee.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("ticket_Renee.png", zoom=1.1)
-                action Jump("Sorry")
-            imagebutton:
-                idle Transform("ticket_Julia.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("ticket_Julia.png", zoom=1.1)
-                action Jump("Julia_Start")
-            imagebutton:
-                idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
-                hover Transform("ticket_Quol.png", zoom=1.1)
-                action Jump("Sorry")
-    text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
-
+    image bg entrance_ticket_dark = im.Scale("backgrounds/bg_entrance_ticket_dark.png", config.screen_width, config.screen_height)
+    screen character_selection:
+        vbox:
+            xalign 0.5
+            yalign 0.5
+            hbox spacing 40:  # Add space between each option
+                imagebutton:
+                    idle Transform("ticket_Renee.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                    hover Transform("ticket_Renee.png", zoom=1.1)
+                    action Jump("Sorry")
+                imagebutton:
+                    idle Transform("ticket_Julia.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                    hover Transform("ticket_Julia.png", zoom=1.1)
+                    action Jump("Julia_Start")
+                imagebutton:
+                    idle Transform("ticket_Quol.png", size=(config.screen_width / 5, config.screen_height * 2 / 3), zoom=1.0)
+                    hover Transform("ticket_Quol.png", zoom=1.1)
+                    action Jump("Sorry")
+        text "{b}Choose a Character{/b}" size 40 align (0.5, 0.93)  # Add title at the bottom of the screen
 
 #timer
-default downer = 0
+    default downer = 0
 
-screen timerDown(rangeD, missed_event):
-    on "show" action SetVariable("downer", rangeD)
-    frame:
-        xalign 0.5
-        yalign 0.1
-        hbox:
-            timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
+    screen timerDown(rangeD, missed_event):
+        on "show" action SetVariable("downer", rangeD)
+        frame:
+            xalign 0.5
+            yalign 0.1
             hbox:
-                xalign 0.5
-                bar:
-                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
-                    yalign 0.0
-                    xmaximum 500
-                    bar_invert True
-                    right_bar "gui/bar/left.png"
-                    left_bar "gui/bar/right.png"
-                    ysize 10  # Adjust this value to change the thickness of the bar
-                bar:
-                    value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
-                    yalign 0.0
-                    xmaximum 500
-                    ysize 10  # Adjust this value to change the thickness of the bar
-                    
-
-
+                timer 0.1 action If(0 < downer, true = SetVariable("downer", downer - 0.1), false = [Hide("timerDown"), Jump(missed_event)]) repeat True
+                hbox:
+                    xalign 0.5
+                    bar:
+                        value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                        yalign 0.0
+                        xmaximum 500
+                        bar_invert True
+                        right_bar "gui/bar/left.png"
+                        left_bar "gui/bar/right.png"
+                        ysize 10  # Adjust this value to change the thickness of the bar
+                    bar:
+                        value AnimatedValue(value=downer, range=rangeD, delay= 0.1)
+                        yalign 0.0
+                        xmaximum 500
+                        ysize 10  # Adjust this value to change the thickness of the bar            
 
 # QTE choice screen
-screen qte_choice(items):
-    style_prefix "qte"
-    zorder 1
-    for i in items:
-        frame:
-            xalign i[2]  # Adjust this to move the box horizontally
-            yalign i[3]  # Adjust this to move the box vertically
-            has vbox:
-                textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
+    screen qte_choice(items):
+        style_prefix "qte"
+        zorder 1
+        for i in items:
+            frame:
+                xalign i[2]  # Adjust this to move the box horizontally
+                yalign i[3]  # Adjust this to move the box vertically
+                has vbox:
+                    textbutton "{size=-10}" + i[0] + "{/size}"xalign 0.5 action [Hide("timerDown"), Jump(i[1])] style "qte_button"
 
 #temp hp screen
-screen display_hp:
-    text "HP: [hp]" xpos 0.1 ypos 0.1
-
+    screen display_hp:
+        text "HP: [hp]" xpos 0.1 ypos 0.1
 
 #Illustrations
-image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
+    image JS1FS = im.Scale("JS1/JS1FS.png", config.screen_width, config.screen_height)
 
 
 
@@ -235,16 +261,8 @@ label Julia_Start:
     hide Agent1
     hide Agent2
     hide Lenorra
-    show Julia exhausted at textbox_over
-    menu:
-        J"(What should I do?)"
-        "Warn my bandmates about them":
-            hide Julia
-            Z"That option is unavailable...for now."
-            show Julia exhausted at textbox_over
-            jump J2
-        "Ignore them and hope it doesn't worsen the situation":
-            jump J2
+    
+    jump J2
 
     return
 
@@ -413,7 +431,7 @@ label JS0:
 
     (My eyes darted between the chaotic scene unfolding before me and the unwavering bravery of Quol.)
 
-    (It's in this moment, that I realise I must do something other than stay in this vulnerable position.)"""
+    (It's in this moment, that I realize I must do something other than stay in this vulnerable position.)"""
 
     menu:
         J"I'm hyperventilating.."
@@ -1070,7 +1088,7 @@ label JS11:
 
     show Julia traumatized at textbox_over
 
-    J"""(However, I turned my head towards the direction of Renee and witnessed her arm getting hit by the baton of one of the agents and tumbling to the floor.)
+    J"""(However, I turned my head towards Renee and witnessed her leg getting hit by the baton of one of the agents and tumbling to the floor.)
 
     (My heart skipped a beat.)
 
@@ -1151,9 +1169,23 @@ label JS11:
     hide Renee with Dissolve(0.3)
     show bg stage with fade
 
-    J"""(I snapped back to reality and held my bat tightly as I knocked down the agent who injured Renee.)
+    J"""(I snapped back to reality, realizing her bag was near the drums. Pulling it closer, I hurriedly searched for anything that could help Renee's injured leg.)
 
-    (I realised that I had to protect everyone.)"""
+    (As I search through her bag, I find her favorite drink, Ice Red Tea, still cold. An idea flashes in my mind, using the chilled tea like an ice pack for her bruised leg.)
+
+    (I grab the tea, gently applying it to the affected area, hoping the cold can provide some relief to Renee.)
+
+    (As I tended to Renee's leg, I heard footsteps approaching behind us fast. Panic surged through me as I turned around to see an agent charging toward us.)
+
+    (I instinctively shielded Renee from the impending danger, but Quol intercepted the threat, delivering a powerful blow that left the agent unconscious.)
+
+    (I breathed a deep sigh of relief before turning my attention back to Renee, helping her back on her feet by placing her arm over my shoulder.)
+
+    (Quol turns to us to check, I give her a reassuring nod showing we're okay. She nods in response before her attention returns to the agents.)
+
+    (The tension lingers in the air, a silent acknowledgment of the dangers we've faced and those that still loom ahead.)
+
+    (I realized that I had to protect everyone.)"""
 
     jump JS13
 
@@ -1190,7 +1222,7 @@ label JS12:
 
     hide Renee with Dissolve(0.3)
 
-    J"""(However, I turned my head towards the direction of Quol and witness her leg getting hit by the baton of one of the agents and tumbling to the floor.)
+    J"""(However, I turned my head towards Quol and witness her leg getting hit by the baton of one of the agents and tumbling to the floor.)
 
     (My heart skipped a beat.)
 
@@ -1356,7 +1388,7 @@ label JS12:
 
     J"""(I snapped back, with moments to spare, I swung with all my might, my bat knocked down the agent who injured Quol.)
 
-    (I realised that I had to protect my friends at all cost..)"""
+    (I realized that I had to protect my friends at all cost..)"""
 
     jump JS13
 
@@ -1780,9 +1812,9 @@ label JS25:
     
     AH-
     
-    (Andrew immedately grabbed my arm and attempted to run the opposite direction, but their hands were already grabbing my arm tight.)
+    (Andrew immediately grabbed my arm and attempted to run the opposite direction, but their hands were already grabbing my arm tight.)
     
-    (After a moment of stuggle, both of us were apprehended.)"""
+    (After a moment of struggle, both of us were apprehended.)"""
     hide Andrew with Dissolve(0.3)
     jump badend
 
