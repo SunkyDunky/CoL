@@ -1426,112 +1426,329 @@ label JS2:
     You're drenched in sweat already, I get how tense it is!"""
 
     J"I....I..."
-    menu:
-        J"Andrew.."
-        "I left them behind..":
-            jump JS21
-        "Can you come to the front stage now?...please?":
-            jump JS22   
 
-label JS21:
-    J"They are here for us ... the institute.."
+    J"Andrew.."
 
-    J"(I bury my face deep into my hands.)"
+    J"Iam...ah ... scared ... Andrew..."
 
-    J"(My thoughts... it's spiraling back and forth between the present and the past.)"
-    
+    J"there are agents, the institute... we need to ... to..."
+
     A"They're here...?"
 
-    J"i don't know anything.."
+    J"(I nod as I am still gasping for air.)"
 
-    J"I don't know anything!"
+    J"(Andrew stands up hastily from the couch, gently picks up a glass of water and hands it over to me.)"
 
-    J"... iam weak. Compared to who I was..."
+    A"Here... calm down..."
 
-    A"Julia. What are you talking about? Your past self? Pull yourself together!"
+    J"(I slowly drink the glass of water, then exhale in relief after I finish, putting the glass on the nearby desk. The heavy gasps decreases into smaller panting of anxiety as I daze into the floor.)"
 
-    J"(Andrew gently grabs my shoulders, as my hands slowly fall from my face, revealing my teary eyes.)"
+    J"(He then grabs my right shoulder, softly caressing it to comfort me as he looks at the door, his face visibly tense up in concern.)"
 
-    J"I was really dissatisfied, with my life...I..."
+    A"Stay here."
 
-    J"I have to keep running away..."
+    J"(no...no I won't. I quickly look up to him, our eyes meet.)"
 
-    J"do I have to keep running away? from my past? F-from...them?"
+    J"No!..."
 
-    A"Everyone feels that way, Julia. It's fine."
+    J"""(I am indeed scared. I don't want to return to the institute..being caught by them is the last thing I wanted to happen...)
+    
+    (but I shouldn't just stay here and do nothing as my friends struggle...)"""
 
-    A"while pursuited, there's a point where it feels like there's no end to it. I think that's more reason for you to find more happiness in small things. I'd say you already did a great job."
-
-    J"...I don't get it. What did...I do?"
-
-    A"Julia. Why did you join this band in the first place?"
+    A"""H-hey now...Are ya sure?...You said you're scared. 
+    
+    I don't want you to catch any bruises y'know?"""
 
     J"..."
 
-    A"Any small, atomic efforts are already admirable. Have some self respect for yourself Julia. You might be better than you think you are right now. And you should realize that sooner."
+    J"(I was about to say something, but my words caught up in my throat as the thought of my past lingers back into my mind.)"
 
-    A"your initiative of agreeing to join the band is already an effort to have great little things in your journey. Alongside people that you can share moments and grow with."
+    J"(Andrew then nudges my shoulder gently, still grabbing onto it, to have us facing each other.)"
 
-    J"""(...I think I do get it now.)
+    A"""Julia?... You okay? 
+    
+    Tell me anything if you want to. 
+    
+    I can understand you're scared."""
 
-    (My friends... I should be more thankful to them. Leaving them behind just like that was a mistake. I frown and look down to the floor, feeling heavy guilt deep within my chest, I can hardly speak up.)"""
-    jump JS23
+    J"..."
 
-label JS22:
-    A"Huh..?"
+    A"Julia... I know you're holding some words in your mouth..."
 
-    A"What happened? is there a problem? or someone wants my autograph? Ehhe.."
+    J"(I am terrified.)"
+
+    J"""(I am terrified that all of this will keep happening, and I am really scared of the past crawling at the back of my mind...)
+    
+    (I can't move. I don't want to recall the past... but I can't move a single muscle.)"""
+
+    J"(... I am terrified of the institute...the agents...)"
+
+    J"(and her...)"
+
+    J"""(I feel nervous, scared, it feels impossible to let out words in this state.)
+    
+    (But Andrew's reassuring smile makes it feel a bit...easier for me to do so.)"""
+
+    J"""...do... do I have to keep running away? from my past? F-from...them? 
+    
+    What if there's no next time?--
+    
+    What if we're gonna be cornered?--"""
+
+    A"Ah...um... everyone feels that way, Julia. It's... it's fine."
+
+    J"(I noticed how he said that so apprehensively...his smile becomes more nervous and unsure.)"
+
+    A"Don't be scared... be...Happy that you still have your friends alongside you."
+
+    J"...I... don't get it."
+
+    J"(I see him glancing silently into the floor as he scratches his head briefly, before looking back at me again.)"
+
+    A"Julia... Why did you join this band in the first place?"
+
+    J"..."
+
+    A"""...Your... initiative of agreeing to join the band is already an effort to have great little things in your journey. 
+    
+    Alongside people that you can share moments and grow with."""
+
+    J"Huh..?"
 
     A"..."
 
-    J"(I bury my face deep into my hands.)"
+    J"(I do get what he is saying, I can understand he is trying. But I don't think that connects at all...)"
 
-    J"(My thoughts... it's spiraling back and forth between the present and the past.)"
+    J"it's not that ... Andrew..."
 
-    A"...So... somethin' wrong then."
+    A"""Ah!- 
+    
+    S-sorry! 
+    
+    W-well? 
+    
+    Lemme think...
+    
+    Uhh..."""
 
-    J"i dont know anything.."
+    J"""the institute... will they always chase us? 
+    
+    Will there be an end to this? 
+    
+    I am scared not only at this moment... 
+    
+    I am scared of what will happen beyond this moment... 
+    
+    and my pas-"""
 
-    J"I don't know anything!"
+    A"""I-i know... Julia! 
+    
+    Everyone feels the same way too. Everyone has their own histories..."""
 
-    A"H-hey! Julia! Calm down..."
+    A"O-or so I thought..."
 
-    J"the institute..."
+    J"(... I know everyone has their own history... what does he mean?...)"
 
-    A"I know... Julia. Everyone feels the same way too."
+    J"""Yes I know... 
+    
+    but h-how long... how long do we have to keep running away..? 
+    
+    From the past ... 
+    
+    from them..."""
 
-    J"h-how long... how long do we have to keep running away..? From the past ... from them..."
+    J"(Andrew shakes my shoulders lightly as he stares at me, genuine concern is visible on his face, but encouragement is vivid in his eyes.)"
 
-    J"i wish I could be stronger as who I was...but at the same time I... dont like it... the past... i... I don't ..."
+    A"""Snap out of it, okay? 
+    
+    whatever was your past, it doesn't matter now. 
+    
+    I don't want to hear ifs and buts. 
+    
+    What's happening is now. 
+    
+    And that's what matters!"""
 
-    J"(My breath gets heavier.)"
-
-    J"(Andrew gently grabs my shoulders, as my hands slowly fall from my face, revealing my teary eyes.)"
-
-    J"I am scared...scared of whatever happened back then, whatever I did back then, whatever that haunts us! I don't know what to do! Who I was?! Who were we?! I–"
-
-    A"Julia."
-
-    J"(Andrew shook my shoulders lightly as he stares at me, genuine concern is visible on his face, but encouragement is vivid in his eyes.)"
-
-    A"Does that matter now?! All we need to do is to just... face whatever the present gives us on the way, hangin' too much back there will get you nowhere and keep being there!"
-
-    J"B...But–"
-
-    A"Snap out of it, okay? Whatever happened, whatever it was, I don't want to hear if's and but's! What's happening is now! And that's what matters!"
+    J"(My past doesn't matter...?)"
 
     J"...Andrew... but..."
 
     J"...would you...even understand?...i..."
 
-    A"Trust me. I have my own history too. Everyone does."
+    A"""Trust me... I do. 
+    
+    I did say that everyone has their...pasts righ-"""
 
-    A"And the only thing that matters now is what you want to do now, and what you choose to be."
+    J"""I know!-- 
+    
+    you don't need to mention it twice Andrew... but I am just..."""
+
+    J"i don't know what to do... what to say..."
+
+    J"(Andrew close his eyes as he sighs.)"
+
+    A"Look...Julia. You can... you have us right? You can believe in us."
+
+    J"""...it felt isolating... 
+    
+    it felt so cramped...
+    
+    I do have Renee,
+    
+    Quol,
+    
+    ....you... 
+    
+    but I can't seem to believe anyone so much, and I can't even go elsewhere...without the thought of the institute!..."""
+
+    J"i wish...I could have back the friends I had. even if it's just a small conversation..."
+
+    J"i wish...my family didn't..."
+
+    J"i wish things could've been..."
+
+    J"(Andrew's expression frowns more.)"
+
+    A"...but what happened... has happened... Julia..."
+
+    J"(there's a hint of troubled in his expression.)"
+
+    J"...I know... but Andrew i-"
+
+    A"Lets not think about that right now! Please Julia. Don't bother about it or you'll always be like this!"
+
+    J"(I can feel Andrew getting more desperate for us to move. But he felt as if he's ignorant about it...)"
+
+    A"Please. Are you choosing to stay here or go with me???"
+
+    J"I... want to!"
+
+    A"Then stop thinking about whatever that had happened! drop it now or we would never move!"
+
+    J"""(...huh?!...)
+    
+    (I know I am stuck on my mind about the past...) 
+    
+    (but to just drop it like that isn't as easy as just simply saying it...)"""
+
+    J"I know Andrew... But-"
+
+    A"No buts and ifs! Do you trust me and the others?"
+
+    J"""(I do! But that's beside the point...) 
+    
+    (why is he asking that?) 
+    
+    (Is he that desperate?) 
+    
+    (Is he trying to brush this off?)"""
+
+    J"Andrew...I do trust you, you all!"
+
+    A"Alright then don't bother over what already happened..."
+
+    J"""(he's trying to brush it off isn't he...)
+    
+    (As if it's just a simple switch of a button...to forget all these...)"""
+
+    J"Andrew! It's not easy just like that! Do you...do you have any idea!"
+
+    A"I do Julia! It's hard! But it's what we have to do this instance!"
+
+    J"If you do... you can't just say I could just wipe the past off!"
+
+    J"""(I almost don't know what I am saying anymore, he says it as if it's so easy to just... let it all go.) 
+    
+    (I know I shouldn't be stuck in the past. )
+    
+    (But telling someone to just forget about it as if I have control over it...)"""
+
+    J"(our tone raise for every exchange of words.)"
+
+    A"Its hard to not overthink about it, but let's put it aside now!"
+
+    J"do you forget about the past as easy as how you said it?!"
+
+    A"""Of course I don't! Don't say that! 
+    
+    But if we keep clinging on the past our ass would still be sitting in here all day! 
+    
+    Don't bring up about the past!"""
+
+    J"But you say it as if I should simply just be ignorant about it as much as you do!"
+
+    A"Its better that way than just to whine about it all the time!"
+
+    J"You wouldn't understand because you're just that ignorant!"
+
+    A"""it doesn't matter and it never matter because it happened! 
+    
+    Think and whine a lot and it wouldn't just magically fix your past anyways??"""
+
+    J"""See?! 
+    
+    Do you even care about any past?! about people you cared before?! Are you that ignorant about the-"""
+
+    A"I KNOW! I JUST DONT WANT TO SEE IT BACK ANYMORE!"
+
+    J"(I am left speechless as I realized whatever we said, my face is in shock and worry as Andrew yells, his face gets a bit redder.)"
+
+    A"""I DONT WANT TO RECALL IT ANYMORE! I MISS THEM TOO! AS MUCH AS YOU DO TO YOUR OWN! 
+    
+    DO YOU THINK ITS NOT PAINFUL TO GET REMINDED OF THEM?!"""
+
+    A"""I WISH I COULD GO OUT THERE AND TALK TO SOMEONE TOO! TALK TO MY FAMILY! MY FRIENDS! 
+    
+    AS IF NOTHING IS ON MY TAIL EVERY NOW AND THEN! 
+    
+    AS IF... if...."""
+
+    J"(we're both gasping for air, I can only look at the floor as all the things I said finally sink into my thoughts.)"
+
+    J"""(But he said something is after him... is the institute after him too?)
+    
+    (...nonetheless...I feel...guilty. )
+    
+    (I think this is my fault... my eyes are watery again...)"""
+
+    A"..."
+
+    J"""(Andrew grab my left shoulder once again, trying to comfort me. 
+    
+    I take a few steps back... i really have to apologize. 
+    
+    But it's hard. It's stuck in my throat...)"""
+
+    A"..You know..."
+
+    A"You remind me exactly of... myself... Julia."
+
+    J"(as soon as I heard this, I lift my head and our eyes meet.)" 
+
+    A"""Afraid, Anxious, Lonely, Lost... And many many doubts... but I try to ignore all of that so I could live on. 
+    
+    It's hard but I tried my very best. 
+    
+    But because of this I do admit I got a bit too... ignorant and only think about moving on."""
+
+    A"""I didn't think about how difficult it actually is for someone else. 
+    
+    Just so you know Julia... no matter how much ignorant I may seem... beneath this... I am just like you. 
+    
+    I am just as terrified as you are, about the past and the future."""
+
+    A"But we can't just let all those lingering thoughts halt us In the present. What matters now is what we choose to do now, what we choose to be."
+
+    A"""The past shouldn't pull us back, it should push us forward. 
+    
+    It should be the reason as we go far far away from whatever happened and face what's next."""
 
     J"..."
 
-    J"(...I think I get what he's saying.)"
+    J"(as much as the past hurts me, he does have...a point.)"
 
+    J"(I never expected us to have similar experiences. Usually he's just relaxed everytime I saw him since the day he first joined... but I never seen this side of Andrew...)"
+        
     jump JS23
 
 label JS23:
