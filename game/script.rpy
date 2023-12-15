@@ -447,23 +447,257 @@ label JH1:
     play music "Fear_And_Terror.mp3"
     show bg toilet 
     show Julia at textbox_over with Dissolve(0.3)
-    J"""huff...huff...
+    J"(I hold the bathroom door shut so the agents don't come in, then take a few steps back when my surroundings momentarily feel silent.)"
 
-    I'm safe...aren't I?
+    J"Are they gone? They shouldn't know I'm here? But what do I do now—"
+
+    J"(I clutch my head, it is throbbing. These moments of running away feel familiar...)"
+
+    J"(Thoughts of  the NewFutures Institute slowly flooded my mind with experiences I don't want to recall.)"
+    show bg black with fade
+    #(Story Beat 1 Part 1)
+    J"..."
+
+    LQ"""This is her right? 
+
+    (Lenorra's colleagues nod and promptly scatter, preparing an operation room for memory extraction.)"""
+
+    J """(Lenorra smiles a little as she turns towards me.)
+    
+    (The intent in her gaze as she eyes me causes me to shiver. )
+    
+    (She kneels so that we are face to face, her faint smile fills me with terror.)
+
+    (Lenorra scoffs...)"""
+
+    LQ"""Julia... What is with that face? 
+    
+    Oh I understand now, you must be confused..."""
+
+    J"(Lenorra's smile fades for a moment as she puts her hand on my shoulder.)"
+
+    J"""(I want to say something to her but a choking feeling dwelling in my throat silences the courage I once had.)
+    
+    (That courage fails to escape me as a swallow with difficulty.)"""
+
+    LQ"Be not afraid my child, you are the key to a potential breakthrough that will change the future as we know it..."
+
+    J"..."
+
+    J"(Lenorra's gaze lingers as she scrutinizes me. She rubs my forehead for a brief moment before locking eye contact with me again.)"
+
+    LQ"""This may be the last time we speak Julia, but I understand how you feel. 
+    
+    Dwelling in a society where you don't know your true purpose in life can only worsen when your presence remains unknown and ignored by those closest to you..."""
+
+    J"""(Lenorra's speech was soft but somber.)
+    
+    (Her feelings of hope didn't reflect the dull surroundings of the Institute where I was seated...) 
+
+    (...At that moment, what Lenorra had said was true, and because of this, she radiated as light I felt a temporary warmth in.)
+    
+    (Though I still shook where I sat. Something was missing...)"""
+    show bg toilet with fade
+    #(Transition back to reality)
+
+    J"""(I am standing facing the bathroom door... That was a moment I experienced from the Institute)
+
+    (I start to think to myself... Lenorra was always interested in my mind... she never saw me as a person...)
+
+    (Footsteps can be heard rushing past the bathroom)
+
+    !!!
+
+    Sooner or later they will capture me... and those memories will become reality over again...
+
+    (My eyes widen in fear as my pupils jitter... I am reminded of that lingering pain from my past)
+
+    I don't want to go back to the institute... I don't want to leave this life behind...
+
+    ...
+
+    (I begin to lose balance, my body fighting to maintain control over my anxious thoughts)"""
+
+    LQ"A crucial flaw to the human mind is its independence..."
+
+    J"(I hear Lenorra's voice in my head again... I tear up as I lean against the wall)"
+    show bg black with fade
+    #(Transition back to story beat)
+
+    J"(Lenorra lets out a soft chuckle as she sits beside me now... I am confused, it felt like Lenora knew more than she let on...)"
+
+    LQ"""The Amanita muscaria lacks this flaw. It is an example of why I adore fungi. 
+    
+    Just the ability alone to share thoughts and form a hivemind means that no mushroom is left alone in isolation by its kin..."""
+
+    J"...what? "
+
+    J"(I recall another moment from the Institute... one that gives my throat a constricting feeling)"
+
+    LQ"""...now imagine if we adapted that trait onto the minds of humankind. 
+    
+    Our kind's collective thoughts would weave together, and become one just like this..."""
+
+    J"(Suddenly I find myself looking at my hand as Lenorra's fingers...)"
+
+    J"(...her fingers intertwined with mine as she holds my hand tightly...)"
+
+    LQ"""... this is just a singular example, but we'd all get to share our findings, our research, pain, happiness... 
+    
+    Our everything will bleed together so that we as individuals are never lost."""
+
+    J"(...I pull my hand away from Lenorra's, I felt uncomfortable with the weight of her glare)"
+
+    J"...I don't even know you? Why my memories?! "
+
+    J"(I am suddenly teary eyed... I wasn't getting any answers from her...)"
+    show bg toilet with fade
+    #(Transition back to reality)
+    
+    J"(I find myself shaking for a brief moment. I look at my hand, and I am reminded of that past interaction with Lenorra at the Institute.)"
+
+    J"""(I slowly slide against the wall, sitting down on the floor, left alone with my thoughts.)
+
+    (I looked at my hand again for a brief moment.)
+    
+    (I recall Lenorra's smile and that false sense of hope she radiated.)"""
+
+    J"Why are you back again...? to take everyone back to the institute with you?"
+
+    J"They can't experience the same pain I did... I don't want that to happen..."
+
+    J"""(A thought comes into my mind)
+
+    (You could turn yourself in)
+
+    (I don't know what to do, and suddenly ending it all here... it... it doesn't seem like a bad idea.) 
+    
+    (It would be better than the looks of disappointment from my friends...)"""
+
+    J"""The same hand that held Lenorra's that day is the one I used to play guitar with my band...
+
+    ... the one I used to beat up people with my bat, to train with Quol... or cook with Renee."""
+
+    J"""(I grip my hands, my nails digging into my skin.)
+    
+    (If Lenorra stood in front of me in this bathroom right now, would I be able to fight against her with the state?)"""
+
+    J"""(I couldn't... and I hated this answer.) 
+
+    (My vision is blurred by my tears, as I relax my hand, there's a possibility that everything right now falls to ruin because of me!)
+
+    (I stand up and I walk towards the washroom exit... but then I find myself stopping in place.)
+
+    (...) 
+
+    (When I see my reflection in the mirror, I look at myself and I don't like what I see.)"""
+
+    #A/N: 
+    #(transition back to storybeat)
+    show bg black with fade
+    LQ"Is the room ready? I want Julia secured to the hospital bed..."
+
+    J"(Her speech dwindles into muffles as I fall unconscious accompanied by a pounding pain in my head.)"
+    show bg toilet with fade
+    #(Story Beat 1 Part 1 End)
+    J"""(I find that I was talking to myself in the bathroom facing the mirror...)
+    
+    (tears seeped down my cheeks... )
+    
+    (my head would continue to hurt just like that day they first caught me.)"""
+
+    J"Could this all be my fault? Are they really here to extract my memories again?"
+
+    J"(I look at myself in the mirror... my reflection reminded me of the terror I felt there... I get anxious)"
+
+    J"""Just a few moments ago, everything was fine... 
+
+    Everything felt comfortable... the debut...the...the... 
+
+    It's... all so fragile...""" 
+
+    J"(I glance at the mirror again as I take a few steps back, leaning against a bathroom stall)"
+
+    J"(The face that looks right back at me stuns me... I hadn't been this terrified since the first memory extraction)"
+    show bg black with fade
+    #A/N: Fade to black as the stall mirror "transforms" into a window a helpless Julia bound to a hospital bed would look through 
+    #(Mental Breakdown + Story Beat 1 Part 2) 
+    J"(...murmurs can be heard in the background alongside miscellaneous noise, and footsteps made by Lenorra towards her colleagues)"
+
+    J"""(...as I regain consciousness I notice restraints that bind me to a sterile bed. I am unable to move and forced to look ahead through a window... I focus on Lenorra.)
+
+    (She was surrounded by a group of people conversing amongst one another)"""
+
+    G1"Is it necessary to bind her to the bed like that..."
+
+    LQ"""Her state of mind is dwindling and she wants to leave. 
+    
+    I got her to lower her guard and now we can begin searching her memories for any evidence of underlying Brookcastle details."""
+
+    G1"However, she has said countless times before... Julia can't recall"
+
+    LQ"""... and you choose to believe the patient over your superior! 
+    
+    Given the circumstances provided by previous information we've found and past events, it might be beneficial to examine Julia's mind closely...
+
+    ...even if she doesn't know whatever memories lie in her brain right now, the documents show that she is related to Brookcastle. That alone is strong enough evidence to examine her mind..."""
+
+    J"(I gather enough strength to attempt to wiggle myself free but it does not work... it also seems to have caught Lenorra's attention)"
+
+    J"(Lenorra speaks over an intercom)"
+
+    LQ"""In this state your mind is fragile. There's no need to worry though... All you need to do is relax. 
+    
+    I have the proper technology providing for a painless procedure. 
+    
+    Hence, the only obstacle making things difficult is yourself alone. """
+
+    LQ"Choose to cooperate and this procedure will go smoothly..."
+
+    J"(I take a moment to examine my surroundings, high-tech equipment, some of which I'm familiar with only serve to feel my fear)"
+
+    J"""how many times do I need to say it to you? 
+    
+    I really don't know anything about this incident you have the wrong person— 
+    
+    please—"""
+
+    LQ"This again..."
+
+    J"I'm not making excuses... "
+
+    J"""(it seems like Lenora could hear me, but she chose to ignore my words...) 
+    
+    (I look at my body, I'm weak, the stress is getting to me... )
+    
+    (It is starting to feel hopeless...)"""
+    show bg toilet with fade
+    #(Transition back to reality)
+    J""" Even before all of this— I don't know what I was doing with my life. 
+
+    It was always torn away from me by them— 
+
+    The Institute...
+
+    These days I find myself crying alone because of them... just like right now..."""
+
+    J"""(I look away from the mirror and for a moment I eye the exit door...)
+    
+    (I focus on my breathing... it's as loud as ever...)"""
+
+    J"""Huff...huff...
+
+    They'll eventually find me if I hide out here
 
     What can I do now...what do I do??"""
 
     menu:
-        "Go find Andrew":
-            hide Julia
-            jump JS2
-        "Rush and help your friends":
-            hide Julia
-            show bg stage with fade
-            jump jhfs5
-        "Don't go outside":
+        "No! The agents they will find me if I stay in here any longer ":
             hide Julia
             jump JH2
+        "Maybe my friends will come for me if I wait out the noise... I should just hide out here":
+            hide Julia
+            jump JH3
 
 
 
@@ -1337,12 +1571,7 @@ label JS25:
 
 
 label JH2:
-    hide Julia
-    J"Without hesitation, I stepped inside and locked the door behind her. The silence enveloped me, and tears welled up in her eyes. She collapsed onto the cold, tiled floor, her sobs echoing in the confined space."
-    show Julia at center_lower
-    J"She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me...She is here to get me..."
-    show bg Julia_toilet
-    "I..."
+    J"wip"
 
 
 

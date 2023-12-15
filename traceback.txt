@@ -1,32 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1019, in script
-    stop msuic fadeout 5
-  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
-    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
-Exception: Audio channel 'msuic' is unknown.
+  File "game/script.rpy", line 474, in script
+    Lq" Be not afraid my child, you are the key to a potential breakthrough that will change the future as we know it..."
+Exception: Sayer 'Lq' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1019, in script
-    stop msuic fadeout 5
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2259, in execute
-    self.call("execute")
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2241, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\statements.py", line 342, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 263, in execute_stop_music
-    renpy.music.stop(fadeout=eval(p["fadeout"]), channel=channel)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\music.py", line 298, in stop
-    c = get_channel(channel)
-  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\audio\audio.py", line 947, in get_channel
-    raise Exception("Audio channel %r is unknown." % name)
-Exception: Audio channel 'msuic' is unknown.
+  File "game/script.rpy", line 474, in script
+    Lq" Be not afraid my child, you are the key to a potential breakthrough that will change the future as we know it..."
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\100ga\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Lq' is not defined.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Concert of Liberation DEMO 1.0
-Thu Dec 14 03:18:07 2023
+Sat Dec 16 01:59:31 2023
