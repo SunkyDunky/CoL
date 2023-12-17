@@ -55,6 +55,18 @@ image Julia traumatized:
 image Julia exhausted:   
     "characters/Julia-half exhausted.png"  
     zoom 0.2
+image Julia cry:   
+    "characters/Julia-half cry.png"  
+    zoom 0.2    
+image Julia stare:   
+    "characters/Julia-half stare.png"  
+    zoom 0.2       
+image Julia smile:   
+    "characters/Julia-half smile.png"  
+    zoom 0.2    
+image Julia eep:   
+    "characters/Julia-half eep.png"  
+    zoom 0.2         
 image Julia alt:   
     "characters/Julia-half alt.png"
     zoom 0.2
@@ -78,7 +90,22 @@ image Julia raincoat traumatized:
     zoom 0.2
 image Julia raincoat exhausted:   
     "characters/Julia-half raincoat exhausted.png"  
-    zoom 0.2        
+    zoom 0.2       
+image Julia lab:   
+    "characters/Julia-half lab.png"
+    zoom 0.2
+image Julia lab nervious:   
+    "characters/Julia-half lab nervious.png"
+    zoom 0.2    
+image Julia lab traumatized:   
+    "characters/Julia-half lab traumatized.png"  
+    zoom 0.2
+image Julia lab exhausted:   
+    "characters/Julia-half lab exhausted.png"  
+    zoom 0.2    
+image Julia lab cry:   
+    "characters/Julia-half lab cry.png"  
+    zoom 0.2         
 #Quol    
 image Quol :   
     "characters/Quol.png"
@@ -96,10 +123,25 @@ image Quol raincoat Angry:
 image Lenorra:   
     "characters/Lenorra.png"
     zoom 0.5  
+image Lenorra angry:   
+    "characters/Lenorra angry.png"
+    zoom 0.5     
 #Andrew    
 image Andrew:   
     "characters/Andrew.png"
-    zoom 0.5    
+    zoom 0.5   
+image Andrew Angry:   
+    "characters/Andrew Angry.png"
+    zoom 0.5
+image Andrew concerned:   
+    "characters/Andrew concerned.png"
+    zoom 0.5 
+image Andrew confused:   
+    "characters/Andrew confused.png"
+    zoom 0.5 
+image Andrew understanding:   
+    "characters/Andrew understanding.png"
+    zoom 0.5                   
 #Agent    
 image Agent1:   
     "characters/Agent.png"
@@ -111,6 +153,10 @@ image Agent2:
 image Lars:   
     "characters/Lars.png"
     zoom 0.5
+#Juliamum    
+image Juliamum:   
+    "characters/Julia mom.png"
+    zoom 0.5    
 
 # defining bgs
 image bg entrance = im.Scale("backgrounds/bg_entrance.png", config.screen_width, config.screen_height)
@@ -215,7 +261,8 @@ screen display_hp:
 #Illustrations
 image JS1FS = im.Scale("CG/JS1FS.png", config.screen_width, config.screen_height)
 image JS11 = im.Scale("CG/JS11.png", config.screen_width, config.screen_height)
-
+image Jh3door1 = im.Scale("CG/Jh3door1.png", config.screen_width, config.screen_height)
+image Jh3door2 = im.Scale("CG/Jh3door2.png", config.screen_width, config.screen_height)
 
 
 # The game starts here.
@@ -465,37 +512,43 @@ label JS0:
 label JH0:
     show bg black with fade
     J"(As panic grips my racing mind, I sprint towards the backstage area, my breath coming in ragged gasps.)"
-    show bg stage 
+    show bg stage with fade
     show Julia traumatized at textbox_over
     J"(I am hiding at the backstage shaking as I am filled with fear)"
     J"..."
     J"(I take a deep breathe, the agents haven't found me yet)"
+    show Julia nervious at textbox_over
     J"I should calm down... they are not here yet." 
     J"(I take deep breaths trying to be at ease)"
     J"They are not here yet..."
     J"But..."
     J"The agents...why are they back again... did they track me somehow?" 
-    J"(I hear the agents moving in the background as they tear apart the stadium looking for me. Calming down might get me captured... I... I don't want to go back to there)"
+    J"""(I hear the agents moving in the background as they tear apart the stadium looking for me.)
+
+    (Calming down might get me captured...)
+
+    (I... I don't want to go back to there)"""
     J" ...No..."
     J"(I shake my head prolonging a mental tailspin)"
+    show Julia traumatized at textbox_over
     J"""
     Haha... 
     We are safe here... we must be, right Quol? 
     """
     pause 1
     J"Quol?"
-    pause 5
+    pause 1
     J"""(I looked around the room.)
     
     (My face fills with dread)"""
     J"(No...)"
     J"Renee?"
-    pause 5
+    pause 1
     J"(I looked around the room again, eyes widening more by every second.)"
     J"Renee isn't here either..."  
     J"(I can feel my heart beginning to beat out of my chest upon realizing...)"
-    pause 5
-    J"{/b}'I am alone...'{/b}"
+    pause 1
+    J"{b}'I am alone...'{/b}"
    
     J"""(Breaths accompany my slow steps and the sudden truth that I've left my friends alone.)
     
@@ -505,9 +558,15 @@ label JH0:
     #heartbeat sfx
 
     J"(The agents... I hear them approaching backstage. My body flinches, almost moving on its own as I fall over)" 
-    play music "Fear_And_Terror.mp3"
+
+    play music "Fear_And_Terror.mp3" fadein 5
+
     J"No... they'll find me... I... I don't want to go back there"
-    J"(There is little time before the agents catch me. The urgency of the situation suddenly propels me forward, my heart now pounding in my chest. I run for a way out)"
+    J"""(There is little time before the agents catch me.)
+
+    (The urgency of the situation suddenly propels me forward, my heart now pounding in my chest.)
+
+    (I run for a way out)"""
     J"...I have to hide..." 
     J"""(Amidst the chaos and confusion, two options dominate my thoughts like beacons of fleeting respite. 
     
@@ -520,6 +579,7 @@ label JH0:
         J"(Which way do I go?)"
         "Green Room":
             J"I have to go, I have to go!"
+            stop music fadeout 5
             jump JS2
         "Toilet":
             jump JH1    
@@ -534,6 +594,7 @@ label JH1:
     J"(I clutch my head, it is throbbing. These moments of running away feel familiar...)"
 
     J"(Thoughts of  the NewFutures Institute slowly flooded my mind with experiences I don't want to recall.)"
+    show Julia lab nervious at textbox_over
     show bg black with fade
     #(Story Beat 1 Part 1)
     J"..."
@@ -569,7 +630,7 @@ label JH1:
     LQ"""This may be the last time we speak Julia, but I understand how you feel. 
     
     Dwelling in a society where you don't know your true purpose in life can only worsen when your presence remains unknown and ignored by those closest to you..."""
-
+    show Julia lab at textbox_over
     J"""(Lenorra's speech was soft but somber.)
     
     (Her feelings of hope didn't reflect the dull surroundings of the Institute where I was seated...) 
@@ -579,16 +640,18 @@ label JH1:
     (Though I still shook where I sat. Something was missing...)"""
 
     hide Lenorra with Dissolve(0.3)
+    show Julia nervious at textbox_over
     show bg toilet with fade
     #(Transition back to reality)
 
     J"""(I am standing facing the bathroom door... That was a moment I experienced from the Institute)
 
-    (I start to think to myself... Lenorra was always interested in my mind... she never saw me as a person...)
+    (I start to think to myself... Lenorra was always interested in my memories... she never saw me as a person...)
 
-    (Footsteps can be heard rushing past the bathroom)
+    (Footsteps can be heard rushing past the bathroom)"""
 
-    !!!
+    show Julia traumatized at textbox_over
+    J"""!!!
 
     Sooner or later they will capture me... and those memories will become reality over again...
 
@@ -601,11 +664,12 @@ label JH1:
     (I begin to lose balance, my body fighting to maintain control over my anxious thoughts)"""
 
     LQ"A crucial flaw to the human mind is its independence..."
-
+    show Julia cry at textbox_over
     J"(I hear Lenorra's voice in my head again... I tear up as I lean against the wall)"
     show bg black with fade
+    show Julia lab nervious at textbox_over
     #(Transition back to story beat)
-
+    show Lenorra at center_lower with Dissolve(0.3)
     J"(Lenorra lets out a soft chuckle as she sits beside me now... I am confused, it felt like Lenorra knew more than she let on...)"
 
     LQ"""The Amanita muscaria lacks this flaw. It is an example of why I adore fungi. 
@@ -627,7 +691,7 @@ label JH1:
     LQ"""... this is just a singular example, but we'd all get to share our findings, our research, pain, happiness... 
     
     Our everything will bleed together so that we as individuals are never lost."""
-
+    show Julia lab exhausted at textbox_over
     J"(...I pull my hand away from Lenorra's, I felt uncomfortable with the weight of her glare)"
 
     J"...I don't even know you? Why my memories?! "
@@ -639,14 +703,14 @@ label JH1:
     J"(With every sentence, Lenorra had weaved her way into my life.)"
 
     LQ"You are wrong Julia, this isn't the first time we are meeting...we had a conversation earlier...remember? "
-
+    show Julia lab traumatized at textbox_over
     J"What?"
 
     LQ" It was about the Brookcastle incident...no worries, I rather not strain your mind with those thoughts again."
-
+    hide Lenorra with Dissolve(0.3)
     show bg toilet with fade
     #(Transition back to reality)
-    
+    show Julia exhausted at textbox_over
     J"(I find myself shaking for a brief moment. I look at my hand, and I am reminded of that past interaction with Lenorra at the Institute.)"
 
     J"""(I slowly slide against the wall, sitting down on the floor, left alone with my thoughts.)
@@ -688,17 +752,19 @@ label JH1:
     #A/N: 
     #(transition back to storybeat)
     show bg black with fade
+    show Julia lab exhausted at textbox_over
     LQ"Is the room ready? I want Julia secured to the hospital bed..."
 
     J"(Her speech dwindles into muffles as I fall unconscious accompanied by a pounding pain in my head.)"
     show bg toilet with fade
+    show Julia exhausted at textbox_over
     #(Story Beat 1 Part 1 End)
     J"""(I find that I was talking to myself in the bathroom facing the mirror...)
     
     (tears seeped down my cheeks... )
     
     (my head would continue to hurt just like that day they first caught me.)"""
-
+    show Julia cry at textbox_over
     J"Could this all be my fault? Are they really here to extract my memories again?"
 
     J"(I look at myself in the mirror... my reflection reminded me of the terror I felt there... I get anxious)"
@@ -713,13 +779,15 @@ label JH1:
 
     J"(The face that looks right back at me stuns me... I hadn't been this terrified since the first memory extraction)"
     show bg black with fade
+    show Julia lab at textbox_over
 
     #A/N: Fade to black as the stall mirror "transforms" into a window a helpless Julia bound to a hospital bed would look through 
 
     #(Mental Breakdown + Story Beat 1 Part 2) 
 
     J"(...murmurs can be heard in the background alongside miscellaneous noise, and footsteps made by Lenorra towards her colleagues)"
-
+    show Lenorra at right_center_lower with Dissolve(0.3)
+    show Agent1 at left_center_lower with Dissolve(0.3)
     J"""(...as I regain consciousness I notice restraints that bind me to a sterile bed. I am unable to move and forced to look ahead through a window... I focus on Lenorra.)
 
     (She was surrounded by a group of people conversing amongst one another)"""
@@ -731,20 +799,21 @@ label JH1:
     I got her to lower her guard and now we can begin searching her memories for any evidence of underlying Brookcastle details."""
 
     G1"However, she has said countless times before... she can't recall, are you sure she is the one we are looking for?"
-
+    show Lenorra angry at right_center_lower with Dissolve(0.3)
     LQ"""... and you choose to believe the patient over your superior! 
     
     Given the circumstances provided by previous information we've found and past events, it might be beneficial to examine Julia's mind closely...
 
     ...even if she doesn't know whatever memories lie in her brain right now, the documents show that she is related to Brookcastle. That alone is strong enough evidence to examine her mind..."""
-
+    hide Agent1 with Dissolve(0.3)
+    show Lenorra at center_lower with Dissolve(0.3)
     J"(I gather enough strength to attempt to wiggle myself free but it does not work... it also seems to have caught Lenorra's attention)"
-
+    show Julia lab traumatized at textbox_over
     J"(After a slight pause, she started to walk towards me. My trembles increase in magnitude for every step.)"
 
-    J"(Suddenly Lenorra leans in to hug me. I don't know what to make of it. I am frozen in place...too stunned to let a word out...)"
+    J"(I am frozen in place...too stunned to let a word out...)"
 
-    J"(I struggle to understand what Lenorra is talking about...)"
+    J"(I struggle to understand what is happening...)"
 
     J"I don't feel comfortable with this. I want to go home, please let me leave—"
 
@@ -767,7 +836,9 @@ label JH1:
     LQ"Prepare the operating room..."
       
     J"(It is starting to feel hopeless...)"
+    hide Lenorra with Dissolve(0.3)
     show bg toilet with fade
+    show Julia exhausted at textbox_over
     #(Transition back to reality)
     J""" Even before all of this— I don't know what I was doing with my life. 
 
@@ -788,11 +859,10 @@ label JH1:
     What can I do now...what do I do??"""
 
     menu:
+        J"What can I do now...what do I do??"
         "No! The agents they will find me if I stay in here any longer":
-            hide Julia
             jump JH2
         "I should just hide out here...it should be safe..":
-            hide Julia
             jump JH3
 
 
@@ -1526,7 +1596,6 @@ label JS2:
     J"""I burst into the green room, slamming the door open and gasping for air. 
 
     It awakened the only person who was in the room, who was lying comfortably on the sofas, and he was shocked when I rushed in with such an expression, and while creating such a loud noise."""
-    hide Julia
     $ haveAndrew = True
     show Andrew at center_lower with Dissolve(0.3)
     A"""Holy mother of–
@@ -1544,7 +1613,7 @@ label JS2:
     J"Iam...ah ... scared ... Andrew..."
 
     J"there are agents, the institute... we need to ... to..."
-
+    
     A"They're here...?"
 
     J"(I nod as I am still gasping for air.)"
@@ -1552,13 +1621,13 @@ label JS2:
     J"(Andrew stands up hastily from the couch, gently picks up a glass of water and hands it over to me.)"
 
     A"Here... calm down..."
-
+    show Julia exhausted at textbox_over
     J"(I slowly drink the glass of water, then exhale in relief after I finish, putting the glass on the nearby desk. The heavy gasps decreases into smaller panting of anxiety as I daze into the floor.)"
-
+    show Andrew concerned at center_lower
     J"(He then grabs my right shoulder, softly caressing it to comfort me as he looks at the door, his face visibly tense up in concern.)"
-
+    
     A"Stay here."
-
+    show Julia stare at textbox_over
     J"(no...no I won't. I quickly look up to him, our eyes meet.)"
 
     J"No!..."
@@ -1570,11 +1639,11 @@ label JS2:
     A"""H-hey now...Are ya sure?...You said you're scared. 
     
     I don't want you to catch any bruises y'know?"""
-
+    show Julia nervious at textbox_over 
     J"..."
 
     J"(I was about to say something, but my words caught up in my throat as the thought of my past lingers back into my mind.)"
-
+    show Andrew at center_lower
     J"(Andrew then nudges my shoulder gently, still grabbing onto it, to have us facing each other.)"
 
     A"""Julia?... You okay? 
@@ -1630,9 +1699,9 @@ label JS2:
     A"..."
 
     J"(I do get what he is saying, I can understand he is trying. But I don't think that connects at all...)"
-
+    show Julia exhausted at textbox_over 
     J"it's not that ... Andrew..."
-
+    show Andrew concerned at center_lower
     A"""Ah!- 
     
     S-sorry! 
@@ -1642,7 +1711,7 @@ label JS2:
     Lemme think...
     
     Uhh..."""
-
+    show Julia traumatized at textbox_over 
     J"""the institute... will they always chase us? 
     
     Will there be an end to this? 
@@ -1652,8 +1721,8 @@ label JS2:
     I am scared of what will happen beyond this moment... 
     
     and my pas-"""
-
-    A"""I-i know... Julia! 
+    
+    A"""I-I know... Julia! 
     
     Everyone feels the same way too. Everyone has their own histories..."""
 
@@ -1685,7 +1754,7 @@ label JS2:
 
     J"...Andrew... but..."
 
-    J"...would you...even understand?...i..."
+    J"...would you...even understand?...I..."
 
     A"""Trust me... I do. 
     
@@ -1694,8 +1763,8 @@ label JS2:
     J"""I know!-- 
     
     you don't need to mention it twice Andrew... but I am just..."""
-
-    J"i don't know what to do... what to say..."
+    show Julia exhausted at textbox_over 
+    J"I don't know what to do... what to say..."
 
     J"(Andrew close his eyes as he sighs.)"
 
@@ -1713,11 +1782,11 @@ label JS2:
     
     but I can't seem to believe anyone so much, and I can't even go elsewhere...without the thought of the institute!..."""
 
-    J"i wish...I could have back the friends I had. even if it's just a small conversation..."
+    J"I wish...I could have back the friends I had. even if it's just a small conversation..."
 
-    J"i wish...my family didn't..."
+    J"I wish...my family didn't..."
 
-    J"i wish things could've been..."
+    J"I wish things could've been..."
 
     J"(Andrew's expression frowns more.)"
 
@@ -1725,14 +1794,14 @@ label JS2:
 
     J"(there's a hint of troubled in his expression.)"
 
-    J"...I know... but Andrew i-"
+    J"...I know... but Andrew I-"
 
     A"Lets not think about that right now! Please Julia. Don't bother about it or you'll always be like this!"
 
     J"(I can feel Andrew getting more desperate for us to move. But he felt as if he's ignorant about it...)"
 
     A"Please. Are you choosing to stay here or go with me???"
-
+    show Julia traumatized at textbox_over 
     J"I... want to!"
 
     A"Then stop thinking about whatever that had happened! drop it now or we would never move!"
@@ -1742,7 +1811,7 @@ label JS2:
     (I know I am stuck on my mind about the past...) 
     
     (but to just drop it like that isn't as easy as just simply saying it...)"""
-
+    show Julia exhausted at textbox_over
     J"I know Andrew... But-"
 
     A"No buts and ifs! Do you trust me and the others?"
@@ -1762,7 +1831,7 @@ label JS2:
     J"""(he's trying to brush it off isn't he...)
     
     (As if it's just a simple switch of a button...to forget all these...)"""
-
+    show Julia traumatized at textbox_over 
     J"Andrew! It's not easy just like that! Do you...do you have any idea!"
 
     A"I do Julia! It's hard! But it's what we have to do this instance!"
@@ -1799,10 +1868,10 @@ label JS2:
 
     J"""See?! 
     
-    Do you even care about any past?! about people you cared before?! Are you that ignorant about the-"""
-
+    Do you even care about any past?! about people you cared about before?! Are you that ignorant about the-"""
+    show Andrew Angry at center_lower
     A"I KNOW! I JUST DONT WANT TO SEE IT BACK ANYMORE!"
-
+    show Julia stare at textbox_over 
     J"(I am left speechless as I realized whatever we said, my face is in shock and worry as Andrew yells, his face gets a bit redder.)"
 
     A"""I DONT WANT TO RECALL IT ANYMORE! I MISS THEM TOO! AS MUCH AS YOU DO TO YOUR OWN! 
@@ -1814,27 +1883,27 @@ label JS2:
     AS IF NOTHING IS ON MY TAIL EVERY NOW AND THEN! 
     
     AS IF... if...."""
-
+    show Julia exhausted at textbox_over 
     J"(we're both gasping for air, I can only look at the floor as all the things I said finally sink into my thoughts.)"
-
+    show Julia cry at textbox_over 
     J"""(But he said something is after him... is the institute after him too?)
     
     (...nonetheless...I feel...guilty. )
     
     (I think this is my fault... my eyes are watery again...)"""
-
+    show Andrew concerned at center_lower
     A"..."
 
-    J"""(Andrew grab my left shoulder once again, trying to comfort me. 
+    J"""(Andrew grab my left shoulder once again, trying to comfort me.)
     
-    I take a few steps back... i really have to apologize. 
+    (I take a few steps back... I really have to apologize.)
     
-    But it's hard. It's stuck in my throat...)"""
+    (But it's hard. It's stuck in my throat...)"""
 
     A"..You know..."
 
     A"You remind me exactly of... myself... Julia."
-
+    show Julia at textbox_over 
     J"(as soon as I heard this, I lift my head and our eyes meet.)" 
 
     A"""Afraid, Anxious, Lonely, Lost... And many many doubts... but I try to ignore all of that so I could live on. 
@@ -1864,7 +1933,7 @@ label JS2:
     J"Andrew...how come you never tell us about this?..."
 
     A"Well.."
-
+    show Andrew at center_lower
     J"(Andrew looks down for a brief moment, then looks at me again, faintly smiling.)"
 
     A"""It's not like I want to talk or hear anything about it again in the first place.
@@ -1876,42 +1945,44 @@ label JS2:
     We all have eyes on the front. We should be looking towards the front, seeing the present and be prepared for the future, Julia."""
 
     J"my eyes looked down, staring blankly, thinking about his words."
+    show Andrew understanding at center_lower
 
-    A"*sigh* I want to thank you. I can finally lift off this sealed feeling off my chest, it sat too long inside me... I can finally express it to someone else."
-
+    A"*sigh*"
+    A"I want to thank you. I can finally lift off this sealed feeling off my chest, it sat too long inside me... I can finally express it to someone else."
+    show Julia smile at textbox_over 
     J"I look up at him once again...now with a smile."
 
-    A"""Someone...who can understand.
-
-    I am sorry I was so ignorant."""
-
-    J"""...i-Its alright Andrew... I am also thankful we could... talk about this...
+    A"Someone...who can understand."
+    show Andrew concerned at center_lower
+    A"I am sorry I was so ignorant."
+    show Julia at textbox_over 
+    J"""...I-Its alright Andrew... I am also thankful we could... talk about this...
 
     ...I also apologize for being whiny...um...
 
     I...I know I am stuck in the past as much as you want to run away from yours.
 
     But I think what's best is that we...we do our best now..."""
-
+    show Andrew at center_lower
     J"(Andrew smiles widely. He then tap my forehead, before facing towards the door.)"
-
+    show Julia eep at textbox_over 
     J"Eep-"
-
+    show Julia at textbox_over 
     A"""Don't tell anyone about this, alright?
 
     About me, about my past.
 
     It's best to keep this between us."""
-
-    J"""(He then winks at me before he walks towards the door, hinting me to follow him.)
-
-    (I reply with a smile.)
+    hide Andrew with Dissolve (0.3)
+    J"(He then winks at me before he walks towards the door, hinting me to follow him.)"
+    show Julia smile at textbox_over 
+    J"""(I reply with a smile.)
 
     (I am glad we had that talk...I feel less isolated...I think)
 
-    (I can understand why he wouldn't want the others to know. I feel a bit...honored to be trusted...and to trust someone back as well.)
-
-    (I stand still for a brief moment, I feel the past and what I lost still creeping at the back of my mind...)
+    (I can understand why he wouldn't want the others to know. I feel a bit...honored to be trusted...and to trust someone back as well.)"""
+    show Julia at textbox_over 
+    J"""(I stand still for a brief moment, I feel the past and what I lost still creeping at the back of my mind...)
 
     (Yes, the past did happen and impacted me as a whole.. but I think it's best to use it as a motivation to stray further away from it.)
 
@@ -1934,15 +2005,19 @@ label JS2:
 label JS23:
     
     menu:
-        "what should we do?"
+        J"What should we do?"
         "Return to our friends":
             hide Andrew
-            show bg stage
+            show bg stage with fade
+            
             jump js42fs
         "Exit through the backdoor":
+            show bg black with fade
+            stop music fadeout 5
             jump JS25    
 
 label JS25:
+    show Julia exhausted at textbox_over 
     J"""(We decided to run towards the backdoor, our hearts pounding with a mix of fear and resolve. )
 
     (Adrenaline fueled our every step as we sprinted, desperately seeking an escape route from the perilous situation we found ourselves in.)
@@ -1953,14 +2028,15 @@ label JS25:
     
     (However, our hopes were shattered as we were met with an unexpected sight:) 
 
-    (Six agents, standing in a calculated formation, blocking our way.)
-    
-    AH-
-    
-    (Andrew immediately grabbed my arm and attempted to run the opposite direction, but their hands were already grabbing my arm tight.)
+    (Six agents, standing in a calculated formation, blocking our way.)"""
+    show Julia stare at textbox_over 
+    J"AH-"
+    show Andrew at center_lower
+    J"""(Andrew immediately grabbed my arm and attempted to run the opposite direction, but their hands were already grabbing my arm tight.)
     
     (After a moment of struggle, both of us were apprehended.)"""
     hide Andrew with Dissolve(0.3)
+    hide Julia with Dissolve(0.3)
     jump badend
 
 
@@ -1978,40 +2054,50 @@ label JH2:
     
     (My hands landed on the three pins on my shirt, each having a different color)
     
-    (I stared at them, as i sense myself calming down a little)
+    (I stared at them, as I sense myself calming down a little)
     
-    (I grabbed the pins tight so that the corners of the pins pains my palm.)
+    (I grabbed the pins tight so that the corners of the pins hurts my palm.)
     
     (It brings me a sense of comfort.)
     
-    (I looked at them after a while, my purple pin is sandwiched between the orange and blue ones of of Renee and Quol.)
+    (I looked at them after a while, my purple pin is sandwiched between the orange and blue ones of Renee and Quol.)
     
     (It was a symbol of their support)
    
     (their support..)
    
     (There was a day during self defense practice where I was sandwiched between them too..)"""
+
+    show bg black with fade
+    show Julia at textbox_over
+    show Quol at left_center_lower with Dissolve(0.3)
     Q"That's it Julia! Beat them all! Don't leave your enemies alive!"
-    R"That's... maybe a bit too much, Quol..."
+    show Renee at right_center_lower with Dissolve(0.3)
+    R "That's... maybe a bit too much, Quol..."
     Q"What? What do you mean? Do you want your enemies to come back and beat you?"
-    R"Well, no, but I think..."
-    J"""(Quol and Renee began arguing on their different philosophies on the topic. I stand there and watch as Quol asserts the need to eliminate the enemies while Renee is concerned about the level of aggression.)
+    show Renee worried at right_center_lower
+    R "Well, no, but I think..."
+    J"""(Quol and Renee began arguing on their different philosophies on the topic.)
     
-    (However, since Quol is at my right and Renee is at my left, I was caught in the middle of it)
+    (I stand there and watch as Quol asserts the need to eliminate the enemies while Renee is concerned about the level of aggression.)
+    
+    (However, since Quol is at my left and Renee is at my right, I was caught in the middle of it)
     
     (After a while, I feel like my eardrums were doing to burst.)"""
+    show Julia nervious at textbox_over
     J"Girls.."
     J"""(I managed to speak up after a while in a more loud tone than normal, causing a paused silence in the air)
     
     (I looked at the two)"""
     J"What exactly am I fighting for?"
+    show Renee at right_center_lower
     J"""(Silence followed, Renee and Quol stared at each other, throwing eye signals as both their expressions deepened)
     
     (But Renee broke the silence after a while)"""
-    R"You are fighting for yourself, Julia."
+    R "You are fighting for yourself, Julia."
     Q"To be exact, your future."
-    R"That's the same thing isn't it?"
-    J"""(Another pause followed, as I go deep into thought.)
+    R "That's the same thing isn't it?"
+    J"""(Another pause followed, as I went deep into thought.)
     
     (My future?)
     
@@ -2027,7 +2113,7 @@ label JH2:
     J"(I paused again)"
     J"I want to take control of my life.."
     J"(Quol holds my hands, which are holding the bat, and put it in a ready position)"
-    Q"And that starts with you holding this bat tight and swinging it at the people you dont want in your life anymore!"
+    Q"And that starts with you holding this bat tight and swinging it at the people you don't want in your life anymore!"
     J"""(The bat hits the dummy and it falls on the floor)
     
     (We all giggled)
@@ -2035,25 +2121,36 @@ label JH2:
     (I take the dummy and put it back up, and throw another swing at it)
     
     (It flies across half the room)"""
-    R"The bat is your tool."
-    R"You should decide on who to swing it to."
+    R "The bat is your tool."
+    R "You should decide on who to swing it to."
     J"(Renee looked at the fallen dummy, then back at me with a smile on her face)"
-    R"And we also have our own tools to help when you need it too."
+    show Renee smile at right_center_lower
+    R "And we also have our own tools to help when you need it too."
     Q"Don't ever swing it at me Julia!"
+    show Julia smile at textbox_over
     J"(I turned to the both of them, and gave a smile)"
     J"I won't!"
+
     #reality
+    hide Renee with Dissolve(0.3)
+    hide Quol with Dissolve(0.3)
+    show bg toilet with fade
+    show Julia at textbox_over
     J"They are using their tools to protect me..."
     J"I have to use mine to protect them too!"
+    show Julia nervious at textbox_over
     J"(I held my hands in the air in the ready position, as if I had my bat)"
     J"I will swing it at the agents."
+    show Julia eep at textbox_over
     J"(I swing my arms forward)"
+    show Julia at textbox_over
     J"That is what I've decided."
     J"""(I take a deep breath)
     
     (I tried to open the door, surprisingly, it opens)
     
     (I sprint towards the stage, motivated to fight.)"""
+    show bg stage with fade
     jump jhfs5
 
 
@@ -2063,9 +2160,9 @@ label JH3:
 
     They will come for me right...?
 
-    Won't they..?
-
-    (I started to doubt my own words)
+    Won't they..?"""
+    
+    J"""(I started to doubt my own words)
 
     (Renee and Quol are outside fighting for me, I am sure they would come for me.)
 
@@ -2078,19 +2175,20 @@ label JH3:
     (I heard a few knocks from the door, they sounded familiar...)"""
 
     #Fade to black then transition to hotel
-
+    show bg black with fade
+    show Julia alt exhausted at textbox_over 
     J"""(I knock on the door)
 
     Mother, please be home...anyone! Please answer the door..."""
-
-    JM"(Julia's mother opens the door to her frail daughter helpless standing there right in front of you)"
-
+    show Juliamum at center_lower with Dissolve(0.3)
+    J"(The door opens and I see my mum standing right in front of me.)"
+    show Julia alt nervious at textbox_over
     J"(My eyes widen when I see my mother...)"
 
-    J"Mom I...we need to leave...i-"
+    J"Mom I...we need to leave...I-"
 
     JM" My daughter I...I can't believe you are safe..."
-
+    show Julia alt exhausted at textbox_over
     J"I...I'm sorry Mother...I...my head..."
 
     J"( I want to give my mother a hug but I am too weak...I start to cry...)"
@@ -2102,21 +2200,20 @@ label JH3:
     (Right now...I feel seen and heard by someone who has sideline me for years.)"""
 
     J" Mother...the Institute is after me...please you and father have to get them to stop!"
-
-    J"(!!!)"
+    show Julia alt nervious at textbox_over
+    J"(...!!!)"
 
     J"(My mother promptly brings me inside...at first she was happy to see me but now she is unnerved.)"
-
+    show Julia alt exhausted at textbox_over
     J"I did I do something wrong—"
 
-    JM"Is the name Lenorra familiar to you? DO you know who that—"
-
-    J"(I cut my mother off)"
-
+    JM"Is the name Lenorra familiar to you? Do you know who that—"
+    show Julia alt traumatized at textbox_over
     J"""Yes! Lenorra and the NewFutures Institute are after me, please Mother, you have to do something...I don't want to go back there!!!
+    
     (I clutch my mother's dress)"""
-
-    JM" You father was on the phone with them this morning...I overheard him...he has sorted out a deal."
+    show Julia alt at textbox_over
+    JM" Your father was on the phone with them this morning...I overheard him...he has sorted out a deal."
 
     J"(I smile at my mother)"
 
@@ -2129,11 +2226,16 @@ label JH3:
     J"(I am elated. My body moves on its own.)"
 
     J"I love you too..."
+    hide Juliamum with Dissolve(0.3)
     #reality
+    show bg toilet with fade
+    show Julia cry at textbox_over
     J"""I murmured to myself, tears stuck on my cheek.
 
     I love you..."""
     #flashback
+    show bg black with fade
+    show Julia alt at textbox_over
     J"""(The next day I woke up early for breakfast)
 
     (Taking out a few dresses from the dresser, I held them in front of me and tried to see which matched me the most.)
@@ -2144,9 +2246,9 @@ label JH3:
     J"(I do a final twirl in and smile at my reflection.)"
 
     J"I wonder what meal Mother had the butler prepare..."
-
+    
     J"(When I go to open the door the knob won't budge...)"
-
+    show Julia alt nervious at textbox_over
     J"""Huh?
 
     (I tried opening it again)
@@ -2156,28 +2258,54 @@ label JH3:
     J"(Why won't the door open?)"
 
     J"Mother...Father..."
-
+    
     J"(I am met with no response...I attempt to open the door again...)"
 
-    J"Mother...Father...I'm stuck.. Can anyone open the closet door! I think it is jammed..."
-
-    J"HELP PLEASE! "
-
+    J"Mother...Father...I'm stuck.. Can anyone open the door! I think it is jammed..."
+    show Julia alt traumatized at textbox_over
+    J"HELP PLEASE!"
+    pause 2
     #(There is no response)
-
+    show Julia alt exhausted at textbox_over
+    show Jh3door1
     J"(I slumped down next to the door.)"
 
     J"What...does this mean..."
 
-    J"""Seconds passed into minutes, and the door was still stuck)
+    J"""(Seconds passed into minutes, and the door was still stuck)
 
     (Does my family not want me?...was coming back here a mistake?) """
 
-    J"(I sobbed until I get tired...this didn't take long.. I was starving...a dwindled lethargic...)"
-
+    J"(I sobbed until I got tired...this didn't take long.. I was starving...a dwindled lethargic...)"
+    hide Julia
+    pause 0.1
     #reality/flashback
+    show Jh3door2
+    pause 0.1
+    hide Jh3door1
+    pause 0.1
+    hide Jh3door2
+    pause 0.1
+    show Jh3door1
+    pause 0.1
+    show Jh3door2
+    pause 0.1
+    hide Jh3door1
+    pause 0.1
+    hide Jh3door2
+    pause 0.1
+    show Jh3door1
+    pause 0.1
+    show Jh3door2
+    pause 0.1
+    hide Jh3door1
+    pause 0.1
     J"(after a long while, the door opens suddenly)"
-
+    hide Jh3door2
+    hide Jh3door1
+    show bg toilet with fade
+    show Julia traumatized at textbox_over
+    show Lenorra at center_lower with Dissolve (0.3)
     J"(I lose balance and fall into Lenorra's arms)"
 
     J"(I was greeted by her wide smile.)"
@@ -2192,6 +2320,8 @@ label JH3:
 
 label js42fs:
     show screen display_hp
+    stop music fadeout 5
+    play music "StageBGM.mp3" fadein 5
     J"(Four agents approched us)"
     if haveAndrew == True:
         jump js42fsa
@@ -2499,6 +2629,8 @@ label js42fsafter:
 label jhfs5:
     show Julia traumatized at textbox_over
     show screen display_hp
+    stop music fadeout 5
+    play music "StageBGM.mp3" fadein 5
     J"""(As I reach the front stage, a sinking feeling settles in the pit of my stomach.) 
     
     (I glance behind me and discover that two agents have been tailing me, closing in on the stage. )
@@ -2677,7 +2809,7 @@ label jhfs5b:
         jump finishedjhfs5b2
 
     label finishedjhfs5b2:
-        "When i looked back forward, I see an agent right in front of my path, I dash towards him and.."
+        "When I looked back forward, I see an agent right in front of my path, I dash towards him and.."
         show screen timerDown(3, "misseditjhfs5b3")  # seconds, label to jump on fail
         call screen qte_choice([
         ("Hit him", "choice1jhfs5b3", 0.5, 0.3),  # xpos and ypos for choice 1
@@ -2711,7 +2843,7 @@ label jhfs5d:
             jump jhfs5j
 
 label jhfs5e:
-    J"""(I decided that i should call my teammates for help)
+    J"""(I decided that I should call my teammates for help)
     
     (who should I call?)"""
     menu:
@@ -2987,6 +3119,7 @@ label game_over:
     hide Andrew
     hide Agent1
     show bg black with fade
+    stop music fadeout 5
     show text "{size=100}{color=#ff0000}BAD END{/color}{/size}\n{size=30}{color=#ffffff}you died{/color}{/size}" at truecenter with dissolve
     pause 5.0
     hide text with dissolve
@@ -3002,7 +3135,14 @@ label game_over:
 
 
 label badend:
+    hide Julia
+    hide Quol
+    hide Renee
+    hide Lenorra
+    hide Andrew
+    hide Agent1
     show bg black with fade
+    stop music fadeout 5
     show text "{size=100}{color=#ff0000}BAD END{/color}{/size}\n{size=30}{color=#ffffff}you were caught{/color}{/size}" at truecenter with dissolve
     pause 5.0
     hide text with dissolve
