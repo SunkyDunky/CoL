@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: Unexpected indentation at start of file.
+File "game/script.rpy", line 1859: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+        (But at the very least I still could see what's in front.)
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sat Dec 16 04:48:24 2023
+Sun Dec 17 13:40:12 2023
