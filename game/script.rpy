@@ -92,17 +92,24 @@ image Quol raincoat:
 image Quol raincoat Angry:   
     "characters/Quol raincoat Angry.png"
     zoom 1.78    
+#Lenorra    
 image Lenorra:   
     "characters/Lenorra.png"
     zoom 0.5  
+#Andrew    
 image Andrew:   
     "characters/Andrew.png"
     zoom 0.5    
+#Agent    
 image Agent1:   
     "characters/Agent.png"
     zoom 0.5
 image Agent2:   
     "characters/Agent.png"
+    zoom 0.5
+#Lars    
+image Lars:   
+    "characters/Lars.png"
     zoom 0.5
 
 # defining bgs
@@ -456,18 +463,61 @@ label JS0:
             jump JH0
 
 label JH0:
+    show bg black with fade
+    J"(As panic grips my racing mind, I sprint towards the backstage area, my breath coming in ragged gasps.)"
     show bg stage 
     show Julia traumatized at textbox_over
-    J"""(As panic grips my racing mind, I sprint towards the backstage area, my breath coming in ragged gasps.)
+    J"(I am hiding at the backstage shaking as I am filled with fear)"
+    J"..."
+    J"(I take a deep breathe, the agents haven't found me yet)"
+    J"I should calm down... they are not here yet." 
+    J"(I take deep breaths trying to be at ease)"
+    J"They are not here yet..."
+    J"But..."
+    J"The agents...why are they back again... did they track me somehow?" 
+    J"(I hear the agents moving in the background as they tear apart the stadium looking for me. Calming down might get me captured... I... I don't want to go back to there)"
+    J" ...No..."
+    J"(I shake my head prolonging a mental tailspin)"
+    J"""
+    Haha... 
+    We are safe here... we must be, right Quol? 
+    """
+    pause 1
+    J"Quol?"
+    pause 5
+    J"""(I looked around the room.)
+    
+    (My face fills with dread)"""
+    J"(No...)"
+    J"Renee?"
+    pause 5
+    J"(I looked around the room again, eyes widening more by every second.)"
+    J"Renee isn't here either..."  
+    J"(I can feel my heart beginning to beat out of my chest upon realizing...)"
+    pause 5
+    J"{/b}'I am alone...'{/b}"
+   
+    J"""(Breaths accompany my slow steps and the sudden truth that I've left my friends alone.)
+    
+    (The weight of everything is beginning to be too heavy to bear.)
+    
+    (I feel uneasy)"""
+    #heartbeat sfx
 
-    (The urgency of the situation propels me forward, my heart pounding in my chest.)
+    J"(The agents... I hear them approaching backstage. My body flinches, almost moving on its own as I fall over)" 
+    play music "Fear_And_Terror.mp3"
+    J"No... they'll find me... I... I don't want to go back there"
+    J"(There is little time before the agents catch me. The urgency of the situation suddenly propels me forward, my heart now pounding in my chest. I run for a way out)"
+    J"...I have to hide..." 
+    J"""(Amidst the chaos and confusion, two options dominate my thoughts like beacons of fleeting respite. 
+    
+    (I stand between two doors, the green room or the toilets.)
+    
+    (Which way do I go?)"""
 
-    (Two options dominate my thoughts like beacons of fleeting respite: the green room or the toilets.)
-
-    (I must make a swift decision.)"""
 
     menu:
-        J"where...where should I go.."
+        J"(Which way do I go?)"
         "Green Room":
             J"I have to go, I have to go!"
             jump JS2
@@ -475,7 +525,6 @@ label JH0:
             jump JH1    
 
 label JH1:
-    play music "Fear_And_Terror.mp3"
     show bg toilet 
     show Julia at textbox_over with Dissolve(0.3)
     J"(I hold the bathroom door shut so the agents don't come in, then take a few steps back when my surroundings momentarily feel silent.)"
@@ -584,6 +633,17 @@ label JH1:
     J"...I don't even know you? Why my memories?! "
 
     J"(I am suddenly teary eyed... I wasn't getting any answers from her...)"
+
+    J"...This is the first time we are meeting...and I...you..."
+
+    J"(With every sentence, Lenorra had weaved her way into my life.)"
+
+    LQ"You are wrong Julia, this isn't the first time we are meeting...we had a conversation earlier...remember? "
+
+    J"What?"
+
+    LQ" It was about the Brookcastle incident...no worries, I rather not strain your mind with those thoughts again."
+
     show bg toilet with fade
     #(Transition back to reality)
     
@@ -609,7 +669,7 @@ label JH1:
 
     J"""The same hand that held Lenorra's that day is the one I used to play guitar with my band...
 
-    ... the one I used to beat up people with my bat, to train with Quol... or cook with Renee."""
+    ... the one I used to beat up people with my bat, to train with Quol... or read with Renee."""
 
     J"""(I grip my hands, my nails digging into my skin.)
     
@@ -653,8 +713,11 @@ label JH1:
 
     J"(The face that looks right back at me stuns me... I hadn't been this terrified since the first memory extraction)"
     show bg black with fade
+
     #A/N: Fade to black as the stall mirror "transforms" into a window a helpless Julia bound to a hospital bed would look through 
+
     #(Mental Breakdown + Story Beat 1 Part 2) 
+
     J"(...murmurs can be heard in the background alongside miscellaneous noise, and footsteps made by Lenorra towards her colleagues)"
 
     J"""(...as I regain consciousness I notice restraints that bind me to a sterile bed. I am unable to move and forced to look ahead through a window... I focus on Lenorra.)
@@ -667,7 +730,7 @@ label JH1:
     
     I got her to lower her guard and now we can begin searching her memories for any evidence of underlying Brookcastle details."""
 
-    G1"However, she has said countless times before... Julia can't recall"
+    G1"However, she has said countless times before... she can't recall, are you sure she is the one we are looking for?"
 
     LQ"""... and you choose to believe the patient over your superior! 
     
@@ -677,33 +740,33 @@ label JH1:
 
     J"(I gather enough strength to attempt to wiggle myself free but it does not work... it also seems to have caught Lenorra's attention)"
 
-    J"(Lenorra speaks over an intercom)"
+    J"(After a slight pause, she started to walk towards me. My trembles increase in magnitude for every step.)"
 
-    LQ"""In this state your mind is fragile. There's no need to worry though... All you need to do is relax. 
-    
-    I have the proper technology providing for a painless procedure. 
-    
-    Hence, the only obstacle making things difficult is yourself alone. """
+    J"(Suddenly Lenorra leans in to hug me. I don't know what to make of it. I am frozen in place...too stunned to let a word out...)"
 
-    LQ"Choose to cooperate and this procedure will go smoothly..."
+    J"(I struggle to understand what Lenorra is talking about...)"
 
-    J"(I take a moment to examine my surroundings, high-tech equipment, some of which I'm familiar with only serve to feel my fear)"
+    J"I don't feel comfortable with this. I want to go home, please let me leave—"
 
-    J"""how many times do I need to say it to you? 
-    
-    I really don't know anything about this incident you have the wrong person— 
-    
-    please—"""
+    LQ" (I am suddenly embraced by Lenorra as she hugs me tightly)"
 
-    LQ"This again..."
+    J"... what? What is this?"
 
-    J"I'm not making excuses... "
+    J"(I feel a prick at my neck as Lenorra drugs me. The needle of her syringe goes deep as I feel lightheaded.)"
 
-    J"""(it seems like Lenorra could hear me, but she chose to ignore my words...) 
-    
-    (I look at my body, I'm weak, the stress is getting to me... )
-    
-    (It is starting to feel hopeless...)"""
+    LQ"""...
+
+    I hope I've made a good impression."""
+
+    J"No...I want to leave...Please, I'm begging you...I really don't know..."
+
+    LQ"Excuses..."
+
+    J"(Those were the last words escaping Lenorra's lips before I begin to lose balance...)"
+
+    LQ"Prepare the operating room..."
+      
+    J"(It is starting to feel hopeless...)"
     show bg toilet with fade
     #(Transition back to reality)
     J""" Even before all of this— I don't know what I was doing with my life. 
@@ -725,12 +788,13 @@ label JH1:
     What can I do now...what do I do??"""
 
     menu:
-        "No! The agents they will find me if I stay in here any longer ":
+        "No! The agents they will find me if I stay in here any longer":
             hide Julia
             jump JH2
-        "Maybe my friends will come for me if I wait out the noise... I should just hide out here":
+        "I should just hide out here...it should be safe..":
             hide Julia
             jump JH3
+
 
 
 
@@ -744,12 +808,8 @@ label JS1:
 
     menu:
         J"Calm down...calm down..."
-        "I need to help my friends":
-            jump JS1FS
-        "I have to do something!":
-            jump JS1FS
-        "I can't just stand and do nothing!":
-            jump JS1FS        
+        "I need to help my friends!":
+            jump JS1FS      
 
 label JS1FS:
     show Julia nervious at textbox_over
@@ -1275,6 +1335,8 @@ label JS12:
     (This is a bad idea, this is a bad idea...)
     
     (The rain falling deafeningly on the hood of my raincoat, as the backdoor of the hotel swings open.)"""
+
+    show Lars at right_center_lower with Dissolve(0.3)
     
     L"""Sorry to keep you all out in the rain, today's a hectic shift.
     
@@ -1284,11 +1346,9 @@ label JS12:
     
     She acts all nice and dutiful when her boss is looking, but as soon as the Head Scientist turns around she'd just order us around like we are her personal servant or somethi-"""
     
-    show Quol at center_lower with Dissolve(0.3)
+    show Quol at left_center_lower with Dissolve(0.3)
 
     J"(Quol glares at Lars in annoyance)"
-    
-    hide Quol with Dissolve(0.3)
 
     L" Aha- Sorry, yeah, that's all I could gather before they would start asking questions."
 
@@ -1300,6 +1360,7 @@ label JS12:
     
     J"(Lars returns to the hotel, closing the door behind him.)"
 
+    hide Lars with Dissolve(0.3)
     show Quol at center_lower with Dissolve(0.3)
     stop music fadeout 5
 

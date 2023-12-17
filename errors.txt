@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1859: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-        (But at the very least I still could see what's in front.)
+File "game/script.rpy", line 754: Only one say menuitem may exist per menu.
+    J"I need to help my friends!":
+                                 ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sun Dec 17 13:40:12 2023
+Sun Dec 17 17:29:13 2023
