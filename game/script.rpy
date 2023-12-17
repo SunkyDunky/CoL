@@ -1965,287 +1965,97 @@ label JS25:
 
 
 label JH2:
-    J"""(my body urges me to leave the washroom, noise follows me throughout the halls. The agents were approaching...)
-
-    (If I had left any moment later it would have been too late. A glimmer of hope drives my every step until I am startled by noise...)
-
-    (I come to a sudden halt and instinctively find an empty corridor to hide in and catch my breath.)"""
-
-    J"(In the distance, the agents entered the washroom, busting down the door while others ran past me transversing the hallway.)"
-
-    J"(I flinch with each footstep they take, but my eyes widen when I hear Lenorra as she speaks her sudden command.)"
-
-    LQ"I want this place searched, kill if you have to but keep the girls alive..."
-
-    J"""(...it really was her...and she was back for me and my friends. I slowly start to hyperventilate.) 
-
-    (I press my hands against my mouth, trying to make as little noise as possible.)
-
-    (...her footsteps were approaching me and the corridor I was hiding in. I shut my eyes...)"""
-
-    #A/N: sound effects of walking, specifically to Lenorra have it play for a few seconds, probably 5 seconds this should be the only noise accompanied by Julia's breathing
-    #(Story Beat 2 Start)
-
-    J"(The next time I open my eyes Lenorra is seated in front of me. I can't move as she gazes at me. I am filled with terror.)"
-
-    LQ"""Your memories are precious to us, Julia, as I said earlier...they hold the capability to change the future...to elevate our kind to a different level. 
+    J"But... they'll catch me again..."
+    J"""(I huddled onto the bathroom tiles, my back against the wall, contemplating my choices whether I should really go out there and risk myself or stay.)
     
-    All you need to do from now on is to cooperate..."""
-
-    J"...This is the first time we are meeting...and I...you..."
-
-    J"(With every sentence, Lenorra had weaved her way into my life.)"
-
-    J"(Suddenly Lenorra leans in to hug me. I don't know what to make of it. I am frozen in place...too stunned to let a word out...)"
-
-    LQ"You are wrong Julia, this isn't the first time we are meeting...we had a conversation earlier...remember? "
-
-    J"What?"
-
-    LQ" It was about the Brookcastle incident...no worries, I rather not strain your mind with those thoughts again."
-
-    J"(I struggle to understand what Lenorra is talking about...)"
-
-    J"I don't feel comfortable with this. I want to go home, please let me leave—"
-
-    LQ" (I am suddenly embraced by Lenorra as she hugs me tightly)"
-
-    J"... what? What is this?"
-
-    J"(I feel a prick at my neck as Lenorra drugs me. The needle of her syringe goes deep as I feel lightheaded.)"
-
-    LQ"""...
-
-    I hope I've made a good impression."""
-
-    J"No...I want to leave...Please, I'm begging you...I really don't know..."
-
-    LQ"Excuses..."
-
-    J"(Those were the last words escaping Lenorra's lips before I begin to lose balance...)"
-
-    LQ"Prepare the operating room..."
-
-    #(Transition to reality)
-
-    J"""(I suddenly found myself holding my breath as for a moment Lenorra glared down the dark corridor then scoffed.)
-
-    (I press myself against the wall.)
-
-    (Please not here...please not again...I plead that she does not walk down the corridor. However, to my dismay...I hear Lenorra searching for something...)
-
-    (She is suddenly interrupted)"""
-    #(Lenorra two girls are nearby taking out comrades out)
-    LQ" Lead me to them immediately."
-
-    J"(Her presence still haunts me after all this time.)"
-
-    LQ"(Over here! This way...)"
-
-    J"(I hesitantly take a few steps towards the hallway as a few agents pass by.)"
-
-    J"(...)"
-
-    J"(My eyes widened...Quol and Renee were going to be in danger if Lenorra managed to find them in...and here I was...running away.)"
-
-    #(Back to Story beat 2)
-
-    J"No, let me go!"
-
-    J"(I force myself free from the agent preventing me from fleeing...I am moments away from escaping this hell hole...I was finally getting away from the Institute.)"
-
-    J"(The agent grabs my hand.) "
-
-    J"(I scream as I yank my hand away from the agent's and push them away.)"
-
-    #(The agent promptly gets up with intent to chase down Julia but is stopped by Lenorra. She was on the telephone...)
-
-    LQ" Let her flee..."
-
-    J"""(Lenorra has a slight smirk on her face.)
-
-    (...)"""
-
-    #A/N: Fade to black
-
-    J"""(From then I knew where to go...)
-
-    (...home...)"""
-
-    #Fade to black then transition to next scene 
-
-    J"""(I knock on the door)
-
-    Mother, please be home...anyone! Please answer the door..."""
-
-    JM"(Julia's mother opens the door to her frail daughter helpless standing there right in front of you)"
-
-    J"(My eyes widen when I see my mother...)"
-
-    J"Mom I...we need to leave...i-"
-
-    JM" My daughter I...I can't believe you are safe..."
-
-    J"I...I'm sorry Mother...I...my head..."
-
-    J"( I want to give my mother a hug but I am too weak...I start to cry...)"
-
-    J"""(The warm embrace of my mother...never have I ever felt more in need of it then now.)
-
-    (I cry rivers to my mother...I did not want this moment to end.)
-
-    (Right now...I feel seen and heard by someone who has sideline me for years.)"""
-
-    J" Mother...the Institute is after me...please you and father have to get them to stop!"
+    (I let out a quiet puff of breath, looking down at the bathroom tiles. The sound of the passing footsteps outside echoed, intensifying my panic.)
     
-    J"(!!!)"
+    (What am I gonna do... what am I gonna do...)
+    
+    (I continue looking at the bathroom tiles, not sure what to do.)
+    
+    (I attempt to hug myself for comfort)
+    
+    (My hands landed on the three pins on my shirt, each having a different color)
+    
+    (I stared at them, as i sense myself calming down a little)
+    
+    (I grabbed the pins tight so that the corners of the pins pains my palm.)
+    
+    (It brings me a sense of comfort.)
+    
+    (I looked at them after a while, my purple pin is sandwiched between the orange and blue ones of of Renee and Quol.)
+    
+    (It was a symbol of their support)
+   
+    (their support..)
+   
+    (There was a day during self defense practice where I was sandwiched between them too..)"""
+    Q"That's it Julia! Beat them all! Don't leave your enemies alive!"
+    R"That's... maybe a bit too much, Quol..."
+    Q"What? What do you mean? Do you want your enemies to come back and beat you?"
+    R"Well, no, but I think..."
+    J"""(Quol and Renee began arguing on their different philosophies on the topic. I stand there and watch as Quol asserts the need to eliminate the enemies while Renee is concerned about the level of aggression.)
+    
+    (However, since Quol is at my right and Renee is at my left, I was caught in the middle of it)
+    
+    (After a while, I feel like my eardrums were doing to burst.)"""
+    J"Girls.."
+    J"""(I managed to speak up after a while in a more loud tone than normal, causing a paused silence in the air)
+    
+    (I looked at the two)"""
+    J"What exactly am I fighting for?"
+    J"""(Silence followed, Renee and Quol stared at each other, throwing eye signals as both their expressions deepened)
+    
+    (But Renee broke the silence after a while)"""
+    R"You are fighting for yourself, Julia."
+    Q"To be exact, your future."
+    R"That's the same thing isn't it?"
+    J"""(Another pause followed, as I go deep into thought.)
+    
+    (My future?)
+    
+    (Me?)
+    
+    (I've never really thought of that.)"""
+    J".."
+    Q"What do you want, Julia?"
+    J"""(Quol's words hit hard, what do I want?)
+    
+    (I guess..)"""
+    J"I want to live..."
+    J"(I paused again)"
+    J"I want to take control of my life.."
+    J"(Quol holds my hands, which are holding the bat, and put it in a ready position)"
+    Q"And that starts with you holding this bat tight and swinging it at the people you dont want in your life anymore!"
+    J"""(The bat hits the dummy and it falls on the floor)
+    
+    (We all giggled)
+    
+    (I take the dummy and put it back up, and throw another swing at it)
+    
+    (It flies across half the room)"""
+    R"The bat is your tool."
+    R"You should decide on who to swing it to."
+    J"(Renee looked at the fallen dummy, then back at me with a smile on her face)"
+    R"And we also have our own tools to help when you need it too."
+    Q"Don't ever swing it at me Julia!"
+    J"(I turned to the both of them, and gave a smile)"
+    J"I won't!"
+    #reality
+    J"They are using their tools to protect me..."
+    J"I have to use mine to protect them too!"
+    J"(I held my hands in the air in the ready position, as if I had my bat)"
+    J"I will swing it at the agents."
+    J"(I swing my arms forward)"
+    J"That is what I've decided."
+    J"""(I take a deep breath)
+    
+    (I tried to open the door, surprisingly, it opens)
+    
+    (I sprint towards the stage, motivated to fight.)"""
+    jump jhfs5
 
-    J"(My mother promptly brings me inside...at first she was happy to see me but now she is unnerved.)"
-
-    J"I did I do something wrong—"
-
-    JM"Is the name Lenorra familiar to you? DO you know who that—"
-
-    J"(I cut my mother off)"
-
-    J"""Yes! Lenorra and the NewFutures Institute are after me, please Mother, you have to do something...I don't want to go back there!!!
-
-    (I clutch my mother's dress)"""
-
-    JM" You father was on the phone with them this morning...I overheard him...he has sorted out a deal."
-
-    J"(I smile at my mother)"
-
-    J"Thank you..."
-
-    J"(My mother smiles back faintly...she doesn't make eye contact with me for a moment.)"
-
-    JM"I love you...please wash up and get changed...I'll make you something to eat...your favorite meal..."
-
-    J"(I am elated. My body moves on its own.)"
-
-    J"I love you too..."
-
-    #(Transition back to the present)
-    J"(My body jitters and my eyes dart around looking for a weapon. I won't let the Institute separate us.)"
-
-    J"(I hastily grab a mic stand as more agents past by.)"
-
-    J"I have to take a different path to get back to my bandmates on stage."
-
-    J"(I ran back into the hallway taking a different route than the agents nearby. I make my way for an exit...or a potential encounter with my friends.)"
-
-    J"I'm sorry I left you alone...I am almost there guys...I can make it back to you."
-
-    J"(I tear up when I see an exit and head for it...A potential way out of this was just ahead...)"
-
-    J"Please...someone be behind this door...I don't want to face the agents alone..."
-
-    J"(I grab the handle of the doorknob...the exit was locked.)"
-
-    J"(!!!)"
-
-    J"No no no...not again"
-
-    J"(My hands start shaking...open...please open...)"
-
-    J"(I try to unlock the door but I am interrupted by footsteps approaching me.)"
-
-    G1"Where the hell are you running off too let's see..."
-
-    J"(The egotistical agent checks his tracker dn scans Julia. It was a match.)"
-
-    G1"Where are you off to Julia..."
-
-    J"(I freezing in place, my hand still clutching the doorknob and my back facing the agent.)"
-
-    #flashback
-    J"(I am changing in the room, the door is shut behind me...)"
-
-    J"I wonder what meal Mother had the butler prepare..."
-
-    J"(I look in the mirror satisfied with the dress I was wearing...It matched my mother's. Maybe this will make everyone more happy to see me.)"
-
-    J"(I do a final twirl in and smile at my reflection.)"
-
-    J"(When I go to open the closet door the knob won't budge...)"
-
-    J"(!!!)"
-
-    J"(Why won't the door open?!)"
-
-    J"Mother...Father..."
-
-    J"(I am met with no response...I attempt to open the closet door...)"
-
-    J"Mother...Father...I'm stuck.. Can anyone open the closet door! I think it is jammed..."
-
-    JF"No, the closet door is not jammed..."
-
-    JF"""I am doing this for your own good, Julia. 
-
-    you are too far gone...
-
-    I don't want a daughter with a malfunctioning brain."""
-
-    J"""...
-
-    Are you serious?
-
-    Are you even happy to see me Father..."""
-
-    JF" I won't waste my time with you..."
-
-    J" ...this was the deal mother spoke about earlier...to turn me in...?"
-
-    JF"..."
-
-    J" (I chuckle to myself before weeping into my dress...)"
-
-    J" How much money was I worth..."
-
-    JF" (Julia's father does not respond.)"
-
-    J" Screw you...let me speak to Mother!"
-
-    JF" Your mother is feeding your brothers...she says it is your favorite meal."
-
-    J" (I am silent forming a fist.)"
-
-    J"""LET ME OUT! PLEASE FATHER...
-
-    Why do this to me...after all this time.. I never got to see your face once...
-
-    You are supposed to be my father!...don't you care for me?"""
-    #(There is no response) 
-
-    J"(I continue slamming the closet door until I no long have strength.)"
-
-    J"I hate you...I hate all of this..."
-
-    J"(My family does not want me...coming back here was a mistake.) "
-
-    J"(I cry until I get tired...this didn't take long.. I was starving...a dwindled lethargic...)"
-
-    J" (...)"
-
-    J"(When the door finally opens I lose balance and fall into Lenorra's arms)"
-
-    LQ"(Lenorra smiles at Julia.)"
-
-    LQ"We weren't finished yet Julia..."
-
-    J"(Lenorra instructs an agent to carry me...I want to struggle but today moments replay in my mind...in the moment I feel nothing..."
-
-    #(Story beat 2 end) 
-    Q"Seriously, why are you hiding in that box...are you trying to die?"
-
-    J"(I remember Quol saying that to me upon our first encounter...I grip the crowbar in my hand tightly)"
-
-    J"No Quol...I'm not trying to die...In fact I know what I must do..."
-    menu:
-        "Confront the agent guarding the path ahead":
-            jump JH4
 
 label JH3:
     #A/N: Fade to black
@@ -2693,7 +2503,7 @@ label jhfs5:
     
     (I glance behind me and discover that two agents have been tailing me, closing in on the stage. )
     
-    (Panic courses through my veins.)
+    (I looked around nerviously and came to a conclusion:)
     
     (I cannot go back now)
     
@@ -2706,14 +2516,15 @@ label jhfs5:
 
     R "No..no! we have to back up! Lets not get oursleves too hurt!"
     
-    J"""(Caught between these conflicting viewpoints, my mind races.)"""
+    J"""(Caught between these conflicting viewpoints, my mind races.)
+    
+    (But I know I can make a decision for us)"""
 
     hide Quol with Dissolve(0.3)
     hide Renee with Dissolve(0.3)
 
     show Julia nervious at textbox_over
-    J"(What should I do?)"
-    
+   
     menu:
         J"(What should I do?)"
         "Fight them":
@@ -3064,7 +2875,7 @@ label jhfs5k:
 label jhfs5l:
     J"""(I call out for Quol)
     
-    Quol! Please help me here..!
+    Quol! Please help!
     
     (Quol, ever vigilant and quick to respond, turns their attention toward me.)"""
 
@@ -3119,7 +2930,7 @@ label jhfs5o:
 label jhfs5m:
     J"""(I call out for Renee)
     
-    Renee! Please help me here..!
+    Renee! Please help!
     
     (Without hesitation, Renee responds to my plea, her eyes locking onto the remaining agent.) """
     hide Julia with Dissolve(0.3)

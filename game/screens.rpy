@@ -641,13 +641,14 @@ screen about():
 - {b}Metabii{/b}: Overall Writing and gameplay experience
 - {b}Temarqus{/b}: Plot development and dialogue 
 - {b}Metume{/b}: Dialogue and characterization
+- {b}TheMutiplayerMick{/b}: Script advisor
 
 {size=+5}Art and Design:{size=-5}
 - {b}Lyn{/b}: Art direction, character designer, concept art, storyboarder, UI designer and main illustrator
 - {b}Aisi{/b}: Main sprites illustrator and UI designer
 - {b}RubbyBand{/b}: Character designer, concept art, animation
 - {b}Soup_Underscore{/b}: Storyboarder, Animation
-- {b}TheMutiplayerMick{/b}: 3D Modeling
+- {b}TheMutiplayerMick{/b}: 3D Background Modelling
 - {b}Fendy{/b}: Concept artist and backup illustrator
 
 {size=+5}Code and Programming:{size=-5}
@@ -722,6 +723,10 @@ screen credits():
             null height 10
             text "{size=-20}Metume{/size}" xalign 0.5
             null height 75
+            label "{size=-70}Script advisor{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}TheMutiplayerMick{/size}" xalign 0.5
+            null height 75
             label "{size=-70}Art direction{/size}" xalign 0.5
             null height 10
             text "{size=-20}Lyn{/size}" xalign 0.5
@@ -738,7 +743,7 @@ screen credits():
             null height 10
             text "{size=-20}Soup_Underscore{/size}" xalign 0.5
             null height 75
-            label "{size=-70}3D Modeling{/size}" xalign 0.5
+            label "{size=-70}3D Background Modelling{/size}" xalign 0.5
             null height 10
             text "{size=-20}TheMutiplayerMick{/size}" xalign 0.5
             null height 75
