@@ -585,7 +585,7 @@ label JH0:
             jump JH1    
 
 label JH1:
-    show bg toilet 
+    show bg toilet with fade
     show Julia at textbox_over with Dissolve(0.3)
     J"(I hold the bathroom door shut so the agents don't come in, then take a few steps back when my surroundings momentarily feel silent.)"
 
@@ -1527,7 +1527,7 @@ label JS12:
     (I did it.)
 
     (...)"""
-    show Quol at center_lower with Dissolve(0.3)
+    show Quol raincoat at center_lower with Dissolve(0.3)
     J"(I turn to Quol. She gives me a nod of admiration.)"
 
     Q"""I'm sorry, Julia.

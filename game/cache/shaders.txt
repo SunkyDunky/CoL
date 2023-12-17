@@ -1,6 +1,6 @@
 =======
-renpy.solid
 renpy.geometry renpy.texture
+renpy.solid
 renpy.alpha renpy.texture
 renpy.dissolve renpy.dissolve
 renpy.alpha renpy.geometry renpy.texture
