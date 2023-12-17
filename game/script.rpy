@@ -1255,7 +1255,9 @@ label JS11:
    
     J"(And then, in that moment of uncertainty, a vivid memory flashed in my mind—a scene I had shared with Renee not too long ago.)"
 
-    show bg ReneeBedroom
+    show bg ReneeBedroom with fade
+    stop music fadeout 5
+    play music "Anxiety_Shows.mp3"
 
     J"""(Renee's room was bathed in soft, warm light as she and I sat side by side on the edge of the bed.)
 
@@ -1317,6 +1319,8 @@ label JS11:
 
     hide Renee with Dissolve(0.3)
     show bg stage with fade
+    stop music fadeout 5
+    play music "StageBGM.mp3"
 
     J"""(I snapped back to reality, realizing her bag was near the drums. Pulling it closer, I hurriedly searched for anything that could help Renee's injured leg.)
 
