@@ -115,10 +115,10 @@ image Quol Angry:
     zoom 1.78
 image Quol raincoat:   
     "characters/Quol raincoat.png"
-    zoom 1.59
+    zoom 0.5
 image Quol raincoat Angry:   
     "characters/Quol raincoat Angry.png"
-    zoom 1.78    
+    zoom 0.5 
 #Lenorra    
 image Lenorra:   
     "characters/Lenorra.png"
@@ -1420,7 +1420,7 @@ label JS12:
     
     She acts all nice and dutiful when her boss is looking, but as soon as the Head Scientist turns around she'd just order us around like we are her personal servant or somethi-"""
     
-    show Quol at left_center_lower with Dissolve(0.3)
+    show Quol raincoat at left_center_lower with Dissolve(0.3)
 
     J"(Quol glares at Lars in annoyance)"
 
@@ -1435,7 +1435,7 @@ label JS12:
     J"(Lars returns to the hotel, closing the door behind him.)"
 
     hide Lars with Dissolve(0.3)
-    show Quol at center_lower with Dissolve(0.3)
+    show Quol raincoat at center_lower with Dissolve(0.3)
     stop music fadeout 5
 
     Q"Let's go back now before someone sees us."
@@ -1454,7 +1454,7 @@ label JS12:
     
     (The man drops the trash bags he was carrying and in a panic dashes away.)"""
 
-    show Quol at center_lower with Dissolve(0.3)
+    show Quol raincoat at center_lower with Dissolve(0.3)
     play music "Fear_And_Terror.mp3"
     
     J"""(Oh no! Are we gonna get caught?!)
