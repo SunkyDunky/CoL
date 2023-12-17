@@ -663,6 +663,9 @@ screen about():
 - {b}Uncertain Feelings{/b} by Peacefulorenz
 - {b}Temporary Bliss{/b} by Peacefulorenz
 - {b}Anxiety Shows{/b} by Peacefulorenz
+- {b}Fear and Terror{/b} by Peacefulorenz
+- {b}Guilty Conscience{/b} by Peacefulorenz
+- {b}Calm After the Storm{/b} by Peacefulorenz
 
 
 We would like to express our deepest gratitude to all these individuals for their contributions. Their collective efforts have made this game a reality.
@@ -692,7 +695,7 @@ screen credits():
 
     style_prefix "credits"
 
-    timer 70.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
+    timer 80.0 action Return() ## Adjust this number to control when the Credits screen is hidden and the game
     ## returns to its normal flow.
 
     frame at credits_scroll(65.0): #bigger is slower
@@ -775,6 +778,18 @@ screen credits():
             text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
             null height 75
             label "{size=-70}Anxiety Shows{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Fear and Terror{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Guilty Conscience{/size}" xalign 0.5
+            null height 10
+            text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
+            null height 75
+            label "{size=-70}Calm After the Storm{/size}" xalign 0.5
             null height 10
             text "{size=-20}by Peacefulorenz{/size}" xalign 0.5
             null height 400

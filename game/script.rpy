@@ -2247,6 +2247,134 @@ label JH2:
         "Confront the agent guarding the path ahead":
             jump JH4
 
+label JH3:
+    #A/N: Fade to black
+    J"""I should stay...I have my friends.
+
+    They will come for me right...?
+
+    Won't they..?
+
+    (I started to doubt my own words)
+
+    (Renee and Quol are outside fighting for me, I am sure they would come for me.)
+
+    But...but....
+
+    (Are you sure? Julia?)
+
+    (I stared at the door in front of me, the wall between this room and the outside world.)
+
+    (I heard a few knocks from the door, they sounded familiar...)"""
+
+    #Fade to black then transition to hotel
+
+    J"""(I knock on the door)
+
+    Mother, please be home...anyone! Please answer the door..."""
+
+    JM"(Julia's mother opens the door to her frail daughter helpless standing there right in front of you)"
+
+    J"(My eyes widen when I see my mother...)"
+
+    J"Mom I...we need to leave...i-"
+
+    JM" My daughter I...I can't believe you are safe..."
+
+    J"I...I'm sorry Mother...I...my head..."
+
+    J"( I want to give my mother a hug but I am too weak...I start to cry...)"
+
+    J"""(The warm embrace of my mother...never have I ever felt more in need of it then now.)
+
+    (I cry rivers to my mother...I did not want this moment to end.)
+
+    (Right now...I feel seen and heard by someone who has sideline me for years.)"""
+
+    J" Mother...the Institute is after me...please you and father have to get them to stop!"
+
+    J"(!!!)"
+
+    J"(My mother promptly brings me inside...at first she was happy to see me but now she is unnerved.)"
+
+    J"I did I do something wrong—"
+
+    JM"Is the name Lenorra familiar to you? DO you know who that—"
+
+    J"(I cut my mother off)"
+
+    J"""Yes! Lenorra and the NewFutures Institute are after me, please Mother, you have to do something...I don't want to go back there!!!
+    (I clutch my mother's dress)"""
+
+    JM" You father was on the phone with them this morning...I overheard him...he has sorted out a deal."
+
+    J"(I smile at my mother)"
+
+    J"Thank you..."
+
+    J"(My mother smiles back faintly...she doesn't make eye contact with me for a moment.)"
+
+    JM"I love you...please wash up and get changed...I'll make you something to eat...your favorite meal..."
+
+    J"(I am elated. My body moves on its own.)"
+
+    J"I love you too..."
+    #reality
+    J"""I murmured to myself, tears stuck on my cheek.
+
+    I love you..."""
+    #flashback
+    J"""(The next day I woke up early for breakfast)
+
+    (Taking out a few dresses from the dresser, I held them in front of me and tried to see which matched me the most.)
+
+    This one seems best!"""
+    J"(I look in the mirror satisfied with the dress I was wearing...It matched my mother's. Maybe this will make everyone more happy to see me.)"
+
+    J"(I do a final twirl in and smile at my reflection.)"
+
+    J"I wonder what meal Mother had the butler prepare..."
+
+    J"(When I go to open the door the knob won't budge...)"
+
+    J"""Huh?
+
+    (I tried opening it again)
+
+    (That is very weird..)"""
+
+    J"(Why won't the door open?)"
+
+    J"Mother...Father..."
+
+    J"(I am met with no response...I attempt to open the door again...)"
+
+    J"Mother...Father...I'm stuck.. Can anyone open the closet door! I think it is jammed..."
+
+    J"HELP PLEASE! "
+
+    #(There is no response)
+
+    J"(I slumped down next to the door.)"
+
+    J"What...does this mean..."
+
+    J"""Seconds passed into minutes, and the door was still stuck)
+
+    (Does my family not want me?...was coming back here a mistake?) """
+
+    J"(I sobbed until I get tired...this didn't take long.. I was starving...a dwindled lethargic...)"
+
+    #reality/flashback
+    J"(after a long while, the door opens suddenly)"
+
+    J"(I lose balance and fall into Lenorra's arms)"
+
+    J"(I was greeted by her wide smile.)"
+
+    LQ"Julia, welcome back."
+
+    jump badend
 
 
 
